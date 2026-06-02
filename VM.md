@@ -6,6 +6,7 @@ Please **read them carefully and execute all commands in the following order**. 
 
 Let's start :rocket:
 
+
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
@@ -15,6 +16,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 ![GitHub picture](https://github.com/lewagon/setup/blob/master/images/github_picture.png)
 
 :point_right: **[Enable Two-Factor Authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub will send you text messages with a code when you try to log in. This is important for security and also will soon be required in order to contribute code on GitHub.
+
 
 ## SSH key
 
@@ -34,24 +36,22 @@ We highly recommend installing [Windows Terminal](https://apps.microsoft.com/sto
   <summary markdown='span'>Windows</summary>
 
 ```bash
-# replace "your_email@example.com" with your GCP account email
-ssh-keygen.exe -t ed25519 -C "your_email@example.com"
+# replace your_email@example.com, this is purely informative and allows you to remember the use of this key
+ssh-keygen.exe -t ed25519 -C your_email@example.com
 ```
-
 </details>
 
 <details>
   <summary markdown='span'>MacOS & Linux</summary>
 
 ```bash
-# replace "your_email@example.com" with your GCP account email
-ssh-keygen -t ed25519 -C "your_email@example.com"
+# replace your_email@example.com, this is purely informative and allows you to remember the use of this key
+ssh-keygen -t ed25519 -C your_email@example.com
 ```
-
 </details>
 
-You should get the following message: `> Generating public/private algorithm key pair.`
 
+You should get the following message: `> Generating public/private algorithm key pair.`
 - When you are prompted `> Enter a file in which to save the key`, press Enter
 - You should be asked to `Enter a passphrase` - this is optional if you want additional security. To continue without a passphrase press enter without typing anything when asked to enter a passphrase.
 
@@ -68,12 +68,13 @@ If you receive this message, you may already have an SSH Key with the same name 
 To create a separate SSH key to exclusively use for this bootcamp use the following:
 
 ```bash
-# replace "your_email@example.com" with your GCP account email
-ssh-keygen -t ed25519 -f ~/.ssh/de-bootcamp -C "your_email@example.com"
+# replace your_email@example.com, this is purely informative and allows you to remember the use of this key
+ssh-keygen -t ed25519 -f ~/.ssh/de-bootcamp -C your_email@example.com
 ```
 
 Your new SSH Key will be named `de-bootcamp`. Make sure to remember it for later!
 </details>
+
 
 ## Google Cloud Platform setup
 
@@ -97,15 +98,13 @@ Your new SSH Key will be named `de-bootcamp`. Make sure to remember it for later
 
 In order to facilitate the following of the instructions during the bootcamp, open your GCP account preferences:
 
-[https://myaccount.google.com/language](https://myaccount.google.com/language)
+https://myaccount.google.com/language
 
 If the *preferred language* is not:
-
 - **English**
 - **United States**
 
 Then switch the language to english:
-
 - Click on the edit pen logo
 - Select **English**
 - Select **United States**
@@ -144,12 +143,13 @@ Once this is done, verify that your billing account is linked to your GCP projec
 
 You should now see:
 
-```bash
+```
 Free trial status: $300 credit and 91 days remaining - with a full account, you'll get unlimited access to all of Google Cloud Platform.
 ```
 
 <details>
   <summary>👉 If you do not own a credit card 👈</summary>
+
 
 If you do not own a credit card, an alternative is to setup a **Revolut** account.
 Revolut is a financial app that will allow you to create a virtual credit card linked to your mobile phone billing account.
@@ -170,7 +170,6 @@ Once this is done, select the standard (free) plan. No need to add the card to A
 You now have a virtual card which we will use for the GCP setup.
 
 In the main view of the Revolut the app
-
 - Click on Ready to use
 - Click on the card
 - Click on Show card details
@@ -180,6 +179,7 @@ In the main view of the Revolut the app
 
 <details>
   <summary>👉 If you receive an email from Google saying "Urgent: your billing account XXXXXX-XXXXXX-XXXXXX has been suspended" 👈</summary>
+
 
 This may happen especially in case you just setup a Revolut account.
 
@@ -215,88 +215,22 @@ Go to your project [APIs dashboard](https://console.cloud.google.com/apis/dashbo
     <img alt='APIs enable' src="https://github.com/lewagon/data-engineering-setup/blob/main/images/gcp_apis_enable.png" width=300>
 - Compute Engine is now enabled on your project
 
+
+
 ## Virtual Machine (VM)
 
-**👌 Note: Skip to the next section if you already have a VM set up**
+_Note: The VM setup requires a [Google Cloud Platform](https://cloud.google.com/) account associated with an active [Billing account](https://console.cloud.google.com/billing)_
 
-_Note: The following section requires you already have a [Google Cloud Platform](https://cloud.google.com/) account associated with an active [Billing account](https://console.cloud.google.com/billing)._
+ℹ️ In the guide, left click to drag the screenshots if necessary
 
-- Go to console.cloud.google.com > > Compute Engine > VM instances > Create instance
-- Name it `lewagon-data-eng-vm-<github_username>`, replace `<github_username>` with your own, e.g. `krokrob`
-- Region `europe-west1`, choose the closest one among the [available regions](https://cloud.google.com/compute/docs/regions-zones#available)
+ℹ️ You may adjust the aspect ratio of your browser window to see the full screenshots
 
-    <img alt="gcloud-console-vm-create-instance" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-create-instance.png" width=500>
-- In the section `Machine configuration` under the sub-heading `Machine type`
-- Select General purpose > PRESET > e2-standard-4
+<a href="https://scribehow.com/embed/Create_a_Google_Cloud_VM_Instance_with_SSH_Key__1ohFlAbSR9yoG28S0PDfwg">
+  <img src="https://github.com/lewagon/data-engineering-setup/blob/main/images/scribe_gcp_vm.png" alt="scribe gcp vm" width="500">
+</a>
 
-    <img alt="gcloud-console-vm-e2-standard4" src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/v9dv42llst8qjp2uj0d1yr00po1g" width=500>
-- Boot disk > Change
-  - Operating system > Ubuntu
-  - Version > Ubuntu 22.04 LTS x86/64
-  - Boot disk type > Balanced persistent disk
-  - Size > upgrade to 150GB
+**👌 Follow [this guide](https://scribehow.com/embed/Create_a_Google_Cloud_VM_Instance_with_SSH_Key__1ohFlAbSR9yoG28S0PDfwg) or skip to the next section if you already have a VM set up**
 
-    <img alt="gcloud-console-vm-ubunt" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-ubunt.png" width=500>
-- Open `Networking, Disks, ...` under `Advanced options`
-- Open `Networking`
-
-    <img alt="gcloud-console-vm-networking" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-networking.png" width=500>
-- Go to `Network interfaces` and click on `default default (...)` with a downward arrow on the right.
-
-    <img alt="gcloud-console-vm-network-interfaces" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-network-interfaces.png" width=500>
-- This opened a box `Edit network interface`
-- Go to the dropdown `External IPv4 address`, click on it, click on `RESERVE STATIC EXTERNAL IP ADDRESS`
-
-    <img alt="gcloud-console-vm-create-static-ip" src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/1ax09j2zld7x0lsvpp9p8ld8u5vc" width=300>
-- Give it a name, like "lewagon-data-eng-vm-ip-<github_username>" (replace `<github_username>` with your own) and description "Le Wagon - Data Engineering VM IP". This will take a few seconds.
-
-    <img alt="gcloud-console-reserve-static-ip" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-reserve-static-ip.png" width=300>
-
-- You will now have a public IP associated with your account, and later to your VM instance. Click on `Done` at the bottom of the section `Edit network interface` you were in.
-
-    <img alt="gcloud-console-new-external-ip" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-new-external-ip.png" width=300>
-
-### Public SSH key
-
-- Open the `Security` section
-
-    <img alt="gcloud-console-vm-security" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-security.png" width=300>
-- Open the `Manage access` subsection
-
-    <img alt="gcloud-console-manage-access" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-manage-access.png" width=200>
-- Go to `Add manually generated SSH keys` and click `Add item`
-
-    <img alt="gcloud-console-add-manual-ssh-key" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-add-manual-ssh-key.png" width=500>
-- In your terminal display your public SSH key:
-  - Windows: navigate to where you created your SSH key and open `id_ed25519.pub`
-
-  - Mac/Linux users can use:
-
-    ```bash
-    cat ~/.ssh/id_ed25519.pub
-    # OR cat ~/.ssh/de-bootcamp.pub if you created a unique key
-    ```
-
-- Copy your public SSH key and paste it:
-
-    <img alt="gcloud-console-add-ssh-key-pub" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-add-ssh-key-pub.png" width=500>
-- On the right hand side you should see
-
-    <img alt="gcloud-console-vm-price-month" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-price-month.png" width=300>
-- You should be good to go and click `CREATE` at the bottom
-
-    <img alt="gcloud-console-vm-create" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-create.png" width=500>
-- It will take a few minutes for your virtual machine (VM) to be created. Your instance will show up like below when ready, with a green circled tick, named `lewagon-data-eng-vm-krokrob` (`krokrob` being replaced by your GitHub username).
-
-    <img alt="gcloud-console-vm-instance-running" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-instance-running.png" width=500>
-- Click on your instance
-
-    <img alt="gcloud-console-vm-running" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-running.png" width=500>
-- Go down to the section `SSH keys`, and write down your username (you need it for the next section)
-
-    <img alt="gcloud-console-vm-username" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/gcloud-console-vm-username.png" width=300>
-
-Congrats, your virtual machine is up and running, it is time to connect it with VS Code!
 
 ## Visual Studio Code
 
@@ -309,9 +243,10 @@ Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 - Open the file you have just downloaded.
 - Install it with few options:
 
-![VS Code installation options](https://github.com/lewagon/data-engineering-setup/blob/main/https://github.com/lewagon/setup/blob/master/images/windows_vscode_installation.png)
+![VS Code installation options](https://github.com/lewagon/setup/blob/master/images/windows_vscode_installation.png)
 
 When the installation is finished, launch VS Code.
+
 
 ### VS Code Remote SSH Extension
 
@@ -337,6 +272,7 @@ That's the only extension you should install on your _local_ machine, we will in
 - Type `ssh -i <path/to/your/private/key> <username>@<ip address>`, for instance, my username is `somedude`, my private SSH key is located at `~/.ssh/id_rsa` on my local computer, my VM has a public IP of `34.77.50.76`: I'll type `ssh -i ~/.ssh/id_rsa somedude@34.77.50.76`
 
 <img alt="vscode-ssh-connection-command" src="https://wagon-public-datasets.s3.amazonaws.com/data-engineering/setup/vscode-ssh-connection-command.png" width=500>
+
 
 - When prompted to `Select SSH configuration file to update`, pick the one in your home directory, under the `.ssh` folder, `~/.ssh/config` basically. Usually VS Code will pick automatically the best option, so their default should work.
 
@@ -374,7 +310,6 @@ Host <machine ip>
   IdentityFile <file path for your ssh key>
   User <username>
 ```
-
 You can now change Host to whatever you would like to see as the name of your connection or in terminal with `ssh <Host>`!
 
 ❗️ It is important that the `Host` alias does not contain any whitespaces ❗️
@@ -388,6 +323,7 @@ Host "de-bootcamp-vm"
 ```
 
 **The setup of your local machine is over. All following commands will be run from within your 🚨 virtual machine**🚨 terminal (via VS code for instance)
+
 
 ## VS Code Extensions
 
@@ -417,7 +353,38 @@ Here is a list of the extensions you are installing:
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
+
 ## Command line tools
+
+### Check the locale
+
+The locale is a mechanism allowing to customize programs to your language and country.
+
+Let's verify that the default locale is set to English, please type this in the Ubuntu terminal:
+
+```bash
+locale
+```
+
+If the output does not contain `LANG=en_US.UTF-8`, run the following command in a Ubuntu terminal to install the english locale:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
+If after, you receive a warning (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) in your terminal, please do the following:
+
+<details>
+  <summary>Generate locale</summary>
+
+Please, run this lines in your terminal.
+
+```bash
+sudo update-locale LANG=en_US.UTF8
+sudo apt-get update
+sudo apt-get install language-pack-en language-pack-en-base manpages
+```
+</details>
 
 ### Zsh & Git
 
@@ -426,7 +393,6 @@ Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_
 We will also use [`git`](https://git-scm.com/), a command line software used for version control.
 
 Let's install them, along with other useful tools:
-
 - Open an **Ubuntu terminal**
 - Copy and paste the following commands:
 
@@ -475,6 +441,7 @@ gh --version
 
 :x: Otherwise, please **contact a teacher**
 
+
 ## Oh-my-zsh
 
 Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
@@ -495,14 +462,18 @@ At the end your terminal should look like this:
 
 :x: Otherwise, please **ask for a teacher**
 
+
 ## direnv
 
 [direnv](https://direnv.net/) is a shell extension. It makes it easy to deal with per project environment variables. This will be useful in order to customize the behavior of your code.
+
 
 ``` bash
 sudo apt-get update; sudo apt-get install direnv
 echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
 ```
+
+
 
 ## GitHub CLI
 
@@ -516,7 +487,7 @@ We will use the GitHub CLI (`gh`) to connect to GitHub using *SSH*, a protocol t
 
 First in order to **login**, copy-paste the following command in your terminal:
 
-:warning: **DO NOT edit the `email`**
+:warning: **DO NOT edit the `email`** — Even though `user:email` looks like a placeholder for your actual email address, it isn't — do not replace it.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -528,7 +499,9 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
   If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`:
+  - **FOR MOST PEOPLE:** Just press `Enter` to skip. You don't need a passphrase for the bootcamp and it would prompt you every time you use the key. There is a risk, however, that if someone steals your laptop, they could then push to GitHub.
+  - **IF SECURITY IS REALLY IMPORTANT TO YOU:** Enter a passphrase of your choice and press `Enter`. It's _really_ important that if you enter a passphrase, you write it down somewhere immediately and do not lose/forget it. You will need to enter this frequently.
 
 - `Title for your SSH key`. You can leave it at the proposed "GitHub CLI", press `Enter`.
 
@@ -555,10 +528,10 @@ gh auth status
 
 :x: If not, **contact a teacher**.
 
+
 ## Google Cloud CLI
 
 Install the `gcloud` CLI to communicate with [Google Cloud Platform](https://cloud.google.com/) through your terminal:
-
 ```bash
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 sudo apt-get install apt-transport-https ca-certificates gnupg
@@ -566,7 +539,6 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyr
 sudo apt-get update && sudo apt-get install google-cloud-sdk
 sudo apt-get install google-cloud-sdk-app-engine-python
 ```
-
 👉 [Install documentation](https://cloud.google.com/sdk/docs/install#deb)
 
 ### Create a service account key 🔑
@@ -578,11 +550,12 @@ Now that you have created a `GCP account` and a `project` (identified by its `PR
 <details>
   <summary>🤔 Why do we need a service account key ?</summary>
 
+
   You have created a `GCP account` linked to your credit card. Your account will be billed according to your usage of the ressources of the **Google Cloud Platform**. The billing will occur if you consume anything once the free trial is over, or if you exceed the amount of spending allowed during the free trial.
 
-  In your `GCP account`, you have created a single `GCP project`, identified by its `PROJECT_ID`. The `GCP projects` allow you to organize and monitor more precisely how you consume the **GCP** resources. For the purpose of the bootcamp, we are only going to create a single project.
+  In your `GCP account`, you have created a single `GCP project`, identified by its `PROJECT_ID`. The `GCP projects` allow you to organize and monitor more precisely how you consume the **GCP** ressources. For the purpose of the bootcamp, we are only going to create a single project.
 
-  Now, we need a way to tell which resources within a `GCP project` our code will be allowed to consume. Our code consumes GCP resources through API calls.
+  Now, we need a way to tell which ressources within a `GCP project` our code will be allowed to consume. Our code consumes GCP ressources through API calls.
 
   Since API calls are not free, it is important to define with caution how our code will be allowed to use them. During the bootcamp this will not be an issue and we are going to allow our code to use all the API of **GCP** without any restrictions.
 
@@ -616,11 +589,11 @@ Since the [service account](https://cloud.google.com/iam/docs/service-accounts) 
 
 The browser has now saved the service account json file 🔑 in your downloads directory (it is named according to your service account name, something like `le-wagon-data-123456789abc.json`)
 
+
 ### Configure Cloud sdk
 
 - Open the service account json file with any text editor and copy the key
-
-    ```json
+    ```
     # It looks like:
     {
         "type": "service_account",
@@ -635,51 +608,40 @@ The browser has now saved the service account json file 🔑 in your downloads d
         "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bootcamp%40kevin-bootcamp.iam.gserviceaccount.com"
     }
     ```
-
 - **on your Virtual Machine**, create a `~/.gcp_keys` directory, then create a json file in it:
-
     ``` bash
     mkdir ~/.gcp_keys
     touch ~/.gcp_keys/le-wagon-de-bootcamp.json
     ```
-
 - Open the json file then store the service account json file pasting the key:
-
     ```bash
     code ~/.gcp_keys/le-wagon-de-bootcamp.json
     ```
-
     ![service account json key](https://github.com/lewagon/data-engineering-setup/blob/main/images/service_account_json_key.png)
 
     ❗️Don't forget to **save** the file with `CMD` + `s` or `CTRL` + `s`
 
 - Authenticate the `gcloud` CLI with the google account you used for GCP
-
     ```bash
     # Replace service_account_name@project_id.iam.gserviceaccount.com with your own
     SERVICE_ACCOUNT_EMAIL=service_account_name@project_id.iam.gserviceaccount.com
     KEY_FILE=$HOME/.gcp_keys/le-wagon-de-bootcamp.json
     gcloud auth activate-service-account $SERVICE_ACCOUNT_EMAIL --key-file=$KEY_FILE
     ```
-
 - List your active account and check your email address you used for GCP is present
-
     ```bash
     gcloud auth list
     ```
-
 - Set your current project
-
     ```bash
     # Replace `PROJECT_ID` with the `ID` of your project, e.g. `wagon-bootcamp-123456`
     gcloud config set project PROJECT_ID
     ```
-
 - List your active account and current project and check your project is present
-
     ```bash
     gcloud config list
     ```
+
 
 ## Dotfiles
 
@@ -701,6 +663,7 @@ There seems to be a problem with the previous step (`gh auth`).
 
 There are three options, choose **one**:
 
+
 <details>
     <summary>
         <strong>I did not attend the Web Dev or Data Science & AI or Data Analytics bootcamp at Le Wagon</strong>
@@ -720,6 +683,7 @@ gh repo fork lewagon/dotfiles --clone
 
 </details>
 
+
 <details>
     <summary>
         <strong>I already attended a Le Wagon coding bootcamp (Web Development or Data Science & AI or Data Analytics) <em>but I have a new laptop</em></strong>
@@ -734,6 +698,7 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo clone $GITHUB_USERNAME/dotfiles
 ```
 
+
 Open your terminal and go to your `dotfiles` project:
 
 ```bash
@@ -785,6 +750,7 @@ git push origin master
 ```
 
 </details>
+
 
 <details>
     <summary>
@@ -793,6 +759,7 @@ git push origin master
 
 This means that you already forked and cloned the GitHub repo `lewagon/dotfiles`, but at that time the configuration was maybe not ready for the current Data Analytics bootcamp. Let's update it. **Ask a TA to join you for the nex steps.**
 
+
 Open your terminal and go to your `dotfiles` project:
 
 ```bash
@@ -844,6 +811,7 @@ git push origin master
 ```
 
 </details>
+
 
 ### Run the dotfiles installer
 
@@ -870,6 +838,7 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 Please now **quit** all your opened terminal windows.
 
+
 ### zsh default terminal
 
 Set `zsh` as your default VS Code terminal.
@@ -880,6 +849,7 @@ Set `zsh` as your default VS Code terminal.
 - Select `zsh /usr/bin/zsh`
 
     <img alt="Terminal zsh profile" src="https://github.com/lewagon/data-engineering-setup/blob/main/images/terminal_zsh_profile.png" width=300>
+
 
 ## Disable SSH passphrase prompt
 
@@ -892,11 +862,11 @@ code ~/.zshrc
 ```
 
 Then:
-
 - Spot the line starting with `plugins=`
 - Add `ssh-agent` at the end of the plugins list
 
 :heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
+
 
 ### Install `pyenv`
 
@@ -957,6 +927,7 @@ exec zsh
 
 To check if this worked, run `python --version`. If you see `3.12.9`, perfect! If not, ask a TA that will help you debug the problem thanks to `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
 
+
 ## Python Virtual Environment
 
 Before we start installing relevant Python packages, we will isolate the setup for the Bootcamp into a **dedicated** virtual environment. We will use a `pyenv` plugin called [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv).
@@ -984,6 +955,7 @@ pyenv global lewagon
 
 Great! Anytime we'll install Python package, we'll do it in that environment.
 
+
 ### Python packages
 
 Now that we have a pristine `lewagon` virtual environment, it's time to install some packages in it.
@@ -996,9 +968,14 @@ pip install --upgrade pip
 
 Then let's install some packages for the first weeks of the program:
 
+
+
 ``` bash
-pip install -r https://raw.githubusercontent.com/lewagon/data-setup/master/specs/releases/linux.txt
+pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
+
+
+
 
 ## Jupyter Notebook tweaking
 
@@ -1008,10 +985,11 @@ Run the following lines to create a `custom.css` stylesheet in your Jupyter conf
 
 ```bash
 LOCATION=$(jupyter --config-dir)/custom
-SOURCE=https://raw.githubusercontent.com/lewagon/data-setup/refs/heads/master/specs/jupyter/custom.css
+SOURCE=https://raw.githubusercontent.com/lewagon/data-analytics-setup/refs/heads/master/specs/jupyter/custom.css
 mkdir -p $LOCATION
 curl $SOURCE > $LOCATION/custom.css
 ```
+
 
 ## Python setup check
 
@@ -1026,19 +1004,19 @@ cd ~/code && exec zsh
 Check your Python version with the following commands:
 
 ```bash
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-setup/master/checks/python_checker.sh)" 3.12.9
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/python_checker.sh)" 3.12.9
 ```
 
 Run the following command to check if you successfully installed the required packages:
 
 ```bash
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-setup/master/checks/pip_check.sh)"
+zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/pip_check.sh)"
 ```
 
 Now run the following command to check if you can load these packages:
 
 ```bash
-python -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-setup/master/checks/pip_check.py)"
+python -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/pip_check.py)"
 ```
 
 ### Jupyter check
@@ -1073,13 +1051,15 @@ You can close your web browser then terminate the jupyter server with `CTRL` + `
 
 Here you have it! A complete python virtual env with all the third-party packages you'll need for the whole bootcamp.
 
-## Kitt
+
+  ## Kitt
 
 You should have received an email from Le Wagon inviting you to sign up on [Kitt](https://kitt.lewagon.com) (our learning platform).
 
 Then you should receive an additional invitation from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and complete the information.
 
 If you haven't, please contact your teaching team.
+
 
 ## Slack
 
@@ -1090,6 +1070,7 @@ If you haven't, please contact your teaching team.
 [Download the Slack app](https://slack.com/downloads/windows) and install it.
 
 :warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
+
 
 ### Settings
 
@@ -1102,7 +1083,6 @@ Make sure you **upload a profile picture** :point_down:
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
-
 - Open the Slack app
 - Click your profile picture in the top right.
 - Select `Preferences` from the menu.
@@ -1118,14 +1098,11 @@ To ensure that everything is working fine for video calls, let's test your camer
 
 You can also install Slack app on your phone and sign in `lewagon-alumni`!
 
-## Setup completed!
 
-That's all you need for now! Some of the free trial periods on the tools we use are very short, so from now on, whenever we introduce a new tool or software, we will guide you through the sign-in and installation steps at the beginning of the day.
-
-Ready to start? 🚀
-
-## (Bonus)
+## Bonus
 
 If you are done with your setup, please ask around if some classmates need some help with theirs (macOS, Linux, Windows). We will have our first lectures at 2pm and will talk about the Setup you just did + onboard you on Kitt.
 
 If you don't have a lot of experience with `git` and GitHub, please [(re-)watch this workshop](https://www.youtube.com/watch?v=Z9fIBT2NBGY) (`1.25` playback speed is fine).
+
+

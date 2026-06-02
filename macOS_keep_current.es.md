@@ -1,23 +1,23 @@
 
-# Keeping your setup current
+# Cómo mantener tu configuración al día
 
-This section contains the steps that you need to follow in order to make sure that your setup is up to date
+Esta sección contiene los pasos que tienes que seguir para asegurarte de que tu configuración esté actualizada.
 
-First and foremost, in order to work in good conditions, make sure that :
+Primero y principal, para trabajar en buenas condiciones, asegúrate de que:
 
-- you are working with a high speed internet connection
-- your computer has enough memory (8GB), so that you can run your code efficiently
-- your computer has enough disk space (30GB), so that you can work on big datasets
+- tienes una conexión internet de alta velocidad
+- tu computadora tiene suficiente memoria (8GB) para poder ejecutar tu código eficientemente
+- tu computadora tiene suficiente espacio en disco (30GB) para poder trabajar con grandes datasets.
 
 ## git
 
-Verify that git works
+Verifica que git funcione:
 
 ``` bash
 git --version
 ```
 
-👉 You should expect an output similar to this one yielding the git version :
+👉 Deberías obtener algo parecido a esto de aquí abajo que te muestra la versión de git:
 
 ``` bash
 git version 2.33.0
@@ -25,14 +25,14 @@ git version 2.33.0
 
 ## GitHub
 
-Verify that you have access to the Le Wagon public GitHub repositories
+Verifica que tengas acceso a los repositorios GitHub públicos de Le Wagon
 
 ``` bash
 cd ~/code/<YOUR_GITHUB_NICKNAME>/
 git clone git@github.com:lewagon/data-analytics-setup data-analytics-setup
 ```
 
-👉 The repo should clone correctly :
+👉 Se debe clonar el repositorio correctamente:
 
 ``` bash
 Cloning into 'data-analytics-setup'...
@@ -44,21 +44,21 @@ Resolving deltas: 100% (6/6), done.
 remote: Total 21 (delta 6), reused 16 (delta 1), pack-reused 0
 ```
 
-👉 You can delete the cloned repo
+👉 Puedes borrar el repositorio clonado
 
 ``` bash
 rm -Rf data-analytics-setup
 ```
 
-## Verify your pyenv configuration
+## Verificación de la configuración de pyenv
 
-Verify that you have a `~/.zprofile` :
+Verifica que tengas un `~/.zprofile` :
 
 ``` bash
 cat ~/.zprofile
 ```
 
-👉 You should see the following lines :
+👉 Deberías poder ver las líneas siguientes:
 
 ``` bash
 # Setup the PATH for pyenv binaries and shims
@@ -67,14 +67,14 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 type -a pyenv > /dev/null && eval "$(pyenv init --path)"
 ```
 
-If the command does not output anything, create the `~/.zprofile` file :
+Si el comando no da ningún resultado, crea el archivo `~/.zprofile`:
 
 ``` bash
 cd
 touch .zprofile
 ```
 
-Add the following lines to your `~/.zprofile` :
+Agrega las siguientes líneas a tu `~/.zprofile` :
 
 ``` bash
 # Setup the PATH for pyenv binaries and shims
@@ -83,9 +83,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 type -a pyenv > /dev/null && eval "$(pyenv init --path)"
 ```
 
-## Create a dedicated virtual environment
+## Creación de un ambiente virtual dedicado
 
-Update pyenv :
+Actualiza pyenv:
 
 
 ``` bash
@@ -93,61 +93,61 @@ brew update && brew upgrade pyenv
 ```
 
 
-Install the current python version :
+Instala la versión actual de python:
 
 ```bash
 pyenv install 3.12.9
 ```
 
-👉 Make sure that the command completes correctly and **restart your terminal**
+👉 Asegúrate de que el comando se ejecute completamente y luego **reinicia tu terminal**.
 
-Let's remove the existing current virtual environment :
+Remueve el ambiente virtual dedicado actual:
 
 ```bash
 pyenv virtualenv-delete lewagon_current
 ```
 
-Create a new virtual environment :
+Crea un nuevo ambiente virtual:
 
 ```bash
 pyenv virtualenv 3.12.9 lewagon_current
 ```
 
-Set the new virtual environment as default :
+Define el nuevo ambiente virtual como predeterminado:
 
 ```bash
 pyenv global lewagon_current
 ```
 
-You should now be able to see the new virtual environment as active :
+Ahora deberías poder ver que el nuevo ambiente virtual está activado:
 
 ``` bash
 pyenv versions
 ```
 
-👉 Here is a sample output :
+👉 Aquí hay una muestra del resultado:
 
 ``` bash
   system
   3.12.9
   3.12.9/envs/lewagon_current
-  3.10.6
-  3.10.6/envs/lewagon
+  3.7.6
+  3.7.6/envs/lewagon
 * lewagon_current
   lewagon
 ```
 
-### Install the bootcamp packages
+### Instalación de los paquetes del bootcamp
 
 ```bash
 pip install -U pip
 ```
 
 
-If your computer uses **Apple Silicon**, expand the paragraph below and go through it. Otherwise ignore it.
+Si tu computadora usa **Apple Silicon**, expande el párrafo de abajo y léelo. Si no es el caso, ignóralo.
 
 <details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
+  <summary>👉&nbsp;&nbsp;Configuración para Apple Silicon 👈</summary>
 
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/apple_silicon.txt
@@ -155,10 +155,10 @@ pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/ma
 
 </details>
 
-If your computer uses **Apple Intel**, expand the paragraph below and go through it. Otherwise ignore it.
+Si tu computadora usa **Apple Intel**, expande el párrafo de abajo y léelo. Si no es el caso, ignóralo.
 
 <details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Intel 👈</summary>
+  <summary>👉&nbsp;&nbsp;Configuración para Apple Intel 👈</summary>
 
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/apple_intel.txt
@@ -169,13 +169,13 @@ pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/ma
 
 ## GCP
 
-Make sure that the `gcloud` command is linked to the email address of your Google Cloud Platform account :
+Asegúrate de que el comando `gcloud` esté conectado con el email de tu cuenta Google Cloud Platform:
 
 ``` bash
 gcloud auth list
 ```
 
-👉 This lists the email address of your GCP account :
+👉 Esto muestra los emails de tu cuenta GCP:
 
 ``` bash
       Credentialed Accounts
@@ -186,13 +186,13 @@ To set the active account, run:
     $ gcloud config set account `ACCOUNT`
 ```
 
-Verify the name of your gcp project :
+Verifica el nombre de tu proyecto gcp:
 
 ``` bash
 gcloud config list
 ```
 
-👉 This lists both the email address of your GCP account and your GCP project :
+👉 Esto muestra tanto el email de tu cuenta GCP como tu proyecto GCP:
 
 ``` bash
 [core]
@@ -203,33 +203,33 @@ project = your-gcp-project-id
 Your active configuration is: [default]
 ```
 
-Verify the email created for the service account allowing your code to identify to GCP :
+Verifica que el email creado para la cuenta de servicio permita que tu código se identifique con GCP:
 
 ``` bash
 gcloud iam service-accounts list
 ```
 
-👉 This lists the GCP email address of the service account that allows your code to identify to GCP
+👉 Esto muestra el email de la cuenta de servicio en GCP que permite que tu código se identifique con GCP.
 
 ``` bash
 DISPLAY NAME          EMAIL                                                              DISABLED
 your-gcp-project-id   your-service-account@your-service-account.iam.gserviceaccount.com  False
 ```
 
-Go to [GCP IAM & Admin / Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts):
+Ve a [GCP IAM & Admin / Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts):
 
-- Select your project
-- Click on the service account email
-- Go to `PERMISSIONS`
-- Make sure that the service account email has a `Role` set to `Owner`
+- Selecciona tu proyecto
+- Haz clic en el email de la cuenta de servicio
+- Ve a `PERMISSIONS`
+- Asegúrate de que el email de la cuenta de servicio tenga un `Role` configurado como `Owner`
 
-Verify that you have configured your machine to allow your code to identify to GCP. The service account credentials json key file should be linked to the correct service account email :
+Verifica que hayas configurado tu máquina para que permita que tu código se identifique con GCP. El archivo de claves json de las credenciales de la cuenta de servicio debe estar conectado al email de la cuenta de servicio correcto:
 
 ``` bash
 cat $GOOGLE_APPLICATION_CREDENTIALS
 ```
 
-👉 This lists the content of your service account credentials json key :
+👉 Esto muestra el contenido de la clave json de las credenciales de la cuenta de servicio:
 
 ``` bash
 {
@@ -246,72 +246,72 @@ cat $GOOGLE_APPLICATION_CREDENTIALS
 }
 ```
 
-Make sure that the file contains the correct :
+Asegúrate de que el archivo contenga:
 
-- project id : your-gcp-project-id
-- service account email address : your-service-account@your-service-account.iam.gserviceaccount.com
+- el id el proyecto adecuado: your-gcp-project-id
+- el email de la cuenta de servicio adecuado: your-service-account@your-service-account.iam.gserviceaccount.com
 
-👉 If this does not display anything or if the email inside of the file is not the one of your service account, go back to the setup
+👉 Si esto no muestra nada o si el email dentro del archivo no es el de tu cuenta de servicio, regresa al setup.
 
 
-## Python setup check
+## Chequeo de la configuración de Python
 
-### Python and packages check
+### Chequeo de Python y packages
 
-Let's reset your terminal:
+Reinicia tu terminal:
 
 ```bash
 cd ~/code && exec zsh
 ```
 
-Check your Python version with the following commands:
+Verifica tu versión de Python con los siguientes comandos:
 
 ```bash
 zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/python_checker.sh)" 3.12.9
 ```
 
-Run the following command to check if you successfully installed the required packages:
+Ejecuta el comando siguiente para verificar que hayas instalado los paquetes requeridos correctamente:
 
 ```bash
 zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/pip_check.sh)"
 ```
 
-Now run the following command to check if you can load these packages:
+Ahora ejecuta el siguiente comando para verificar que puedas cargar estos paquetes:
 
 ```bash
 python -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/pip_check.py)"
 ```
 
-### Jupyter check
+### Chequeo de Jupyter
 
-Make sure you can run Jupyter:
+Ahora verifica que puedas iniciar un servidor de notebook en tu máquina:
 
 ```bash
 jupyter notebook
 ```
 
-Your web browser should open on a `jupyter` window:
+Tu navegador web debería abrir en una ventana `jupyter`:
 
 ![jupyter.png](images/jupyter.png)
 
-Click on `New` and in the dropdown menu select `Python 3 (ipykernel)`:
+Haz clic en `New` y, en el menú desplegable, selecciona Python 3 (ipykernel):
 
 ![jupyter_new.png](images/jupyter_new.png)
 
-A tab should open on a new notebook:
+Debería abrirse una pestaña en un nuevo notebook:
 
 ![jupyter_notebook.png](images/jupyter_notebook.png)
 
-Make sure that you are running the correct python version in the notebook. Open a cell and run:
+Asegúrate de que estés usando la versión correcta de python en el notebook. Abre una celda y ejecuta lo siguiente:
 
 ``` python
 import sys; sys.version
 ```
 
-It should output `3.12.9` followed by some more details. If not, check with a TA.
+Debería mostrar `3.12.9` seguido de algunos detalles adicionales. Si no es así, consulta con un TA.
 
-You can close your web browser then terminate the jupyter server with `CTRL` + `C`.
+Puedes cerrar tu navegador web y luego cerrar el servidor jupyter con `CTRL` + `C`.
 
-Here you have it! A complete python virtual env with all the third-party packages you'll need for the whole bootcamp.
+¡Listo! Ya tienes un virtual env de python completo con todos los paquetes tercerizados que necesitarás en el bootcamp.
 
 

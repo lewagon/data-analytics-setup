@@ -6,6 +6,7 @@ Please **read them carefully and execute all commands in the following order**. 
 
 Let's start :rocket:
 
+
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
@@ -16,16 +17,20 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Enable Two-Factor Authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub will send you text messages with a code when you try to log in. This is important for security and also will soon be required in order to contribute code on GitHub.
 
+
 ## Windows version
 
 Before we start, we need to check that the version of Windows installed on your computer is compatible with this setup instructions.
 
 ### Windows 10 or Windows 11
 
+> :warning: **Note on Windows 10 and security**
+>
+> The Le Wagon bootcamp setup works on Windows 10. That said, we highly recommend to upgrade to Windows 11. Since October 14th, 2025, Microsoft has ended support for Windows 10, which means it will no longer receive security updates, potentially putting your machine at risk. For more details, read [Microsoft's guide](https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281). In case your machine can't run Windows 11, consider switching to Ubuntu.
+
 To be able to set up your computer, you need to have **Windows 10 or Windows 11** installed.
 
 To check your Windows version:
-
 - Press `Windows` + `R`
 - Type  `winver`
 - Press `Enter`
@@ -57,13 +62,13 @@ If the first words of this window are **Windows 10**, check the **Version number
     <summary>Activate Windows Update Service to fix Updates</summary>
 
     Some antiviruses and pieces of software deactivate the Update service we need, resulting in the error you see. Let's fix that!
-      - Press `Windows` + `R`
-      - Type  `services.msc`
-      - Press `Enter`
-      - Double Click `Windows Update Service`
-      - Set its `Startup` to `Automatic`
-      - Click on `Start`
-      - Click on `Ok`
+    - Press `Windows` + `R`
+    - Type  `services.msc`
+    - Press `Enter`
+    - Double Click `Windows Update Service`
+    - Set its `Startup` to `Automatic`
+    - Click on `Start`
+    - Click on `Ok`
     Then let's try updates again!
   </details>
 
@@ -79,12 +84,12 @@ If the first words of this window are **Windows 10**, check the **Version number
 
   </details>
 
+
 ## Virtualization
 
 We need to ensure that the Virtualization options are enabled in the BIOS of your computer.
 
 For many computers, this is already the case. Let's check:
-
 - Press `Windows` + `R`
 - Type  `taskmgr`
 - Press `Enter`
@@ -101,26 +106,27 @@ For many computers, this is already the case. Let's check:
   <summary>Activate Virtualization</summary>
 
   We need to access the BIOS / UEFI of the computer to activate it.
-    - Press `Windows + R`
-    - Type  `shutdown.exe /r /o /t 1`
-    - Press `Enter`
-    - Wait for the computer to shutdown
-    - Click on `Troubleshoot`
-    - Click on `Advanced Options`
-    - Click on `UEFI Firmware Settings`
-    - Click on `Restart`
+  - Press `Windows + R`
+  - Type  `shutdown.exe /r /o /t 1`
+  - Press `Enter`
+  - Wait for the computer to shutdown
+  - Click on `Troubleshoot`
+  - Click on `Advanced Options`
+  - Click on `UEFI Firmware Settings`
+  - Click on `Restart`
 
   You need to activate the virtualization option for your processor here:
-    - Most of the time, in the advanced settings, the CPU settings, or the Northbridge settings
-    - The option can be called differently according to your computer:
+  - Most of the time, in the advanced settings, the CPU settings, or the Northbridge settings
+  - The option can be called differently according to your computer:
       - Intel: `Intel VT-x`, `Intel Virtualization Technology`, `Virtualization Extensions`, `Vanderpool`...
       - AMD: `SVM Mode` or `AMD-V`
-    - Save the changes after activation and reboot the computer through the appropriate option
+  - Save the changes after activation and reboot the computer through the appropriate option
 </details>
+
 
 ## Windows Subsystem for Linux (WSL)
 
-WSL is the development environment we are using to run Ubuntu. [You can learn more about WSL here](https://docs.microsoft.com/en-us/windows/wsl/faq).
+WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
 We will install WSL 2 and Ubuntu in one command through the Windows Command Prompt.
 
@@ -133,7 +139,6 @@ We will install WSL 2 and Ubuntu in one command through the Windows Command Prom
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
 A black terminal window will appear:
-
 - Copy the following command (`Ctrl` + `C`)
 - Paste it into the terminal window (`Ctrl` + `V` or by right-clicking in the window)
 - Run it by pressing `Enter`
@@ -150,7 +155,7 @@ wsl --install
 <summary>Troubleshooting for Windows 10 (only if needed, check with a TA)
 </summary>
 
-### For Windows 10 < 2004: install WSL 1 first
+#### For Windows 10 < 2004: install WSL 1 first
 
 :warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
@@ -161,7 +166,6 @@ wsl --install
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
 A blue terminal window will appear:
-
 - Copy the following commands one by one (`Ctrl` + `C`)
 - Paste them into the PowerShell window (`Ctrl` + `V` or by right-clicking in the window)
 - Run them by pressing `Enter`
@@ -205,7 +209,6 @@ Once your computer has restarted, we need to download the WSL2 installer.
 If you are running Windows 10, we will set WSL default version to 2.
 
 Now that WSL 2 is installed, let's make it the default version:
-
 - Press `Windows` + `R`
 - Type  `cmd`
 - Press `Enter`
@@ -236,6 +239,7 @@ wsl --set-default-version 2
 
 </details>
 
+
 ## Ubuntu
 
 ### Installation
@@ -263,9 +267,9 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
   <summary>Uninstall wrong versions of Ubuntu</summary>
 
   To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
-    - Press `Windows` + `R`
-    - Type  `ms-settings:appsfeatures`
-    - Press `Enter`
+  - Press `Windows` + `R`
+  - Type  `ms-settings:appsfeatures`
+  - Press `Enter`
 
   Find the software to uninstall and click on the uninstall button.
 </details>
@@ -277,16 +281,16 @@ Once the installation is finished, the `Get` button becomes a `Open` button: cli
 ### First launch
 
 At first launch, you will be asked some information:
-
 - Choose a **username**:
-  - one word
-  - lowercase
-  - no special characters
-  - for example: `lewagon` or your `firstname`
+    - one word
+    - lowercase
+    - no special characters
+    - for example: `lewagon` or your `firstname`
 - Choose a **password**
 - Confirm your password
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
+
 
 ### Check the WSL version of Ubuntu
 
@@ -320,14 +324,14 @@ wsl -l -v
 <details>
   <summary>Check for Uncompressed Files</summary>
 
-    - Press `Windows` + `R`
-    - Type  `%localappdata%\Packages`
-    - Press `Enter`
-    - Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`
-    - Right Click on the `LocalState` folder
-    - Click on `Properties`
-    - Click on `Advanced`
-    - Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
+  - Press `Windows` + `R`
+  - Type  `%localappdata%\Packages`
+  - Press `Enter`
+  - Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`
+  - Right Click on the `LocalState` folder
+  - Click on `Properties`
+  - Click on `Advanced`
+  - Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
 
   Apply changes to this folder only and try to convert the Ubuntu WSL version again.
 
@@ -350,36 +354,6 @@ It should return the username you chose before.
 
 :x: It if says `root`, **contact a TA** before continuing!
 
-### Check the locale
-
-The locale is a mechanism allowing to customize programs to your language and country.
-
-Let's verify that the default locale is set to English, please type this in the Ubuntu terminal:
-
-```bash
-locale
-```
-
-If the output does not contain `LANG=en_US.UTF-8`, run the following command in a Ubuntu terminal to install the english locale:
-
-```bash
-sudo locale-gen en_US.UTF-8
-```
-
-If after, you receive a warning (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) in your terminal, please do the following:
-
-<details>
-  <summary>Generate locale</summary>
-
-Please, run this lines in your terminal.
-
-```bash
-sudo update-locale LANG=en_US.UTF8
-sudo apt-get update
-sudo apt-get install language-pack-en language-pack-en-base manpages
-```
-
-</details>
 
 ## Visual Studio Code
 
@@ -420,6 +394,7 @@ code .
 
 :x: Otherwise, please **contact a teacher**
 
+
 ## Windows Terminal
 
 ### Installation
@@ -447,9 +422,9 @@ If you are running Windows 10, let's install Windows Terminal, a real modern ter
 
   To uninstall a wrong version of Windows Terminal, you just have to go to the Installed Program List of Windows 10:
 
-    - Press `Windows` + `R`
-    - Type  `ms-settings:appsfeatures`
-    - Press `Enter`
+  - Press `Windows` + `R`
+  - Type  `ms-settings:appsfeatures`
+  - Press `Enter`
 
   Find the software to uninstall and click on the uninstall button.
 </details>
@@ -474,14 +449,13 @@ It should open the terminal settings:
 
 You may see an orange circle rather than a penguin as the logo for Ubuntu.
 
-We have circled in red the part you need to change:
+We have circled in red the part you need to add:
 
 ![Windows Terminal JSON settings file](https://github.com/lewagon/setup/blob/master/images/windows_terminal_settings_json.png)
 
-First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
+First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one.
 
-- Locate the entry with both `"name": "Ubuntu",` and `"hidden": false,`
-- Add the following line after it:
+- Place this line inside the { } block that contains "name": "Ubuntu" (like in the screenshot):
 
 ```bash
 "commandline": "wsl.exe ~",
@@ -491,11 +465,11 @@ First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory inst
 
 Then, let's disable warnings for copy-pasting commands between Windows and Ubuntu:
 
-- Locate the line `"defaultProfile": "{2c4de342-...}"`
+- Locate the line "defaultProfile": "{2c4de342-...}"
 - Add the following line after it:
 
 ```bash
-"multiLinePasteWarning": false,
+"warning.multiLinePaste": false,
 ```
 
 :warning: Do not forget the comma at the end of the line!
@@ -507,6 +481,7 @@ You can save these changes by pressing `Ctrl` + `S`
 This terminal has tabs: you can choose to open a new terminal tab by clicking on the **+** next to the current one.
 
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.
+
 
 ## VS Code Extensions
 
@@ -536,7 +511,38 @@ Here is a list of the extensions you are installing:
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
+
 ## Command line tools
+
+### Check the locale
+
+The locale is a mechanism allowing to customize programs to your language and country.
+
+Let's verify that the default locale is set to English, please type this in the Ubuntu terminal:
+
+```bash
+locale
+```
+
+If the output does not contain `LANG=en_US.UTF-8`, run the following command in a Ubuntu terminal to install the english locale:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
+If after, you receive a warning (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) in your terminal, please do the following:
+
+<details>
+  <summary>Generate locale</summary>
+
+Please, run this lines in your terminal.
+
+```bash
+sudo update-locale LANG=en_US.UTF8
+sudo apt-get update
+sudo apt-get install language-pack-en language-pack-en-base manpages
+```
+</details>
 
 ### Zsh & Git
 
@@ -545,7 +551,6 @@ Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_
 We will also use [`git`](https://git-scm.com/), a command line software used for version control.
 
 Let's install them, along with other useful tools:
-
 - Open an **Ubuntu terminal**
 - Copy and paste the following commands:
 
@@ -594,6 +599,7 @@ gh --version
 
 :x: Otherwise, please **contact a teacher**
 
+
 ## Oh-my-zsh
 
 Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
@@ -613,6 +619,7 @@ At the end your terminal should look like this:
 :heavy_check_mark: If it does, you can continue :+1:
 
 :x: Otherwise, please **ask for a teacher**
+
 
 ## Linking your default browser to Ubuntu
 
@@ -640,14 +647,18 @@ If it does not, you can follow [these instructions](https://github.com/lewagon/s
 
 Do not hesitate to **contact a teacher**.
 
+
 ## direnv
 
 [direnv](https://direnv.net/) is a shell extension. It makes it easy to deal with per project environment variables. This will be useful in order to customize the behavior of your code.
+
 
 ``` bash
 sudo apt-get update; sudo apt-get install direnv
 echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
 ```
+
+
 
 ## GitHub CLI
 
@@ -661,7 +672,7 @@ We will use the GitHub CLI (`gh`) to connect to GitHub using *SSH*, a protocol t
 
 First in order to **login**, copy-paste the following command in your terminal:
 
-:warning: **DO NOT edit the `email`**
+:warning: **DO NOT edit the `email`** — Even though `user:email` looks like a placeholder for your actual email address, it isn't — do not replace it.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -673,7 +684,9 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
   If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`:
+  - **FOR MOST PEOPLE:** Just press `Enter` to skip. You don't need a passphrase for the bootcamp and it would prompt you every time you use the key. There is a risk, however, that if someone steals your laptop, they could then push to GitHub.
+  - **IF SECURITY IS REALLY IMPORTANT TO YOU:** Enter a passphrase of your choice and press `Enter`. It's _really_ important that if you enter a passphrase, you write it down somewhere immediately and do not lose/forget it. You will need to enter this frequently.
 
 - `Title for your SSH key`. You can leave it at the proposed "GitHub CLI", press `Enter`.
 
@@ -700,9 +713,11 @@ gh auth status
 
 :x: If not, **contact a teacher**.
 
+
 ## Google Cloud CLI
 
 Install the `gcloud` CLI to communicate with [Google Cloud Platform](https://cloud.google.com/) through your terminal:
+
 ```bash
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 sudo apt-get install apt-transport-https ca-certificates gnupg
@@ -712,6 +727,7 @@ sudo apt-get install google-cloud-sdk-app-engine-python
 ```
 
 👉 [Install documentation](https://cloud.google.com/sdk/docs/install#deb)
+
 
 ## Dotfiles
 
@@ -733,6 +749,7 @@ There seems to be a problem with the previous step (`gh auth`).
 
 There are three options, choose **one**:
 
+
 <details>
     <summary>
         <strong>I did not attend the Web Dev or Data Science & AI or Data Analytics bootcamp at Le Wagon</strong>
@@ -752,6 +769,7 @@ gh repo fork lewagon/dotfiles --clone
 
 </details>
 
+
 <details>
     <summary>
         <strong>I already attended a Le Wagon coding bootcamp (Web Development or Data Science & AI or Data Analytics) <em>but I have a new laptop</em></strong>
@@ -766,6 +784,7 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo clone $GITHUB_USERNAME/dotfiles
 ```
 
+
 Open your terminal and go to your `dotfiles` project:
 
 ```bash
@@ -817,6 +836,7 @@ git push origin master
 ```
 
 </details>
+
 
 <details>
     <summary>
@@ -825,6 +845,7 @@ git push origin master
 
 This means that you already forked and cloned the GitHub repo `lewagon/dotfiles`, but at that time the configuration was maybe not ready for the current Data Analytics bootcamp. Let's update it. **Ask a TA to join you for the nex steps.**
 
+
 Open your terminal and go to your `dotfiles` project:
 
 ```bash
@@ -876,6 +897,7 @@ git push origin master
 ```
 
 </details>
+
 
 ### Run the dotfiles installer
 
@@ -902,6 +924,7 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 Please now **quit** all your opened terminal windows.
 
+
 ## Disable SSH passphrase prompt
 
 You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
@@ -913,11 +936,11 @@ code ~/.zshrc
 ```
 
 Then:
-
 - Spot the line starting with `plugins=`
 - Add `ssh-agent` at the end of the plugins list
 
 :heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
+
 
 ## Installing Python (with [`pyenv`](https://github.com/pyenv/pyenv))
 
@@ -931,7 +954,9 @@ Check if you have `conda` installed on your machine:
 conda list
 ```
 
+
 If you have `zsh: command not found: conda`, you can **skip** the uninstall of `conda` and jump to the **Install `pyenv`** section.
+
 
 <details>
     <summary markdown='span'><code>conda</code> uninstall instructions</summary>
@@ -949,17 +974,20 @@ anaconda-clean --yes
 rm -rf ~/anaconda2
 rm -rf ~/anaconda3
 rm -rf ~/.anaconda_backup
+
 ```
 
 - Remove Anaconda path from your `.bash_profile`
   - Open the file with `code ~/.bash_profile`
   - If the file opens find the line matching the following pattern `export PATH="/path/to/anaconda3/bin:$PATH"` and delete the line
+
 - Restart your terminal with `exec zsh`
 - Remove Anaconda initialization from your `.zshrc`:
   - Open the file with `code ~/.zshrc`
   - Remove the code lines starting from `>>> conda initialize >>>` to `<<< conda initialize <<<`
 
 </details>
+
 
 ### Install `pyenv`
 
@@ -1020,6 +1048,7 @@ exec zsh
 
 To check if this worked, run `python --version`. If you see `3.12.9`, perfect! If not, ask a TA that will help you debug the problem thanks to `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
 
+
 ## Python Virtual Environment
 
 Before we start installing relevant Python packages, we will isolate the setup for the Bootcamp into a **dedicated** virtual environment. We will use a `pyenv` plugin called [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv).
@@ -1047,6 +1076,7 @@ pyenv global lewagon
 
 Great! Anytime we'll install Python package, we'll do it in that environment.
 
+
 ### Python packages
 
 Now that we have a pristine `lewagon` virtual environment, it's time to install some packages in it.
@@ -1059,9 +1089,14 @@ pip install --upgrade pip
 
 Then let's install some packages for the first weeks of the program:
 
+
+
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
+
+
+
 
 ## Jupyter Notebook tweaking
 
@@ -1075,6 +1110,8 @@ SOURCE=https://raw.githubusercontent.com/lewagon/data-analytics-setup/refs/heads
 mkdir -p $LOCATION
 curl $SOURCE > $LOCATION/custom.css
 ```
+
+
 
 ### Configuring Jupyter Notebook to open in your browser
 
@@ -1115,6 +1152,7 @@ This command should have opened a Jupyter page in your browser:
 If it is not the case, please call a TA.
 
 To stop the Jupyter server in the terminal, press `Ctrl` + `C`, enter y, then press Enter.
+
 
 ## Python setup check
 
@@ -1176,6 +1214,7 @@ You can close your web browser then terminate the jupyter server with `CTRL` + `
 
 Here you have it! A complete python virtual env with all the third-party packages you'll need for the whole bootcamp.
 
+
 ## Insomnia
 
 > ℹ️ **Why?** Insomnia is one of the best-known API testing tools, and it will be useful in our Introduction to API course.
@@ -1186,6 +1225,7 @@ Here you have it! A complete python virtual env with all the third-party package
 
 - Install Insomnia
 
+
 ## Windows settings
 
 ### Exchange files between Windows and Ubuntu
@@ -1193,10 +1233,9 @@ Here you have it! A complete python virtual env with all the third-party package
 We need an easy way to transfer files from Windows to Ubuntu and vice versa.
 
 In order to do that, let's create shortcuts to Ubuntu directories in the Windows **File Explorer**:
-
 - Open the Windows File Explorer (or use the shortcut `WIN` + `E`)
 - In the Address Bar, enter `\\wsl$\` (or `\\wsl$\Ubuntu` if it does not work)
-- You now have access to the Ubuntu file system
+- You now have acces to the Ubuntu file system
 - Dive into the Ubuntu file system in order to look for directories of interest
 - Drag the desired folders into the Address Bar in order to create shortcuts
 
@@ -1205,7 +1244,6 @@ In order to do that, let's create shortcuts to Ubuntu directories in the Windows
 ### Open the Windows File Explorer from the Ubuntu terminal
 
 Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal:
-
 - Open an Ubuntu terminal
 - Go to the directory you wish to explore
 - Run the `explorer.exe .` command (alternatively, use `wslview .`)
@@ -1218,7 +1256,6 @@ Another option to move files around is to open the Windows **File Explorer** fro
 You might want to figure out the exact location of a Windows directory in the Ubuntu file system, or the other way around.
 
 In order to convert a Windows path to and from an Ubuntu path:
-
 - Open an Ubuntu terminal
 - Use the `wslpath "C:\Program Files"` command in order to translate a Windows path into an Ubuntu path
 - Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
@@ -1235,18 +1272,19 @@ To pin an app to your taskbar, launch the app, right-click on the icon in the ta
 ![How to pin an app to the taskbar in Windows](https://github.com/lewagon/setup/blob/master/images/windows_taskbar.png)
 
 You must pin:
-
 - Your terminal
 - Your file explorer
 - VS Code
 - Your Internet browser
 - Slack
 
+
 ## Visual C++ Redistributable
 
 Some Python packages require a compiler to function properly. Let's install one:
 
 [For x64 systems](https://aka.ms/vs/16/release/vc_redist.x64.exe)
+
 
 ## Google Cloud Platform setup
 
@@ -1377,9 +1415,11 @@ Once the verification goes through, you should receive an email stating that "Yo
 
 - Authenticate the `gcloud` CLI with the google account you used for GCP
 
+
 ```bash
 gcloud auth login --no-launch-browser
 ```
+
 
 - Login to your Google account on the new tab opened in your web browser
 - List your active account and check your email address you used for GCP is present
@@ -1475,6 +1515,7 @@ An alternate way to navigate to the Service Accounts page is from the following:
 
 - The browser has now saved the service account json file 🔑 in your downloads directory (it is named according to your service account name, something like `le-wagon-data-123456789abc.json`).
 
+
 We will now move the service account json file from your Windows disk to the Ubuntu disk. This will allow the development tools in Ubuntu to access to the resources of your GCP account.
 
 First, let's create a directory in which we will store the file.
@@ -1555,6 +1596,8 @@ code ~/.zshrc
 
 in the Terminal! 😄
 
+
+
 <details>
   <summary>ℹ️ How to find the absolute path of a file?</summary>
   You can drag and drop the file in your terminal.
@@ -1606,19 +1649,20 @@ gcloud projects get-iam-policy PROJECT_ID \
   <summary>Troubleshooting</summary>
 
 - `AccessDeniedException: 403 The project to be billed is associated with an absent billing account.`
-  - Make sure that billing is enabled for your Google Cloud Platform project https://cloud.google.com/billing/docs/how-to/modify-project
-
+  - Make sure that billing is enabled for your Google Cloud Platform project [https://cloud.google.com/billing/docs/how-to/modify-project](https://cloud.google.com/billing/docs/how-to/modify-project)
 </details>
 
 🏁 You are done with the GCP setup!
 
-## Kitt
+
+  ## Kitt
 
 You should have received an email from Le Wagon inviting you to sign up on [Kitt](https://kitt.lewagon.com) (our learning platform).
 
 Then you should receive an additional invitation from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and complete the information.
 
 If you haven't, please contact your teaching team.
+
 
 ## Slack
 
@@ -1629,6 +1673,7 @@ If you haven't, please contact your teaching team.
 [Download the Slack app](https://slack.com/downloads/windows) and install it.
 
 :warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
+
 
 ### Settings
 
@@ -1641,7 +1686,6 @@ Make sure you **upload a profile picture** :point_down:
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
-
 - Open the Slack app
 - Click your profile picture in the top right.
 - Select `Preferences` from the menu.
@@ -1657,14 +1701,11 @@ To ensure that everything is working fine for video calls, let's test your camer
 
 You can also install Slack app on your phone and sign in `lewagon-alumni`!
 
-## Setup completed!
 
-That's all you need for now! Some of the free trial periods on the tools we use are very short, so from now on, whenever we introduce a new tool or software, we will guide you through the sign-in and installation steps at the beginning of the day.
-
-Ready to start? 🚀
-
-## (Bonus)
+## Bonus
 
 If you are done with your setup, please ask around if some classmates need some help with theirs (macOS, Linux, Windows). We will have our first lectures at 2pm and will talk about the Setup you just did + onboard you on Kitt.
 
 If you don't have a lot of experience with `git` and GitHub, please [(re-)watch this workshop](https://www.youtube.com/watch?v=Z9fIBT2NBGY) (`1.25` playback speed is fine).
+
+
