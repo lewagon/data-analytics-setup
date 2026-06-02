@@ -1,6 +1,6 @@
 
 os: windows
-locales: [en, es]
+locales: [en]
 partials:
   - intro
   - setup/github
