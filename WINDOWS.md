@@ -483,6 +483,7 @@ This terminal has tabs: you can choose to open a new terminal tab by clicking on
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.
 
 
+
 ## VS Code Extensions
 
 ### Installation

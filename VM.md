@@ -325,6 +325,7 @@ Host "da-bootcamp-vm"
 **The setup of your local machine is over. All following commands will be run from within your 🚨 virtual machine**🚨 terminal (via VS code for instance)
 
 
+
 ## VS Code Extensions
 
 ### Installation
