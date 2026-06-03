@@ -1,3 +1,4 @@
+
 # Setup instructions
 
 You will find below the instructions to set up you computer for [Le Wagon Data Analytics course](https://www.lewagon.com/data-analytics-course/full-time)
