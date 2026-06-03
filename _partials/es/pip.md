@@ -10,7 +10,7 @@ pip install --upgrade pip
 
 Ahora instala algunos paquetes para las primeras semanas del programa:
 
-$MAC_START
+{% if os == "macos" %}
 Si tu computadora usa **Apple Silicon**, expande el párrafo de abajo y léelo. Si no es el caso, ignóralo.
 
 <details>
@@ -32,18 +32,16 @@ pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/ma
 ```
 
 </details>
-$MAC_END
-$WINDOWS_START
+{% elsif os == "windows" %}
 
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
 
-$WINDOWS_END
-$LINUX_START
+{% elsif os == "linux" %}
 
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
 
-$LINUX_END
+{% endif %}

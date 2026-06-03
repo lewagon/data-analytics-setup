@@ -6,6 +6,7 @@ Please **read them carefully and execute all commands in the following order**. 
 
 Let's start :rocket:
 
+
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
@@ -15,6 +16,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 ![GitHub picture](https://github.com/lewagon/setup/blob/master/images/github_picture.png)
 
 :point_right: **[Enable Two-Factor Authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub will send you text messages with a code when you try to log in. This is important for security and also will soon be required in order to contribute code on GitHub.
+
 
 ## Visual Studio Code
 
@@ -64,6 +66,8 @@ code
 
 :x: Otherwise, please **contact a teacher**
 
+
+
 ## VS Code Extensions
 
 ### Installation
@@ -82,6 +86,7 @@ code --install-extension alexcvzz.vscode-sqlite
 ```
 
 Here is a list of the extensions you are installing:
+
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
@@ -91,7 +96,38 @@ Here is a list of the extensions you are installing:
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
+
 ## Command line tools
+
+### Check the locale
+
+The locale is a mechanism allowing to customize programs to your language and country.
+
+Let's verify that the default locale is set to English, please type this in the Ubuntu terminal:
+
+```bash
+locale
+```
+
+If the output does not contain `LANG=en_US.UTF-8`, run the following command in a Ubuntu terminal to install the english locale:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
+If after, you receive a warning (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) in your terminal, please do the following:
+
+<details>
+  <summary>Generate locale</summary>
+
+Please, run this lines in your terminal.
+
+```bash
+sudo update-locale LANG=en_US.UTF8
+sudo apt-get update
+sudo apt-get install language-pack-en language-pack-en-base manpages
+```
+</details>
 
 ### Zsh & Git
 
@@ -100,7 +136,6 @@ Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_
 We will also use [`git`](https://git-scm.com/), a command line software used for version control.
 
 Let's install them, along with other useful tools:
-
 - Open an **Ubuntu terminal**
 - Copy and paste the following commands:
 
@@ -149,6 +184,7 @@ gh --version
 
 :x: Otherwise, please **contact a teacher**
 
+
 ## Oh-my-zsh
 
 Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
@@ -169,14 +205,18 @@ At the end your terminal should look like this:
 
 :x: Otherwise, please **ask for a teacher**
 
+
 ## direnv
 
 [direnv](https://direnv.net/) is a shell extension. It makes it easy to deal with per project environment variables. This will be useful in order to customize the behavior of your code.
+
 
 ``` bash
 sudo apt-get update; sudo apt-get install direnv
 echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
 ```
+
+
 
 ## GitHub CLI
 
@@ -190,7 +230,7 @@ We will use the GitHub CLI (`gh`) to connect to GitHub using *SSH*, a protocol t
 
 First in order to **login**, copy-paste the following command in your terminal:
 
-:warning: **DO NOT edit the `email`**
+:warning: **DO NOT edit the `email`** — Even though `user:email` looks like a placeholder for your actual email address, it isn't — do not replace it.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -202,7 +242,9 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
   If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`:
+  - **FOR MOST PEOPLE:** Just press `Enter` to skip. You don't need a passphrase for the bootcamp and it would prompt you every time you use the key. There is a risk, however, that if someone steals your laptop, they could then push to GitHub.
+  - **IF SECURITY IS REALLY IMPORTANT TO YOU:** Enter a passphrase of your choice and press `Enter`. It's _really_ important that if you enter a passphrase, you write it down somewhere immediately and do not lose/forget it. You will need to enter this frequently.
 
 - `Title for your SSH key`. You can leave it at the proposed "GitHub CLI", press `Enter`.
 
@@ -229,6 +271,7 @@ gh auth status
 
 :x: If not, **contact a teacher**.
 
+
 ## Google Cloud CLI
 
 Install the `gcloud` CLI to communicate with [Google Cloud Platform](https://cloud.google.com/) through your terminal:
@@ -242,6 +285,7 @@ sudo apt-get install google-cloud-sdk-app-engine-python
 ```
 
 👉 [Install documentation](https://cloud.google.com/sdk/docs/install#deb)
+
 
 ## Dotfiles
 
@@ -263,6 +307,7 @@ There seems to be a problem with the previous step (`gh auth`).
 
 There are three options, choose **one**:
 
+
 <details>
     <summary>
         <strong>I did not attend the Web Dev or Data Science & AI or Data Analytics bootcamp at Le Wagon</strong>
@@ -282,6 +327,7 @@ gh repo fork lewagon/dotfiles --clone
 
 </details>
 
+
 <details>
     <summary>
         <strong>I already attended a Le Wagon coding bootcamp (Web Development or Data Science & AI or Data Analytics) <em>but I have a new laptop</em></strong>
@@ -296,6 +342,7 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo clone $GITHUB_USERNAME/dotfiles
 ```
 
+
 Open your terminal and go to your `dotfiles` project:
 
 ```bash
@@ -303,7 +350,9 @@ cd ~/code/$GITHUB_USERNAME/dotfiles
 ```
 
 Time to merge the changes from `lewagon/dotfiles` into yours:
+
 1. Commit your current version of your dotfiles:
+
    ```bash
    git add .
    git status # Check what will be committed
@@ -362,7 +411,9 @@ cd ~/code/$GITHUB_USERNAME/dotfiles
 ```
 
 Time to merge the changes from `lewagon/dotfiles` into yours:
+
 1. Commit your current version of your dotfiles:
+
    ```bash
    git add .
    git status # Check what will be committed
@@ -460,7 +511,10 @@ Check if you have `conda` installed on your machine:
 ```bash
 conda list
 ```
+
+
 If you have `zsh: command not found: conda`, you can **skip** the uninstall of `conda` and jump to the **Install `pyenv`** section.
+
 
 <details>
     <summary markdown='span'><code>conda</code> uninstall instructions</summary>
@@ -478,18 +532,22 @@ anaconda-clean --yes
 rm -rf ~/anaconda2
 rm -rf ~/anaconda3
 rm -rf ~/.anaconda_backup
+
 ```
 
 - Remove Anaconda path from your `.bash_profile`
   - Open the file with `code ~/.bash_profile`
   - If the file opens find the line matching the following pattern `export PATH="/path/to/anaconda3/bin:$PATH"` and delete the line
+
   - Save the file with `CTRL` + `s`
+
 - Restart your terminal with `exec zsh`
 - Remove Anaconda initialization from your `.zshrc`:
   - Open the file with `code ~/.zshrc`
   - Remove the code lines starting from `>>> conda initialize >>>` to `<<< conda initialize <<<`
 
 </details>
+
 
 ### Install `pyenv`
 
@@ -550,6 +608,7 @@ exec zsh
 
 To check if this worked, run `python --version`. If you see `3.12.9`, perfect! If not, ask a TA that will help you debug the problem thanks to `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
 
+
 ## Python Virtual Environment
 
 Before we start installing relevant Python packages, we will isolate the setup for the Bootcamp into a **dedicated** virtual environment. We will use a `pyenv` plugin called [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv).
@@ -577,6 +636,7 @@ pyenv global lewagon
 
 Great! Anytime we'll install Python package, we'll do it in that environment.
 
+
 ### Python packages
 
 Now that we have a pristine `lewagon` virtual environment, it's time to install some packages in it.
@@ -589,9 +649,14 @@ pip install --upgrade pip
 
 Then let's install some packages for the first weeks of the program:
 
+
+
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
+
+
+
 
 ## Jupyter Notebook tweaking
 
@@ -605,6 +670,7 @@ SOURCE=https://raw.githubusercontent.com/lewagon/data-analytics-setup/refs/heads
 mkdir -p $LOCATION
 curl $SOURCE > $LOCATION/custom.css
 ```
+
 
 ## Python setup check
 
@@ -666,6 +732,7 @@ You can close your web browser then terminate the jupyter server with `CTRL` + `
 
 Here you have it! A complete python virtual env with all the third-party packages you'll need for the whole bootcamp.
 
+
 ## Insomnia
 
 > ℹ️ **Why?** Insomnia is one of the best-known API testing tools, and it will be useful in our Introduction to API course.
@@ -675,6 +742,7 @@ Here you have it! A complete python virtual env with all the third-party package
 - Download Insomnia
 
 - Install Insomnia
+
 
 ## Google Cloud Platform setup
 
@@ -805,9 +873,11 @@ Once the verification goes through, you should receive an email stating that "Yo
 
 - Authenticate the `gcloud` CLI with the google account you used for GCP
 
+
 ```bash
 gcloud auth login
 ```
+
 
 - Login to your Google account on the new tab opened in your web browser
 - List your active account and check your email address you used for GCP is present
@@ -903,6 +973,7 @@ An alternate way to navigate to the Service Accounts page is from the following:
 
 - The browser has now saved the service account json file 🔑 in your downloads directory (it is named according to your service account name, something like `le-wagon-data-123456789abc.json`).
 
+
 - Store the service account json file somewhere you'll remember, for example:
 
 ``` bash
@@ -924,6 +995,8 @@ code ~/.zshrc
 ```
 
 in the Terminal! 😄
+
+
 
 <details>
   <summary>ℹ️ How to find the absolute path of a file?</summary>
@@ -976,19 +1049,20 @@ gcloud projects get-iam-policy PROJECT_ID \
   <summary>Troubleshooting</summary>
 
 - `AccessDeniedException: 403 The project to be billed is associated with an absent billing account.`
-  - Make sure that billing is enabled for your Google Cloud Platform project https://cloud.google.com/billing/docs/how-to/modify-project
-
+  - Make sure that billing is enabled for your Google Cloud Platform project [https://cloud.google.com/billing/docs/how-to/modify-project](https://cloud.google.com/billing/docs/how-to/modify-project)
 </details>
 
 🏁 You are done with the GCP setup!
 
-## Kitt
+
+  ## Kitt
 
 You should have received an email from Le Wagon inviting you to sign up on [Kitt](https://kitt.lewagon.com) (our learning platform).
 
 Then you should receive an additional invitation from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and complete the information.
 
 If you haven't, please contact your teaching team.
+
 
 ## Slack
 
@@ -999,6 +1073,7 @@ If you haven't, please contact your teaching team.
 [Download the Slack app](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-) and install it.
 
 :warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
+
 
 ### Settings
 
@@ -1011,7 +1086,6 @@ Make sure you **upload a profile picture** :point_down:
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
-
 - Open the Slack app
 - Click your profile picture in the top right.
 - Select `Preferences` from the menu.
@@ -1027,14 +1101,11 @@ To ensure that everything is working fine for video calls, let's test your camer
 
 You can also install Slack app on your phone and sign in `lewagon-alumni`!
 
-## Setup completed!
 
-That's all you need for now! Some of the free trial periods on the tools we use are very short, so from now on, whenever we introduce a new tool or software, we will guide you through the sign-in and installation steps at the beginning of the day.
-
-Ready to start? 🚀
-
-## (Bonus)
+## Bonus
 
 If you are done with your setup, please ask around if some classmates need some help with theirs (macOS, Linux, Windows). We will have our first lectures at 2pm and will talk about the Setup you just did + onboard you on Kitt.
 
 If you don't have a lot of experience with `git` and GitHub, please [(re-)watch this workshop](https://www.youtube.com/watch?v=Z9fIBT2NBGY) (`1.25` playback speed is fine).
+
+

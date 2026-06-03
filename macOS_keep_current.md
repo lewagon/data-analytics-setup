@@ -87,9 +87,11 @@ type -a pyenv > /dev/null && eval "$(pyenv init --path)"
 
 Update pyenv :
 
+
 ``` bash
 brew update && brew upgrade pyenv
 ```
+
 
 Install the current python version :
 
@@ -141,6 +143,7 @@ pyenv versions
 pip install -U pip
 ```
 
+
 If your computer uses **Apple Silicon**, expand the paragraph below and go through it. Otherwise ignore it.
 
 <details>
@@ -162,6 +165,7 @@ pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/ma
 ```
 
 </details>
+
 
 ## GCP
 
@@ -249,6 +253,7 @@ Make sure that the file contains the correct :
 
 👉 If this does not display anything or if the email inside of the file is not the one of your service account, go back to the setup
 
+
 ## Python setup check
 
 ### Python and packages check
@@ -308,3 +313,5 @@ It should output `3.12.9` followed by some more details. If not, check with a TA
 You can close your web browser then terminate the jupyter server with `CTRL` + `C`.
 
 Here you have it! A complete python virtual env with all the third-party packages you'll need for the whole bootcamp.
+
+

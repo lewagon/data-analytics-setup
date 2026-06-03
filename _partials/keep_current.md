@@ -87,32 +87,24 @@ type -a pyenv > /dev/null && eval "$(pyenv init --path)"
 
 Update pyenv :
 
-$MAC_START
-
+{% if os == "macos" %}
 ``` bash
 brew update && brew upgrade pyenv
 ```
-
-$MAC_END
-$LINUX_START
-
+{% elsif os == "linux" %}
 ``` bash
 cd $(pyenv root) && git pull
 ```
-
-$LINUX_END
-$WINDOWS_START
-
+{% elsif os == "windows" %}
 ``` bash
 cd $(pyenv root) && git pull
 ```
-
-$WINDOWS_END
+{% endif %}
 
 Install the current python version :
 
 ```bash
-pyenv install <PYTHON_VERSION>
+pyenv install {{ PYTHON_VERSION }}
 ```
 
 👉 Make sure that the command completes correctly and **restart your terminal**
@@ -126,7 +118,7 @@ pyenv virtualenv-delete lewagon_current
 Create a new virtual environment :
 
 ```bash
-pyenv virtualenv <PYTHON_VERSION> lewagon_current
+pyenv virtualenv {{ PYTHON_VERSION }} lewagon_current
 ```
 
 Set the new virtual environment as default :
@@ -145,8 +137,8 @@ pyenv versions
 
 ``` bash
   system
-  <PYTHON_VERSION>
-  <PYTHON_VERSION>/envs/lewagon_current
+  {{ PYTHON_VERSION }}
+  {{ PYTHON_VERSION }}/envs/lewagon_current
   3.10.6
   3.10.6/envs/lewagon
 * lewagon_current
@@ -159,7 +151,7 @@ pyenv versions
 pip install -U pip
 ```
 
-$MAC_START
+{% if os == "macos" %}
 If your computer uses **Apple Silicon**, expand the paragraph below and go through it. Otherwise ignore it.
 
 <details>
@@ -181,21 +173,19 @@ pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/ma
 ```
 
 </details>
-$MAC_END
-$WINDOWS_START
+{% elsif os == "windows" %}
 
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
 
-$WINDOWS_END
-$LINUX_START
+{% elsif os == "linux" %}
 
 ``` bash
 pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
 
-$LINUX_END
+{% endif %}
 
 ## GCP
 

@@ -1,0 +1,24 @@
+name: Build setup guides
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Build
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          bundle exec ruby build.rb
+          if ! git diff --exit-code
+          then
+            git add .
+            git commit -m "setup guides generated"
+            git push
+          fi

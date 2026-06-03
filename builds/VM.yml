@@ -1,0 +1,40 @@
+
+os: linux
+locales: [en]
+partials:
+  - intro
+  - setup/github
+  - name: de_setup/ssh_key
+    vars:
+      key_name: da-bootcamp
+  - de_setup/gcp_setup
+  - de_setup/virtual_machine
+  - de_setup/win_vscode
+  - name: de_setup/vscode_remote_ssh
+    vars:
+      vm_hostname: da-bootcamp-vm
+  - vscode_extensions
+  - setup/cli_tools
+  - setup/oh_my_zsh
+  - direnv
+  - setup/gh_cli
+  - de_setup/ubuntu_gcloud
+  - de_setup/gcp_setup_linux
+  - dotfiles
+  - dotfiles_new_student
+  - dotfiles_new_laptop
+  - dotfiles_merge_upstream
+  - dotfiles_same_laptop
+  - dotfiles_merge_upstream
+  - dotfiles_installer
+  - de_setup/zsh_default_terminal
+  - setup/ssh_agent
+  - ubuntu_python
+  - virtualenv
+  - pip
+  - nbextensions
+  - python_checkup
+  - kitt
+  - setup/windows_slack
+  - setup/slack_settings
+  - bonus
