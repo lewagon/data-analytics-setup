@@ -28,7 +28,7 @@ partials:
   - python_checkup
   - insomnia
   - gcp_setup
-  - gcp_setup_linux
+  - gcp_setup_mid
   - gcp_setup_end
   - kitt
   - setup/ubuntu_slack
