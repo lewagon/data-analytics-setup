@@ -4,6 +4,7 @@ locales: [en]
 partials:
   - intro
   - setup/github
+  - gcp_account_setup
   - osx_silicon
   - setup/macos_command_line_tools
   - homebrew
