@@ -4,6 +4,7 @@ locales: [en]
 partials:
   - intro
   - setup/github
+  - gcp_account_setup
   - setup/windows_version
   - setup/windows_virtualization
   - setup/windows_wsl

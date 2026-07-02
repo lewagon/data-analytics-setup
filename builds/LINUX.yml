@@ -4,6 +4,7 @@ locales: [en]
 partials:
   - intro
   - setup/github
+  - gcp_account_setup
   - setup/ubuntu_vscode
   - vscode_extensions
   - setup/cli_tools
@@ -27,7 +28,7 @@ partials:
   - python_checkup
   - insomnia
   - gcp_setup
-  - gcp_setup_linux
+  - gcp_setup_mid
   - gcp_setup_end
   - kitt
   - setup/ubuntu_slack
