@@ -918,53 +918,13 @@ gcloud auth application-default login
 This will open a browser window. Log in with the same Google account you used to create your GCP project. Your credentials will be saved automatically.
 
 
-
-<details>
-  <summary>ℹ️ How to find the absolute path of a file?</summary>
-  You can drag and drop the file in your terminal.
-</details>
-
-**Restart** your terminal and run:
-
-``` bash
-echo $GOOGLE_APPLICATION_CREDENTIALS
-```
-
-The ouptut should be the following:
+Let's verify your Application Default Credentials are working:
 
 ```bash
-/some/absolute/path/to/your/gcp/SERVICE_ACCOUNT_JSON_FILE_CONTAINING_YOUR_SECRET_KEY.json
+gcloud auth application-default print-access-token
 ```
 
-Now let's verify that the path to your service account json file is correct:
-
-``` bash
-cat $(echo $GOOGLE_APPLICATION_CREDENTIALS)
-```
-
-👉 This command should display the content of your service account json file. If it does not, ask for a TA 🙏
-
-Your code and utilities are now able to access the resources of your GCP account.
-
-Let's proceed with the final steps of configuration...
-
-- List the service accounts associated to your active account and current project
-
-```bash
-gcloud iam service-accounts list
-```
-
-- Retrieve the service account email address, e.g. `SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com`
-- List the roles of the service account from the cli (replace PROJECT_ID and SERVICE_ACCOUNT_EMAIL)
-
-```bash
-gcloud projects get-iam-policy PROJECT_ID \
---flatten="bindings[].members" \
---format='table(bindings.role)' \
---filter="bindings.members:SERVICE_ACCOUNT_EMAIL"
-```
-
-- You should see that your service account has a role of `roles/owner`
+You should see a long token string. If you see an error, run `gcloud auth application-default login` again.
 
 <details>
   <summary>Troubleshooting</summary>
