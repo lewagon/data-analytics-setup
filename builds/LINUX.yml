@@ -4,6 +4,7 @@ locales: [en]
 partials:
   - intro
   - setup/github
+  - gcp_account_setup
   - setup/ubuntu_vscode
   - vscode_extensions
   - setup/cli_tools
