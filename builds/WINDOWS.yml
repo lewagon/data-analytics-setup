@@ -15,7 +15,6 @@ partials:
   - setup/cli_tools
   - setup/oh_my_zsh
   - windows_browser
-  - direnv
   - setup/gh_cli
   - ubuntu_gcloud
   - dotfiles

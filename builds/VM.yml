@@ -16,7 +16,6 @@ partials:
   - vscode_extensions
   - setup/cli_tools
   - setup/oh_my_zsh
-  - direnv
   - setup/gh_cli
   - de_setup/ubuntu_gcloud
   - de_setup/gcp_setup_linux

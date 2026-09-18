@@ -11,7 +11,6 @@ partials:
   - setup/macos_vscode
   - vscode_extensions
   - setup/oh_my_zsh
-  - direnv
   - setup/gh_cli
   - dotfiles
   - dotfiles_new_student
