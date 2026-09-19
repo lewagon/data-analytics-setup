@@ -28,5 +28,5 @@ partials:
   - kitt
   - setup/macos_slack
   - setup/slack_settings
-  - setup/macos_settings
+  - macos_settings
   - bonus
