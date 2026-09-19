@@ -7,7 +7,7 @@ partials:
   - data_setup/gcp_account_setup
   - data_setup/osx_silicon
   - setup/macos_command_line_tools
-  - homebrew
+  - data_setup/homebrew
   - setup/macos_vscode
   - vscode_extensions
   - setup/oh_my_zsh
