@@ -14,36 +14,36 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
 
-![GitHub picture](https://github.com/lewagon/setup/blob/master/images/github_picture.png)
+![GitHub picture](https://github.com/lewagon/setup/blob/simplify-conso/images/github_picture.png)
 
 :point_right: **[Enable Two-Factor Authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub will send you text messages with a code when you try to log in. This is important for security and also will soon be required in order to contribute code on GitHub.
 
 
 ## Google Cloud Platform setup
 
-[GCP](https://cloud.google.com/) is a cloud solution that you are going to use in order to deploy your Machine Learning-based products to production.
+[Google Cloud](https://cloud.google.com/) is a cloud solution that you are going to use in order to deploy your Machine Learning-based products to production.
 
-🚨 If you are a student of the **Part-Time Bootcamp**, SKIP THIS SECTION FOR NOW! **GCP** offers $300 worth of free credits for a duration of 3 months. You do not want to activate your GCP account too soon 🙅‍♂️
+🚨 If you are a student of the **Part-Time Bootcamp or the Flex bootcamp**, SKIP THIS SECTION FOR NOW! **Google Cloud** offers $300 worth of free credits for a duration of 3 months. You do not want to activate your Google Cloud account too soon 🙅‍♂️
 
 ### Project setup
 
 - Go to [Google Cloud](https://console.cloud.google.com/) and create an account if you do not already have one
 - In the Cloud Console, on the project list, select or create a Cloud project
 
-⚠️ **Important:** When creating a new project, you will see an **Organization** field. Leave this set to **"No organization"**. Do not select or create an organization. Choosing an organization applies restrictions that can prevent you from using GCP services during the bootcamp.
+⚠️ **Important:** When creating a new project, you will see an **Organization** field. Leave this set to **"No organization"**. Do not select or create an organization. Choosing an organization applies restrictions that can prevent you from using Google Cloud services during the bootcamp.
 
-![](images/gcp-create-project.png)
+![](https://github.com/lewagon/data-setup/blob/simplify-except-python/images/gcp-create-project.png)
 
 - Give it a name such as `Wagon Bootcamp` for example
 - Notice the `ID` automatically created for the project, e.g. `wagon-bootcamp-123456`
 
-![](images/gcp_project.png)
+![](https://github.com/lewagon/data-setup/blob/simplify-except-python/images/gcp_project.png)
 
-ℹ️ Note the **Project ID** (e.g. `wagon-bootcamp-123456`) this is **not** the same as the project name you chose (e.g. `Wagon Bootcamp`). You will need the ID later when running terminal commands, but don't worry, you can always find it in GCP.
+ℹ️ Note the **Project ID** (e.g. `wagon-bootcamp-123456`) this is **not** the same as the project name you chose (e.g. `Wagon Bootcamp`). You will need the ID later when running terminal commands, but don't worry, you can always find it in Google Cloud.
 
 ### Account language
 
-In order to facilitate the following of the instructions during the bootcamp, open your GCP account preferences:
+In order to facilitate the following of the instructions during the bootcamp, open your Google Cloud account preferences:
 
 [https://myaccount.google.com/language](https://myaccount.google.com/language)
 
@@ -61,11 +61,11 @@ Then switch the language to english:
 
 ### Billing account
 
-You will now link your account to your credit card. This step is required or you will not be able to use the services provided by GCP. Do not worry, you will be able to consume most GCP services through free credits throughout the bootcamp.
+You will now link your account to your credit card. This step is required or you will not be able to use the services provided by Google Cloud. Do not worry, you will be able to consume most Google Cloud services through free credits throughout the bootcamp.
 
-⚠️ In some cases, Google may charge your card (around €10) to verify that it is valid. This will unfortunately not be refunded once you are approved, but will be added as credit in GCP that you can use once your free credits have been used or expired.
+⚠️ In some cases, Google may charge your card (around €10) to verify that it is valid. This will unfortunately not be refunded once you are approved, but will be added as credit in Google Cloud that you can use once your free credits have been used or expired.
 
-![](images/gcp-billing.png)
+![](https://github.com/lewagon/data-setup/blob/simplify-except-python/images/gcp-billing.png)
 
 - Click on **Billing**
 - Click on **MANAGE BILLING ACCOUNTS**
@@ -82,7 +82,7 @@ You should see that you have a free credit of "$300 credits over the next 90days
 - Enter your credit card info
 - Click on **START MY FREE TRIAL**
 
-Once this is done, verify that your billing account is linked to your GCP project.
+Once this is done, verify that your billing account is linked to your Google Cloud project.
 
 - Select your project
 - Go to **Billing**
@@ -115,14 +115,14 @@ Download the Revolut app, or go to [revolut](https://www.revolut.com/a-radically
 
 Once this is done, select the standard (free) plan. No need to add the card to Apple pay, or ask for a the delivery of a physical card, or add money securely.
 
-You now have a virtual card which we will use for the GCP setup.
+You now have a virtual card which we will use for the Google Cloud setup.
 
 In the main view of the Revolut app
 
 - Click on Ready to use
 - Click on the card
 - Click on Show card details
-- Note down the references of the virtual credit card and use them in order to proceed with the GCP setup
+- Note down the references of the virtual credit card and use them in order to proceed with the Google Cloud setup
 
 </details>
 
@@ -134,7 +134,7 @@ This may happen especially in case you just setup a Revolut account.
 - Click on PROCEED TO VERIFICATION
 - You will be asked to send a picture of your credit card (only the last 4 digits, no other info)
 - In case you used **Revolut**, you can send a screenshot of your virtual credit card (do not forget to remove the validity date from the screenshot)
-- Explain that you are attending the Le Wagon bootcamp, do not own a credit card, and have just created a Revolut account in order to setup GCP for the bootcamp using a virtual credit card
+- Explain that you are attending the Le Wagon bootcamp, do not own a credit card, and have just created a Revolut account in order to setup Google Cloud for the bootcamp using a virtual credit card
 
 You may receive a validation or requests for more information within 30 minutes.
 
@@ -142,7 +142,7 @@ Once the verification goes through, you should receive an email stating that "Yo
 
 </details>
 
-### Enabling GCP services
+### Enabling Google Cloud services
 
 - Make sure that billing is enabled for your Google Cloud project
 
@@ -231,7 +231,7 @@ For many computers, this is already the case. Let's check:
 - Click on the `Performance` tab
 - Click on `CPU`
 
-![Windows task manager](https://github.com/lewagon/setup/blob/master/images/windows_task_manager.png)
+![Windows task manager](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_task_manager.png)
 
 :heavy_check_mark: If you see "Virtualization: Enabled", you're good to go :+1:
 
@@ -333,7 +333,7 @@ Once your computer has restarted, we need to download the WSL2 installer.
 - Click `Next`
 - Click `Finish`
 
-![Update WSL from version 1 to 2](https://github.com/lewagon/setup/blob/master/images/windows_update_wsl.png)
+![Update WSL from version 1 to 2](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_update_wsl.png)
 
 :heavy_check_mark: If didn't encounter any error message, you're good to go :+1:
 
@@ -426,57 +426,6 @@ At first launch, you will be asked some information:
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
-
-### Check the WSL version of Ubuntu
-
-- Press `Windows` + `R`
-- Type  `cmd`
-- Press `Enter`
-
-Type the following command:
-
-```bash
-wsl -l -v
-```
-
-:heavy_check_mark: If the version of Ubuntu WSL is 2, you are good to go :+1:
-
-:x: If the version of Ubuntu WSL is 1, we will need to convert it to version 2.
-
-<details>
-  <summary>Convert Ubuntu WSL V1 to V2</summary>
-
-  In the Command Prompt window, type:
-
-  ```bash
-  wsl --set-version Ubuntu 2
-  ```
-
-  :heavy_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
-
-  :x: If it does not work, we need to be sure that Ubuntu files are not compressed.
-
-<details>
-  <summary>Check for Uncompressed Files</summary>
-
-  - Press `Windows` + `R`
-  - Type  `%localappdata%\Packages`
-  - Press `Enter`
-  - Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`
-  - Right Click on the `LocalState` folder
-  - Click on `Properties`
-  - Click on `Advanced`
-  - Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
-
-  Apply changes to this folder only and try to convert the Ubuntu WSL version again.
-
-  :x: If the conversion still does not work, please **contact a teacher**.
-</details>
-
-You can close this terminal now.
-
-</details>
-
 ### Check your username
 
 Type this in the Ubuntu terminal:
@@ -501,7 +450,7 @@ Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 - Open the file you have just downloaded.
 - Install it with few options:
 
-![VS Code installation options](https://github.com/lewagon/setup/blob/master/images/windows_vscode_installation.png)
+![VS Code installation options](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_vscode_installation.png)
 
 When the installation is finished, launch VS Code.
 
@@ -525,7 +474,7 @@ code .
 
 :heavy_check_mark: If you see `WSL: Ubuntu` in the bottom left corner of the VS Code window, you're good to go :+1:
 
-![WSL Ubuntu Remote](https://github.com/lewagon/setup/blob/master/images/windows_remote_wsl.png)
+![WSL Ubuntu Remote](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_remote_wsl.png)
 
 :x: Otherwise, please **contact a teacher**
 
@@ -576,7 +525,7 @@ Press `Ctrl` + `,`
 
 It should open the terminal settings:
 
-![Windows Terminal Settings](https://github.com/lewagon/setup/blob/master/images/windows_terminal_settings.png)
+![Windows Terminal Settings](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_terminal_settings.png)
 
 - Change the default profile to "Ubuntu"
 - Click on "Save"
@@ -586,7 +535,7 @@ You may see an orange circle rather than a penguin as the logo for Ubuntu.
 
 We have circled in red the part you need to add:
 
-![Windows Terminal JSON settings file](https://github.com/lewagon/setup/blob/master/images/windows_terminal_settings_json.png)
+![Windows Terminal JSON settings file](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_terminal_settings_json.png)
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one.
 
@@ -618,7 +567,6 @@ This terminal has tabs: you can choose to open a new terminal tab by clicking on
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.
 
 
-
 ## VS Code Extensions
 
 ### Installation
@@ -637,7 +585,6 @@ code --install-extension alexcvzz.vscode-sqlite
 ```
 
 Here is a list of the extensions you are installing:
-
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
@@ -750,7 +697,7 @@ If asked "Do you want to change your default shell to zsh?", press `Y`
 
 At the end your terminal should look like this:
 
-![Ubuntu terminal with OhMyZsh](https://github.com/lewagon/setup/blob/master/images/oh_my_zsh.png)
+![Ubuntu terminal with OhMyZsh](https://github.com/lewagon/setup/blob/simplify-conso/images/oh_my_zsh.png)
 
 :heavy_check_mark: If it does, you can continue :+1:
 
@@ -782,18 +729,6 @@ Then please make sure that the following command returns "Browser defined 👌":
 If it does not, you can follow [these instructions](https://github.com/lewagon/setup/blob/master/_partials/windows_browser.md) to set your default browser manually.
 
 Do not hesitate to **contact a teacher**.
-
-
-## direnv
-
-[direnv](https://direnv.net/) is a shell extension. It makes it easy to deal with per project environment variables. This will be useful in order to customize the behavior of your code.
-
-
-``` bash
-sudo apt-get update; sudo apt-get install direnv
-echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-```
-
 
 
 ## GitHub CLI
@@ -850,199 +785,142 @@ gh auth status
 :x: If not, **contact a teacher**.
 
 
-## Google Cloud CLI
-
-Install the `gcloud` CLI to communicate with [Google Cloud Platform](https://cloud.google.com/) through your terminal:
-
-```bash
-sudo apt-get update && sudo apt-get install ca-certificates gnupg curl
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
-echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-sudo apt-get update && sudo apt-get install google-cloud-cli
-```
-
-👉 [Install documentation](https://cloud.google.com/sdk/docs/install#deb)
-
-
 ## Dotfiles
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub.
+Let's enhance the experience of your machine by installing Le Wagon's pre-configured [dotfiles 🔗](https://github.com/lewagon/dotfiles). These are configuration files for your terminal, zsh, git, and VS Code.
 
-### Check your GitHub CLI configuration
 
-First, let's do a quick check. Open your terminal and run the following command:
+### Get your GitHub username
+
+Run the following command:
 
 ```bash
 export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
-There seems to be a problem with the previous step (`gh auth`).
+✔️ You should see your Github username printed.
 
-### Fork and/or clone dotfiles
+❌ If not, stop here and ask for help. There may be a problem with the previous step (`gh auth`).
 
-There are three options, choose **one**:
 
+### Forking the dotfiles
+
+To customise this configuration for yourself, you'll need to **fork** the repository to your own Github account.
+
+**Forking** creates a copy of the repository under your account (`your_github_username/dotfiles`), which you can then modify with your personal information, such as your name.
 
 <details>
-    <summary>
-        <strong>I did not attend the Web Dev or Data Science & AI or Data Analytics bootcamp at Le Wagon</strong>
-    </summary>
+<summary>❗ <strong>If you already did another Le Wagon bootcamp</strong> (<em>Web Development, AI Software Development, Data Analytics, Data Science & AI</em>, <strong>open a ticket with a TA</strong> and open this for instructions ❗
+</summary>
 
- As your configuration is personal, you need your own repository storing it, so you'll need to fork it to your GitHub account.
+You may have an older version of the Le Wagon dotfiles. They could be incompatible with the current setup.
 
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those
-files.
 
-Lets' run this command to fork the repo, and clone it on your laptop:
+**Together with a TA**, do one of the following:
+
+<details>
+<summary>I'm using <strong>the same machine</strong> (or a new machine which already has the dotfiles).</summary>
+
+1. Move into your existing dotfiles folder:
+   ```bash
+   cd ~/code/$GITHUB_USERNAME/dotifles
+   ```
+
+1. Check the diff against the current version of Le Wagon's dotfiles:
+    ```bash
+    git diff upstream/master
+    ```
+
+If there is no meaningful difference other than your name and email setting, continue with the setup.
+
+</details>
+
+<details>
+<summary>I'm using <strong>a new machine</strong> without the dotfiles.</summary>
+
+1. Browse to GitHub and find your `dotfiles` repository.
+
+1. Check how many commits it's behind and ahead `lewagon/dotfiles:master`. You can see this just above the file list.
+
+1. Click through to the behind and the ahead, and scroll down to see the diffs.
+
+If there is no meaningful difference other than your name and email setting, continue with the setup.
+
+</details>
+
+<details>
+<summary>The previous step revealed <strong>meaningful differences</strong>.</summary>
+
+If you are OK with losing your existing dotfiles (recommended):
+
+1. Delete your existing dotfiles repository on GitHub.
+1. Delete the local repository:
+    ```bash
+    cd ~/code && rm -rf ~/code/$GITHUB_USERNAME/dotifles
+    ```
+1. Continue with the setup.
+
+<details>
+<summary>If you do not want to lose your existing dotfiles, we recommend working with branches. Click to open.</summary>
+
+On your **laptop**, or wherever you have a **local** copy of **your existing version of dotfiles**.
+
+1. Commit your current version of your dotfiles:
+
+    ```bash
+    git add .
+    git status # Check what will be committed
+    git commit -m "Version prior to new setup"
+    ```
+
+1. Create a branch of your current dotfiles setup, and push to GitHub:
+    
+    ```bash
+    git checkout -b old-setup
+    git push origin old-setup
+    ```
+
+1. Go back to `master`: `git checkout master`.
+
+1. On local `master`, `git pull upstream master`.
+
+1. Check that you're not in `MERGING` state. If you are, resolve any conflicts.
+    
+    It is important that you accept incoming changes to the `.zshrc`, `.zprofile`, and `settings.json` files. Especially anything related to `pyenv` and to Python environments.
+
+    If there are too many conficts, use your code editor to replace the contents of the conflicting files with the ones from [the Le Wagon dotfiles](https://www.github.com/lewagon/dotfiles).
+
+    Commit your conflict resolution: `git commit --no-edit`
+
+1. Push your changes to GitHub: `git push origin master`.
+
+1. Continue with the setup.
+
+</details>
+
+</details>
+
+</details>
+
+<br>
+
+Time to fork the repo and clone it on your computer:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
 
-</details>
+### Installing the dotfiles
 
-
-<details>
-    <summary>
-        <strong>I already attended a Le Wagon coding bootcamp (Web Development or Data Science & AI or Data Analytics) <em>but I have a new laptop</em></strong>
-    </summary>
-
-This means that you already forked the GitHub repo `lewagon/dotfiles`, but at that time the configuration was maybe not ready for the current Data Analytics bootcamp. Let's update it. **Ask a TA to join you for the nex steps.**
-
-First, clone your fork on this machine:
-
-```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_
-gh repo clone $GITHUB_USERNAME/dotfiles
-```
-
-
-Open your terminal and go to your `dotfiles` project:
-
-```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-
-Time to merge the changes from `lewagon/dotfiles` into yours:
-
-1. Commit your current version of your dotfiles:
-
-   ```bash
-   git add .
-   git status # Check what will be committed
-   git commit -m "Version prior to new setup"
-   ```
-
-1. Let's bring in the changes from upstream: `git merge upstream/master`
-
-1. Check that you're not in `MERGING` state. If you are, resolve any conflicts.
-
-1. Do a `git diff HEAD~1 HEAD` to check what changed.
-
-1. If nothing seems out of the ordinary, continue
-
-<details>
-  <summary>Too many conflicts?
-  </summary>
-
-  Let's just take over the current version from `lewagon/dotfiles`.
-
-  First abort the merge: `git merge --abort`.
-
-  Run `code .`
-
-  In VS Code, open the `zshrc` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zshrc). Save to disk.
-
-  Still in VS Code, open the `zprofile` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zprofile). Save to disk.
-
-  Back in the terminal, run a `git diff` and check if this didn't remove any personal configuration setting that you wanted to keep.
-
-</details>
-
-Time to commit your changes and push them.
-
-```bash
-git add .
-git commit -m "Update for Data Analytics bootcamp"
-git push origin master
-```
-
-</details>
-
-
-<details>
-    <summary>
-        <strong>I already did the setup of a Le Wagon coding bootcamp (WebDev or Data Science & AI or Data Analytics) <em>on the same laptop</em> before</strong>
-    </summary>
-
-This means that you already forked and cloned the GitHub repo `lewagon/dotfiles`, but at that time the configuration was maybe not ready for the current Data Analytics bootcamp. Let's update it. **Ask a TA to join you for the nex steps.**
-
-
-Open your terminal and go to your `dotfiles` project:
-
-```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-
-Time to merge the changes from `lewagon/dotfiles` into yours:
-
-1. Commit your current version of your dotfiles:
-
-   ```bash
-   git add .
-   git status # Check what will be committed
-   git commit -m "Version prior to new setup"
-   ```
-
-1. Let's bring in the changes from upstream: `git merge upstream/master`
-
-1. Check that you're not in `MERGING` state. If you are, resolve any conflicts.
-
-1. Do a `git diff HEAD~1 HEAD` to check what changed.
-
-1. If nothing seems out of the ordinary, continue
-
-<details>
-  <summary>Too many conflicts?
-  </summary>
-
-  Let's just take over the current version from `lewagon/dotfiles`.
-
-  First abort the merge: `git merge --abort`.
-
-  Run `code .`
-
-  In VS Code, open the `zshrc` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zshrc). Save to disk.
-
-  Still in VS Code, open the `zprofile` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zprofile). Save to disk.
-
-  Back in the terminal, run a `git diff` and check if this didn't remove any personal configuration setting that you wanted to keep.
-
-</details>
-
-Time to commit your changes and push them.
-
-```bash
-git add .
-git commit -m "Update for Data Analytics bootcamp"
-git push origin master
-```
-
-</details>
-
-
-### Run the dotfiles installer
-
-It's time to run the `dotfiles` installer:
+Run the `dotfiles` installer with:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
-Check the emails registered with your GitHub Account. You'll need to pick one at the next step:
+Check the emails registered with your GitHub Account. You'll need to pick one in the next step:
 
 ```bash
 gh api user/emails | jq -r '.[].email'
@@ -1055,26 +933,10 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
 :point_up: This will **prompt** you for your name (`FirstName LastName`) and your email.
-:warning: You **need** to put one of the emails listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress. 💡 Select the `@users.noreply.github.com` address if you don't want your email to appear in public repositories you may contribute to.
 
-Please now **quit** all your opened terminal windows.
+:warning: You **need** to put one of the emails listed above from the previous `gh api ...` command. If you don't do that, Kitt will not be able to track your progress.
 
-
-## Disable SSH passphrase prompt
-
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
-
-First, open the `.zshrc` file:
-
-```bash
-code ~/.zshrc
-```
-
-Then:
-- Spot the line starting with `plugins=`
-- Add `ssh-agent` at the end of the plugins list
-
-:heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
+💡 Select the `...@users.noreply.github.com` address if you don't want your email to appear in public repositories you may contribute to.
 
 
 ## Installing Python (with [`pyenv`](https://github.com/pyenv/pyenv))
@@ -1350,6 +1212,75 @@ You can close your web browser then terminate the jupyter server with `CTRL` + `
 Here you have it! A complete python virtual env with all the third-party packages you'll need for the whole bootcamp.
 
 
+
+## Google Cloud CLI
+
+### Install `gcloud`
+
+Install the `gcloud` CLI to communicate with [Google Cloud Platform](https://cloud.google.com/) through your terminal:
+```bash
+sudo apt-get update && sudo apt-get install ca-certificates gnupg curl
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+sudo apt-get update && sudo apt-get install google-cloud-cli
+```
+👉 [Install documentation](https://cloud.google.com/sdk/docs/install#deb)
+
+
+### Configure the Google Cloud CLI
+
+- Authenticate the `gcloud` CLI with the google account you used for GCP
+
+  ```bash
+  gcloud auth login
+  ```
+
+- Login to your Google account on the new tab opened in your web browser
+
+- List your active account and check your email address you used for GCP is present
+
+  ```bash
+  gcloud auth list
+  ```
+
+- Set your current project (replace `PROJECT_ID` with the `ID` of your project, e.g. `wagon-bootcamp-123456`)
+
+  ```bash
+  gcloud config set project PROJECT_ID
+  ```
+
+- List your active account and current project and check your project is present
+
+  ```bash
+  gcloud config list
+  ```
+
+- Now let's set up Application Default Credentials so your Python code can access GCP:
+
+  ```bash
+  gcloud auth application-default login
+  ```
+
+  This will open a browser window. Log in with the same Google account you used to create your GCP project. Your credentials will be saved automatically.
+
+- Let's verify your Application Default Credentials are working:
+
+  ```bash
+  gcloud auth application-default print-access-token
+  ```
+
+  You should see a long token string. If you see an error, run `gcloud auth application-default login` again.
+
+  <details>
+    <summary>Troubleshooting</summary>
+
+  - `AccessDeniedException: 403 The project to be billed is associated with an absent billing account.`
+    - Make sure that billing is enabled for your Google Cloud Platform project [https://cloud.google.com/billing/docs/how-to/modify-project](https://cloud.google.com/billing/docs/how-to/modify-project)
+  </details>
+
+🏁 You are done with the GCP setup!
+
+
 ## Insomnia
 
 > ℹ️ **Why?** Insomnia is one of the best-known API testing tools, and it will be useful in our Introduction to API course.
@@ -1359,123 +1290,6 @@ Here you have it! A complete python virtual env with all the third-party package
 - Download Insomnia
 
 - Install Insomnia
-
-
-## Windows settings
-
-### Exchange files between Windows and Ubuntu
-
-We need an easy way to transfer files from Windows to Ubuntu and vice versa.
-
-In order to do that, let's create shortcuts to Ubuntu directories in the Windows **File Explorer**:
-- Open the Windows File Explorer (or use the shortcut `WIN` + `E`)
-- In the Address Bar, enter `\\wsl$\` (or `\\wsl$\Ubuntu` if it does not work)
-- You now have acces to the Ubuntu file system
-- Dive into the Ubuntu file system in order to look for directories of interest
-- Drag the desired folders into the Address Bar in order to create shortcuts
-
-![How to add a shortcut to Ubuntu file system on Windows](https://github.com/lewagon/setup/blob/master/images/windows_ubuntu_file_system_shortcut.gif)
-
-### Open the Windows File Explorer from the Ubuntu terminal
-
-Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal:
-- Open an Ubuntu terminal
-- Go to the directory you wish to explore
-- Run the `explorer.exe .` command (alternatively, use `wslview .`)
-- If you get an input output error message, run `wsl --shutdown` in a Windows PowerShell and reopen an Ubuntu terminal
-
-![How to launch Windows Explorer from Ubuntu terminal](https://github.com/lewagon/setup/blob/master/images/windows_explorer_from_terminal.png)
-
-### Find your way in the Ubuntu File System
-
-You might want to figure out the exact location of a Windows directory in the Ubuntu file system, or the other way around.
-
-In order to convert a Windows path to and from an Ubuntu path:
-- Open an Ubuntu terminal
-- Use the `wslpath "C:\Program Files"` command in order to translate a Windows path into an Ubuntu path
-- Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
-- In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
-
-![How to access a Windows path from Ubuntu terminal](https://github.com/lewagon/setup/blob/master/images/windows_path_from_terminal.png)
-
-### Pin apps to your taskbar
-
-You are going to use most of the apps you've installed today really often. Let's pin them to your taskbar so that they are just one click away!
-
-To pin an app to your taskbar, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Pin to taskbar".
-
-![How to pin an app to the taskbar in Windows](https://github.com/lewagon/setup/blob/master/images/windows_taskbar.png)
-
-You must pin:
-- Your terminal
-- Your file explorer
-- VS Code
-- Your Internet browser
-- Slack
-
-
-## Visual C++ Redistributable
-
-Some Python packages require a compiler to function properly. Let's install one:
-
-[For x64 systems](https://aka.ms/vs/16/release/vc_redist.x64.exe)
-
-
-### Configure Cloud sdk
-
-- Authenticate the `gcloud` CLI with the google account you used for GCP
-
-
-```bash
-gcloud auth login --no-launch-browser
-```
-
-
-- Login to your Google account on the new tab opened in your web browser
-- List your active account and check your email address you used for GCP is present
-
-```bash
-gcloud auth list
-```
-
-- Set your current project (replace `PROJECT_ID` with the `ID` of your project, e.g. `wagon-bootcamp-123456`)
-
-```bash
-gcloud config set project PROJECT_ID
-```
-
-- List your active account and current project and check your project is present
-
-```bash
-gcloud config list
-```
-
-
-Now let's set up Application Default Credentials so your Python code can access GCP:
-
-```bash
-gcloud auth application-default login --no-launch-browser
-```
-
-Copy the URL shown in the terminal, open it in your Windows browser, and log in with the same Google account you used to create your GCP project. Once you approve access, copy the verification code from the browser and paste it back into the terminal. Your credentials will be saved automatically.
-
-
-Let's verify your Application Default Credentials are working:
-
-```bash
-gcloud auth application-default print-access-token
-```
-
-You should see a long token string. If you see an error, run `gcloud auth application-default login` again.
-
-<details>
-  <summary>Troubleshooting</summary>
-
-- `AccessDeniedException: 403 The project to be billed is associated with an absent billing account.`
-  - Make sure that billing is enabled for your Google Cloud Platform project [https://cloud.google.com/billing/docs/how-to/modify-project](https://cloud.google.com/billing/docs/how-to/modify-project)
-</details>
-
-🏁 You are done with the GCP setup!
 
 
   ## Kitt
@@ -1504,7 +1318,7 @@ Launch the app and sign in to `lewagon-alumni` organization.
 
 Make sure you **upload a profile picture** :point_down:
 
-![How to upload a profile picture on Slack](https://github.com/lewagon/setup/blob/master/images/slack_profile_picture.gif)
+![How to upload a profile picture on Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_profile_picture.gif)
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
@@ -1516,13 +1330,66 @@ To ensure that everything is working fine for video calls, let's test your camer
 - Below `Troubleshooting`, click `Run an audio, video and screensharing test`. The test will open in a new window.
 - Check that your preferred speaker, microphone and camera devices appear in the drop-down menus, then click `Start test`.
 
-![Check microphone and webcam with Slack](https://github.com/lewagon/setup/blob/master/images/slack_call_test.png)
+![Check microphone and webcam with Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_call_test.png)
 
 :heavy_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
 
 :x: If not, **contact a teacher**.
 
 You can also install Slack app on your phone and sign in `lewagon-alumni`!
+
+
+## Windows settings
+
+### Exchange files between Windows and Ubuntu
+
+We need an easy way to transfer files from Windows to Ubuntu and vice versa.
+
+In order to do that, let's create shortcuts to Ubuntu directories in the Windows **File Explorer**:
+- Open the Windows File Explorer (or use the shortcut `WIN` + `E`)
+- In the Address Bar, enter `\\wsl$\` (or `\\wsl$\Ubuntu` if it does not work)
+- You now have acces to the Ubuntu file system
+- Dive into the Ubuntu file system in order to look for directories of interest
+- Drag the desired folders into the Address Bar in order to create shortcuts
+
+![How to add a shortcut to Ubuntu file system on Windows](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_ubuntu_file_system_shortcut.gif)
+
+### Open the Windows File Explorer from the Ubuntu terminal
+
+Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal:
+- Open an Ubuntu terminal
+- Go to the directory you wish to explore
+- Run the `explorer.exe .` command (alternatively, use `wslview .`)
+- If you get an input output error message, run `wsl --shutdown` in a Windows PowerShell and reopen an Ubuntu terminal
+
+![How to launch Windows Explorer from Ubuntu terminal](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_explorer_from_terminal.png)
+
+### Find your way in the Ubuntu File System
+
+You might want to figure out the exact location of a Windows directory in the Ubuntu file system, or the other way around.
+
+In order to convert a Windows path to and from an Ubuntu path:
+- Open an Ubuntu terminal
+- Use the `wslpath "C:\Program Files"` command in order to translate a Windows path into an Ubuntu path
+- Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
+- In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
+
+![How to access a Windows path from Ubuntu terminal](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_path_from_terminal.png)
+
+### Pin apps to your taskbar
+
+You are going to use most of the apps you've installed today really often. Let's pin them to your taskbar so that they are just one click away!
+
+To pin an app to your taskbar, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Pin to taskbar".
+
+![How to pin an app to the taskbar in Windows](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_taskbar.png)
+
+You must pin:
+- Your terminal
+- Your file explorer
+- VS Code
+- Your Internet browser
+- Slack
 
 
 ## Bonus
