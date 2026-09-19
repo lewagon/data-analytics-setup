@@ -4,21 +4,15 @@ locales: [en]
 partials:
   - intro
   - setup/github
-  - gcp_account_setup
-  - osx_silicon
+  - data_setup/gcp_account_setup
+  - data_setup/osx_silicon
   - setup/macos_command_line_tools
   - homebrew
   - setup/macos_vscode
   - vscode_extensions
   - setup/oh_my_zsh
   - setup/gh_cli
-  - dotfiles
-  - dotfiles_new_student
-  - dotfiles_new_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_same_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_installer
+  - data_setup/dotfiles
   - conda_uninstall
   - osx_python
   - virtualenv

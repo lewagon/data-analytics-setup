@@ -4,27 +4,19 @@ locales: [en]
 partials:
   - intro
   - setup/github
-  - gcp_account_setup
+  - data_setup/gcp_account_setup
   - setup/windows_version
   - setup/windows_virtualization
   - setup/windows_wsl
   - setup/windows_ubuntu
   - setup/windows_vscode
   - setup/windows_terminal
-  - vscode_extensions
+  - data_setup/vscode_extensions
   - setup/cli_tools
   - setup/oh_my_zsh
-  - windows_browser
+  - data_setup/windows_browser
   - setup/gh_cli
-  - ubuntu_gcloud
-  - dotfiles
-  - dotfiles_new_student
-  - dotfiles_new_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_same_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_installer
-  - setup/ssh_agent
+  - data_setup/dotfiles
   - conda_uninstall
   - ubuntu_python
   - virtualenv
@@ -32,13 +24,11 @@ partials:
   - nbextensions
   - win_jupyter
   - python_checkup
+  - data_setup/ubuntu_gcloud
+  - data_setup/gcp_setup
   - insomnia
-  - setup/windows_settings
-  - win_vs_redistributable
-  - gcp_setup
-  - gcp_setup_wsl
-  - gcp_setup_end
-  - kitt
+  - data_setup/kitt
   - setup/windows_slack
   - setup/slack_settings
+  - setup/windows_settings
   - bonus
