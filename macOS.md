@@ -977,7 +977,7 @@ You are going to use most of the apps you've installed today really often. Let's
 
 To pin an app to your dock, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Options" then "Keep in Dock".
 
-![How to pin an app to the taskbar in macOS](images/macos_dock.png)
+![How to pin an app to the taskbar in macOS](https://raw.githubusercontent.com/lewagon/setup/refs/heads/master/images/macos_dock.png)
 
 You must pin:
 - Your terminal
