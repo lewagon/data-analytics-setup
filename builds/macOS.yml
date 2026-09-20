@@ -1,6 +1,6 @@
 
 os: macos
-locales: [en]
+locales: [en, es]
 partials:
   - intro
   - setup/github
