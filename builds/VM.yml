@@ -32,7 +32,7 @@ partials:
   - ubuntu_python
   - virtualenv
   - pip
-  - nbextensions
+  - data_setup/nbextensions
   - python_checkup
   - kitt
   - setup/windows_slack

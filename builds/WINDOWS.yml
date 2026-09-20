@@ -23,7 +23,7 @@ partials:
   - ubuntu_python
   - virtualenv
   - pip
-  - nbextensions
+  - data_setup/nbextensions
   - python_checkup
   - data_setup/ubuntu_gcloud
   - data_setup/gcp_setup
