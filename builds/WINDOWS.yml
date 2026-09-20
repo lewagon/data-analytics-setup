@@ -24,7 +24,6 @@ partials:
   - virtualenv
   - pip
   - nbextensions
-  - win_jupyter
   - python_checkup
   - data_setup/ubuntu_gcloud
   - data_setup/gcp_setup
