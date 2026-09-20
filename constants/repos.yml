@@ -1,7 +1,7 @@
 
 branches:
   setup: simplify-conso
-  data-setup: simplify-except-python
+  data-setup: pyenv-to-uv
 
 
 aliases:

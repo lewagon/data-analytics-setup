@@ -15,10 +15,7 @@ partials:
   - setup/oh_my_zsh
   - setup/gh_cli
   - data_setup/dotfiles
-  - conda_uninstall
-  - osx_python
-  - virtualenv
-  - pip
+  - data_setup/install_python
   - data_setup/nbextensions
   - python_checkup
   - insomnia
