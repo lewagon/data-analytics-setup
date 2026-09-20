@@ -31,8 +31,8 @@ partials:
   - setup/ssh_agent
   - data_setup/install_python
   - data_setup/nbextensions
-  - python_checkup
-  - kitt
+  - data_setup/python_checkup
+  - data_setup/kitt
   - setup/windows_slack
   - setup/slack_settings
   - bonus
