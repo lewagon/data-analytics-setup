@@ -1032,7 +1032,8 @@ You can close your web browser then terminate the jupyter server with `CTRL` + `
 Here you have it! A complete python virtual env with all the third-party packages you'll need for the whole bootcamp.
 
 
-  ## Kitt
+
+## Kitt
 
 You should have received an email from Le Wagon inviting you to sign up on [Kitt](https://kitt.lewagon.com) (our learning platform).
 

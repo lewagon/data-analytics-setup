@@ -809,7 +809,8 @@ You should see a long token string. If you see an error, run `gcloud auth applic
 🏁 You are done with the GCP setup!
 
 
-  ## Kitt
+
+## Kitt
 
 You should have received an email from Le Wagon inviting you to sign up on [Kitt](https://kitt.lewagon.com) (our learning platform).
 
