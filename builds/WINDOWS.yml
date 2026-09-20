@@ -13,6 +13,7 @@ partials:
   - setup/windows_vscode
   - setup/windows_terminal
   - data_setup/vscode_extensions
+  - setup/vscode_aifeatures
   - setup/cli_tools
   - setup/oh_my_zsh
   - data_setup/windows_browser
