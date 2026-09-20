@@ -753,21 +753,21 @@ Para asegurarte de que todo lo relacionado a videollamadas funcione bien, prueba
 ¡También puedes instalar la aplicación Slack en tu smartphone e iniciar sesión en `lewagon-alumni`!
 
 
-## macOS settings
+## Configuración de macOS
 
-### Pin apps to your dock
+### Anclar aplicaciones al Dock
 
-You are going to use most of the apps you've installed today really often. Let's pin them to your dock so that they are just one click away!
+Vas a usar la mayoría de las aplicaciones que has instalado hoy con mucha frecuencia. ¡Anclémoslas al Dock para que estén a solo un clic de distancia!
 
-To pin an app to your dock, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Options" then "Keep in Dock".
+Para anclar una aplicación al Dock, abre la aplicación, haz clic derecho sobre el icono en la barra de tareas para abrir el menú contextual y elige "Opciones" y luego "Mantener en el Dock".
 
-![How to pin an app to the taskbar in macOS](https://raw.githubusercontent.com/lewagon/setup/refs/heads/master/images/macos_dock.png)
+![Cómo anclar una aplicación en el Dock de macOS](https://raw.githubusercontent.com/lewagon/setup/refs/heads/master/images/macos_dock.png)
 
-You must pin:
-- Your terminal
-- Your file explorer
+Debes anclar:
+- Tu terminal
+- Tu explorador de archivos
 - VS Code
-- Your Internet browser
+- Tu navegador de Internet
 - Slack
 
 
