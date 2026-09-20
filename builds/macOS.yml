@@ -20,9 +20,7 @@ partials:
   - data_setup/python_checkup
   - insomnia
   - gcp_cli_setup
-  - gcp_setup
-  - gcp_setup_mid
-  - gcp_setup_end
+  - data_setup/gcp_setup
   - data_setup/kitt
   - setup/macos_slack
   - setup/slack_settings
