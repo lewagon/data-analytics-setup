@@ -876,112 +876,68 @@ Then:
 :heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
 
 
-### Install `pyenv`
+## Install Python and dependencies
 
-Ubuntu comes with an outdated version of Python that we don't want to use. You might already have installed Anaconda or something else to tinker with Python and Data Analytics packages. All of this does not really matter as we are going to do a professional setup of Python where you'll be able to switch which version you want to use whenever you type `python` in the terminal.
+Your operating system - macOS, or Ubuntu (native, or inside WSL) - comes with a "system Python". That's a Python version your system depends on. We don't mess around with that one. We're going to do a professional setup of Python where you don't mess up your "system Python" and wher you'll be able to switch which version you want to use for each project you work on.
 
-First let's install `pyenv` with the following Terminal command:
+To manage different Python versions and virtual environments (you'll discover what that means during the setup lecture), we will use the state-of-the-art [`uv` created by Astral](https://docs.astral.sh/uv/).
+
+
+### Install `uv`
+
+First, we'll install `uv`:
 
 ```bash
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Next, restart your shell by running this:
+
+```bash
 exec zsh
 ```
 
-Let's install some [dependencies](https://github.com/pyenv/pyenv/wiki/common-build-problems#prerequisites) needed to build Python from `pyenv`:
+### Create a virtual environment
+
+Next, we'll create a virtual environment (an isolated environment with Python and the dependencies for the bootcamp):
 
 ```bash
-sudo apt-get update; sudo apt-get install make build-essential libssl-dev zlib1g-dev \
-libbz2-dev libreadline-dev sqlite3 libsqlite3-dev wget curl llvm \
-libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
-python3-dev
+uv venv ~/.lewagon/venvs/lewagon --python 3.12.9
 ```
 
-### Install Python
-
-Let's install the [latest stable version of Python](https://www.python.org/doc/versions/) supported by Le Wagon's curriculum:
+Now that we created this new virtual environment, let's restart our shell to pick it up (this works thanks to the `lewagon/dotfiles` we installed before):
 
 ```bash
-pyenv install 3.12.9
-```
-
-This command might take a while, this is perfectly normal. Don't hesitate to help other students seated next to you!
-
-<details>
-  <summary>🛠 Troubleshooting `pyenv` not found</summary>
-
-If you encounter an error `Command 'pyenv' not found`: execute the following line:
-
-```bash
-source ~/.zprofile
-```
-
-Then try to install Python again:
-
-```bash
-pyenv install 3.12.9
-```
-
-If `pyenv` is still not found, contact a teacher.
-
-</details>
-<br>
-
-OK once this command is complete, we are going to tell the system to use this version of Python **by default**. This is done with:
-
-```bash
-pyenv global 3.12.9
 exec zsh
 ```
 
-To check if this worked, run `python --version`. If you see `3.12.9`, perfect! If not, ask a TA that will help you debug the problem thanks to `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
-
-
-## Python Virtual Environment
-
-Before we start installing relevant Python packages, we will isolate the setup for the Bootcamp into a **dedicated** virtual environment. We will use a `pyenv` plugin called [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv).
-
-### Setup a virtualenv
-
-First let's install this plugin:
+Let's check that everything went right. Run this:
 
 ```bash
-git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-exec zsh
+which python3
 ```
 
-Let's create the virtual environment we are going to use during the whole bootcamp:
-
-```bash
-pyenv virtualenv 3.12.9 lewagon
-```
-
-Let's now set the virtual environment with:
-
-```bash
-pyenv global lewagon
-```
-
-Great! Anytime we'll install Python package, we'll do it in that environment.
-
-
-### Python packages
-
-Now that we have a pristine `lewagon` virtual environment, it's time to install some packages in it.
-
-First, let's upgrade `pip`, the tool to install Python Packages from [pypi.org](https://pypi.org). In the latest terminal where the virtualenv `lewagon` is activated, run:
-
-```bash
-pip install --upgrade pip
-```
-
-Then let's install some packages for the first weeks of the program:
-
+It should return this:
 
 
 ``` bash
-pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
+/home/your-username/.lewagon/venvs/lewagon/bin/python3
 ```
 
+
+If it doesn't, check with a TA! Do not continue with the next step before you solved this!
+
+
+### Install dependencies
+
+Python is great for data, because the communitiy has developed an enormous amount of packages we can re-use.
+
+Let's install the most common ones:
+
+
+``` bash
+uv pip install -r /linux.txt
+```
 
 
 
