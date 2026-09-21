@@ -14,7 +14,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
 
-![GitHub picture](https://github.com/lewagon/setup/blob/simplify-conso/images/github_picture.png)
+![GitHub picture](https://github.com/lewagon/setup/blob/master/images/github_picture.png)
 
 :point_right: **[Enable Two-Factor Authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub will send you text messages with a code when you try to log in. This is important for security and also will soon be required in order to contribute code on GitHub.
 
@@ -32,12 +32,12 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 ⚠️ **Important:** When creating a new project, you will see an **Organization** field. Leave this set to **"No organization"**. Do not select or create an organization. Choosing an organization applies restrictions that can prevent you from using Google Cloud services during the bootcamp.
 
-![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/gcp-create-project.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp-create-project.png)
 
 - Give it a name such as `Wagon Bootcamp` for example
 - Notice the `ID` automatically created for the project, e.g. `wagon-bootcamp-123456`
 
-![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/gcp_project.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp_project.png)
 
 ℹ️ Note the **Project ID** (e.g. `wagon-bootcamp-123456`) this is **not** the same as the project name you chose (e.g. `Wagon Bootcamp`). You will need the ID later when running terminal commands, but don't worry, you can always find it in Google Cloud.
 
@@ -65,13 +65,13 @@ You will now link your account to your credit card. This step is required or you
 
 ⚠️ In some cases, Google may charge your card (around €10) to verify that it is valid. This will unfortunately not be refunded once you are approved, but will be added as credit in Google Cloud that you can use once your free credits have been used or expired.
 
-![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/gcp-billing.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp-billing.png)
 
 - Click on **Billing**
 - Click on **MANAGE BILLING ACCOUNTS**
 - Click on **ADD BILLING ACCOUNT**
 - Give a name to your billing account, e.g. `My Billing Account`
-- Click on "I have read..." and agree the to the terms of service
+- Click on "I have read..." and agree to the terms of service
 - Click on **CONTINUE**
 - Select your account type: `Individual`
 - Fill your name and address
@@ -231,7 +231,7 @@ For many computers, this is already the case. Let's check:
 - Click on the `Performance` tab
 - Click on `CPU`
 
-![Windows task manager](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_task_manager.png)
+![Windows task manager](https://github.com/lewagon/setup/blob/master/images/windows_task_manager.png)
 
 :heavy_check_mark: If you see "Virtualization: Enabled", you're good to go :+1:
 
@@ -333,7 +333,7 @@ Once your computer has restarted, we need to download the WSL2 installer.
 - Click `Next`
 - Click `Finish`
 
-![Update WSL from version 1 to 2](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_update_wsl.png)
+![Update WSL from version 1 to 2](https://github.com/lewagon/setup/blob/master/images/windows_update_wsl.png)
 
 :heavy_check_mark: If didn't encounter any error message, you're good to go :+1:
 
@@ -450,7 +450,7 @@ Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 - Open the file you have just downloaded.
 - Install it with few options:
 
-![VS Code installation options](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_vscode_installation.png)
+![VS Code installation options](https://github.com/lewagon/setup/blob/master/images/windows_vscode_installation.png)
 
 When the installation is finished, launch VS Code.
 
@@ -474,7 +474,7 @@ code .
 
 :heavy_check_mark: If you see `WSL: Ubuntu` in the bottom left corner of the VS Code window, you're good to go :+1:
 
-![WSL Ubuntu Remote](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_remote_wsl.png)
+![WSL Ubuntu Remote](https://github.com/lewagon/setup/blob/master/images/windows_remote_wsl.png)
 
 :x: Otherwise, please **contact a teacher**
 
@@ -525,7 +525,7 @@ Press `Ctrl` + `,`
 
 It should open the terminal settings:
 
-![Windows Terminal Settings](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_terminal_settings.png)
+![Windows Terminal Settings](https://github.com/lewagon/setup/blob/master/images/windows_terminal_settings.png)
 
 - Change the default profile to "Ubuntu"
 - Click on "Save"
@@ -535,7 +535,7 @@ You may see an orange circle rather than a penguin as the logo for Ubuntu.
 
 We have circled in red the part you need to add:
 
-![Windows Terminal JSON settings file](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_terminal_settings_json.png)
+![Windows Terminal JSON settings file](https://github.com/lewagon/setup/blob/master/images/windows_terminal_settings_json.png)
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one.
 
@@ -607,9 +607,9 @@ In **VS Code**:
 
 1. Let's open the VS Code "Command **P**alette": type `Ctrl-Shift-P`.
 1. This will open the Command Palette: a small text box at the top of your screen. Start typing `aifeatures` until you see "Chat: Learn How to Hide AI features". Click on it.
-   ![The Command Palette at the top of the screen](https://github.com/lewagon/setup/blob/simplify-conso/images/vscode_find_aifeatures.png)
+   ![The Command Palette at the top of the screen](https://github.com/lewagon/setup/blob/master/images/vscode_find_aifeatures.png)
 1. This will open the settings, and will show you the option "Disable and hide built-in AI features ...". Tick the checkbox in front of that option.
-   ![Check the disable option](https://github.com/lewagon/setup/blob/simplify-conso/images/vscode_disable_aifeatures.png)
+   ![Check the disable option](https://github.com/lewagon/setup/blob/master/images/vscode_disable_aifeatures.png)
 
 Later, if you want **to reenable** the AI features, you can follow the same instructions to untick the checkbox.
 
@@ -661,7 +661,7 @@ sudo apt update
 ```
 
 ```bash
-sudo apt install -y curl git imagemagick jq unzip vim zsh tree
+sudo apt install -y curl git imagemagick jq unzip vim zsh tree direnv
 ```
 
 These commands will ask for your password: type it in.
@@ -716,7 +716,7 @@ If asked "Do you want to change your default shell to zsh?", press `Y`
 
 At the end your terminal should look like this:
 
-![Ubuntu terminal with OhMyZsh](https://github.com/lewagon/setup/blob/simplify-conso/images/oh_my_zsh.png)
+![Ubuntu terminal with OhMyZsh](https://github.com/lewagon/setup/blob/master/images/oh_my_zsh.png)
 
 :heavy_check_mark: If it does, you can continue :+1:
 
@@ -833,7 +833,7 @@ You may have an older version of the Le Wagon dotfiles. They could be incompatib
 
 1. Move into your existing dotfiles folder:
    ```bash
-   cd ~/code/$GITHUB_USERNAME/dotifles
+   cd ~/code/$GITHUB_USERNAME/dotfiles
    ```
 
 1. Check the diff against the current version of Le Wagon's dotfiles:
@@ -863,10 +863,12 @@ If there is no meaningful difference other than your name and email setting, con
 
 If you are OK with losing your existing dotfiles (recommended):
 
+Be aware that this will remove any personal changes you made to your shell configuration, like loading extra utilites, or changing the look and feel of your shell. If you're not aware of any changes you made yourself, this should be fine.
+
 1. Delete your existing dotfiles repository on GitHub.
 1. Delete the local repository:
     ```bash
-    cd ~/code && rm -rf ~/code/$GITHUB_USERNAME/dotifles
+    cd ~/code && rm -rf ~/code/$GITHUB_USERNAME/dotfiles
     ```
 1. Continue with the setup.
 
@@ -952,7 +954,7 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 ## Install Python and dependencies
 
-Your operating system - macOS, or Ubuntu (native, or inside WSL) - comes with a "system Python". That's a Python version your system depends on. We don't mess around with that one. We're going to do a professional setup of Python where you don't mess up your "system Python" and wher you'll be able to switch which version you want to use for each project you work on.
+Your operating system - macOS, or Ubuntu (native, or inside WSL) - comes with a "system Python". That's a Python version your system depends on. We don't mess around with that one. We're going to do a professional setup of Python where you don't mess up your "system Python" and where you'll be able to switch which version you want to use for each project you work on.
 
 To manage different Python versions and virtual environments (you'll discover what that means during the setup lecture), we will use the state-of-the-art [`uv` created by Astral](https://docs.astral.sh/uv/).
 
@@ -1004,13 +1006,13 @@ If it doesn't, check with a TA! Do not continue with the next step before you so
 
 ### Install dependencies
 
-Python is great for data, because the communitiy has developed an enormous amount of packages we can re-use.
+Python is great for data, because the community has developed an enormous amount of packages we can re-use.
 
 Let's install the most common ones:
 
 
 ``` bash
-uv pip install -r /linux.txt
+uv pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
 
 
@@ -1032,7 +1034,7 @@ This script adds a configuration to improve the display of the [`details` disclo
 
 If you're using Windows WSL, it also fixes some other problems.
 
-- It makes sure you're BROWSER is configured correctly. It was configured before, but was overwritten by the dotfiles setup.
+- It makes sure your browser is configured correctly. It was configured before, but was overwritten by the dotfiles setup.
 - It fixes a known bug with Jupyter Notebook always opening the directory tree, even if you specify a specific file path.
 
 
@@ -1065,27 +1067,27 @@ Your web browser should open on a `jupyter` window.
 
   Hit Open in Browser or go to http://localhost:8888/ (the url to use is available in the terminal).
 
-  ![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_port_forward.png)
+  ![](https://github.com/lewagon/data-setup/blob/master/images/jupyter_port_forward.png)
 
   On the first run, jupyter will ask for the token displayed in the terminal of your virtual machine in order to allow you to connect to the application from your local machine.
 
   Fill the token and hit Log in.
 
-  ![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_token.png)
+  ![](https://github.com/lewagon/data-setup/blob/master/images/jupyter_token.png)
 
   You are now interacting from your local machine with the jupyter application running in your virtual machine.
 </details>
 
 
-![jupyter.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter.png)
+![jupyter.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter.png)
 
 Click on `New` and in the dropdown menu select `Python 3 (ipykernel)`:
 
-![jupyter_new.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_new.png)
+![jupyter_new.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_new.png)
 
 A tab should open on a new notebook:
 
-![jupyter_notebook.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_notebook.png)
+![jupyter_notebook.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_notebook.png)
 
 Make sure that you are running the correct python version in the notebook. Open a cell and run:
 
@@ -1216,7 +1218,7 @@ Launch the app and sign in to `lewagon-alumni` organization.
 
 Make sure you **upload a profile picture** :point_down:
 
-![How to upload a profile picture on Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_profile_picture.gif)
+![How to upload a profile picture on Slack](https://github.com/lewagon/setup/blob/master/images/slack_profile_picture.gif)
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
@@ -1228,7 +1230,7 @@ To ensure that everything is working fine for video calls, let's test your camer
 - Below `Troubleshooting`, click `Run an audio, video and screensharing test`. The test will open in a new window.
 - Check that your preferred speaker, microphone and camera devices appear in the drop-down menus, then click `Start test`.
 
-![Check microphone and webcam with Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_call_test.png)
+![Check microphone and webcam with Slack](https://github.com/lewagon/setup/blob/master/images/slack_call_test.png)
 
 :heavy_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
 
@@ -1250,7 +1252,7 @@ In order to do that, let's create shortcuts to Ubuntu directories in the Windows
 - Dive into the Ubuntu file system in order to look for directories of interest
 - Drag the desired folders into the Address Bar in order to create shortcuts
 
-![How to add a shortcut to Ubuntu file system on Windows](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_ubuntu_file_system_shortcut.gif)
+![How to add a shortcut to Ubuntu file system on Windows](https://github.com/lewagon/setup/blob/master/images/windows_ubuntu_file_system_shortcut.gif)
 
 ### Open the Windows File Explorer from the Ubuntu terminal
 
@@ -1260,7 +1262,7 @@ Another option to move files around is to open the Windows **File Explorer** fro
 - Run the `explorer.exe .` command (alternatively, use `wslview .`)
 - If you get an input output error message, run `wsl --shutdown` in a Windows PowerShell and reopen an Ubuntu terminal
 
-![How to launch Windows Explorer from Ubuntu terminal](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_explorer_from_terminal.png)
+![How to launch Windows Explorer from Ubuntu terminal](https://github.com/lewagon/setup/blob/master/images/windows_explorer_from_terminal.png)
 
 ### Find your way in the Ubuntu File System
 
@@ -1272,7 +1274,7 @@ In order to convert a Windows path to and from an Ubuntu path:
 - Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
 - In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
 
-![How to access a Windows path from Ubuntu terminal](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_path_from_terminal.png)
+![How to access a Windows path from Ubuntu terminal](https://github.com/lewagon/setup/blob/master/images/windows_path_from_terminal.png)
 
 ### Pin apps to your taskbar
 
@@ -1280,7 +1282,7 @@ You are going to use most of the apps you've installed today really often. Let's
 
 To pin an app to your taskbar, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Pin to taskbar".
 
-![How to pin an app to the taskbar in Windows](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_taskbar.png)
+![How to pin an app to the taskbar in Windows](https://github.com/lewagon/setup/blob/master/images/windows_taskbar.png)
 
 You must pin:
 - Your terminal

@@ -14,7 +14,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
 
-![GitHub picture](https://github.com/lewagon/setup/blob/simplify-conso/images/github_picture.png)
+![GitHub picture](https://github.com/lewagon/setup/blob/master/images/github_picture.png)
 
 :point_right: **[Enable Two-Factor Authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub will send you text messages with a code when you try to log in. This is important for security and also will soon be required in order to contribute code on GitHub.
 
@@ -368,9 +368,9 @@ In **VS Code**:
 
 1. Let's open the VS Code "Command **P**alette": type `Ctrl-Shift-P`.
 1. This will open the Command Palette: a small text box at the top of your screen. Start typing `aifeatures` until you see "Chat: Learn How to Hide AI features". Click on it.
-   ![The Command Palette at the top of the screen](https://github.com/lewagon/setup/blob/simplify-conso/images/vscode_find_aifeatures.png)
+   ![The Command Palette at the top of the screen](https://github.com/lewagon/setup/blob/master/images/vscode_find_aifeatures.png)
 1. This will open the settings, and will show you the option "Disable and hide built-in AI features ...". Tick the checkbox in front of that option.
-   ![Check the disable option](https://github.com/lewagon/setup/blob/simplify-conso/images/vscode_disable_aifeatures.png)
+   ![Check the disable option](https://github.com/lewagon/setup/blob/master/images/vscode_disable_aifeatures.png)
 
 Later, if you want **to reenable** the AI features, you can follow the same instructions to untick the checkbox.
 
@@ -422,7 +422,7 @@ sudo apt update
 ```
 
 ```bash
-sudo apt install -y curl git imagemagick jq unzip vim zsh tree
+sudo apt install -y curl git imagemagick jq unzip vim zsh tree direnv
 ```
 
 These commands will ask for your password: type it in.
@@ -477,7 +477,7 @@ If asked "Do you want to change your default shell to zsh?", press `Y`
 
 At the end your terminal should look like this:
 
-![Ubuntu terminal with OhMyZsh](https://github.com/lewagon/setup/blob/simplify-conso/images/oh_my_zsh.png)
+![Ubuntu terminal with OhMyZsh](https://github.com/lewagon/setup/blob/master/images/oh_my_zsh.png)
 
 :heavy_check_mark: If it does, you can continue :+1:
 
@@ -878,7 +878,7 @@ Then:
 
 ## Install Python and dependencies
 
-Your operating system - macOS, or Ubuntu (native, or inside WSL) - comes with a "system Python". That's a Python version your system depends on. We don't mess around with that one. We're going to do a professional setup of Python where you don't mess up your "system Python" and wher you'll be able to switch which version you want to use for each project you work on.
+Your operating system - macOS, or Ubuntu (native, or inside WSL) - comes with a "system Python". That's a Python version your system depends on. We don't mess around with that one. We're going to do a professional setup of Python where you don't mess up your "system Python" and where you'll be able to switch which version you want to use for each project you work on.
 
 To manage different Python versions and virtual environments (you'll discover what that means during the setup lecture), we will use the state-of-the-art [`uv` created by Astral](https://docs.astral.sh/uv/).
 
@@ -930,13 +930,13 @@ If it doesn't, check with a TA! Do not continue with the next step before you so
 
 ### Install dependencies
 
-Python is great for data, because the communitiy has developed an enormous amount of packages we can re-use.
+Python is great for data, because the community has developed an enormous amount of packages we can re-use.
 
 Let's install the most common ones:
 
 
 ``` bash
-uv pip install -r /linux.txt
+uv pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
 
 
@@ -988,27 +988,27 @@ Your web browser should open on a `jupyter` window.
 
   Hit Open in Browser or go to http://localhost:8888/ (the url to use is available in the terminal).
 
-  ![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_port_forward.png)
+  ![](https://github.com/lewagon/data-setup/blob/master/images/jupyter_port_forward.png)
 
   On the first run, jupyter will ask for the token displayed in the terminal of your virtual machine in order to allow you to connect to the application from your local machine.
 
   Fill the token and hit Log in.
 
-  ![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_token.png)
+  ![](https://github.com/lewagon/data-setup/blob/master/images/jupyter_token.png)
 
   You are now interacting from your local machine with the jupyter application running in your virtual machine.
 </details>
 
 
-![jupyter.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter.png)
+![jupyter.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter.png)
 
 Click on `New` and in the dropdown menu select `Python 3 (ipykernel)`:
 
-![jupyter_new.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_new.png)
+![jupyter_new.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_new.png)
 
 A tab should open on a new notebook:
 
-![jupyter_notebook.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_notebook.png)
+![jupyter_notebook.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_notebook.png)
 
 Make sure that you are running the correct python version in the notebook. Open a cell and run:
 
@@ -1059,7 +1059,7 @@ Launch the app and sign in to `lewagon-alumni` organization.
 
 Make sure you **upload a profile picture** :point_down:
 
-![How to upload a profile picture on Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_profile_picture.gif)
+![How to upload a profile picture on Slack](https://github.com/lewagon/setup/blob/master/images/slack_profile_picture.gif)
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
@@ -1071,7 +1071,7 @@ To ensure that everything is working fine for video calls, let's test your camer
 - Below `Troubleshooting`, click `Run an audio, video and screensharing test`. The test will open in a new window.
 - Check that your preferred speaker, microphone and camera devices appear in the drop-down menus, then click `Start test`.
 
-![Check microphone and webcam with Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_call_test.png)
+![Check microphone and webcam with Slack](https://github.com/lewagon/setup/blob/master/images/slack_call_test.png)
 
 :heavy_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
 

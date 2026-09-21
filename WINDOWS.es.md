@@ -13,7 +13,7 @@ Por favor **léelas cuidadosamente y ejecuta todos los comandos en el siguiente 
 
 :point_right: **[Sube una foto](https://github.com/settings/profile)** y escribe tu nombre correctamente en tu cuenta GitHub. Esto es importante porque nosotros usaremos un tablero de comando interno con tu avatar. Por favor hazlo **ahora** antes de dar un paso más en esta guía.
 
-![Foto GitHub](https://github.com/lewagon/setup/blob/simplify-conso/images/github_picture.png)
+![Foto GitHub](https://github.com/lewagon/setup/blob/master/images/github_picture.png)
 
 :point_right: **[Habilita la Autenticación de Dos Factores (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub te enviará mensajes de texto con un código cuando intentes iniciar sesión. Esto es importante para la seguridad y también pronto será necesario para contribuir código en GitHub.
 
@@ -31,12 +31,12 @@ Por favor **léelas cuidadosamente y ejecuta todos los comandos en el siguiente 
 
 ⚠️ **Importante:** Al crear un proyecto nuevo, verás un campo **Organization**. Déjalo como **"No organization"**. No selecciones ni crees una organización. Elegir una organización aplica restricciones que pueden impedirte utilizar los servicios de Google Cloud durante el bootcamp.
 
-![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/gcp-create-project.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp-create-project.png)
 
 - Asígnale un nombre, por ejemplo, `Wagon Bootcamp`
 - Observa el `ID` que se crea automáticamente para el proyecto, por ejemplo, `wagon-bootcamp-123456`
 
-![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/gcp_project.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp_project.png)
 
 ℹ️ Anota el **Project ID** (por ejemplo, `wagon-bootcamp-123456`), que **no** es lo mismo que el nombre del proyecto que elegiste (por ejemplo, `Wagon Bootcamp`). Necesitarás el ID más adelante al ejecutar comandos en la terminal, pero no te preocupes: siempre puedes encontrarlo en Google Cloud.
 
@@ -64,7 +64,7 @@ Ahora vincularás tu cuenta a tu tarjeta de crédito. Este paso es obligatorio; 
 
 ⚠️ En algunos casos, Google puede hacer un cargo en tu tarjeta (de unos 10 €) para verificar que es válida. Desafortunadamente, no se reembolsará una vez aprobada, pero se añadirá como crédito en Google Cloud que podrás utilizar cuando hayas usado o hayan caducado tus créditos gratuitos.
 
-![](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/gcp-billing.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp-billing.png)
 
 - Haz clic en **Billing**
 - Haz clic en **MANAGE BILLING ACCOUNTS**
@@ -230,7 +230,7 @@ Normalmente ya es el caso en muchas computadoras. Verifiquemos:
 - Haz clic en la pestaña `Performance`
 - Haz clic en `CPU`
 
-![Windows task manager](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_task_manager.png)
+![Windows task manager](https://github.com/lewagon/setup/blob/master/images/windows_task_manager.png)
 
 :heavy_check_mark: Si ves "Virtualization: Enabled", entonces todo está bien :+1:
 
@@ -331,7 +331,7 @@ Cuando se reinicie tu computadora, descarga el instalador de WSL2.
 - Haz clic en `Next`
 - Haz clic en `Finish`
 
-![Actualiza WSL de la versión 1 a la 2](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_update_wsl.png)
+![Actualiza WSL de la versión 1 a la 2](https://github.com/lewagon/setup/blob/master/images/windows_update_wsl.png)
 
 :heavy_check_mark: Si no obtuviste ningún mensaje de error, entonces puedes continuar :+1:
 
@@ -498,7 +498,7 @@ Instala el editor de texto [Visual Studio Code](https://code.visualstudio.com).
 - Abre el archivo que acabas de descargar.
 - Instálalo con pocas opciones:
 
-![Opciones de instalación de VS Code](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_vscode_installation.png)
+![Opciones de instalación de VS Code](https://github.com/lewagon/setup/blob/master/images/windows_vscode_installation.png)
 
 Abre VS Code cuando termine la instalación.
 
@@ -522,7 +522,7 @@ code .
 
 :heavy_check_mark: Si ves `WSL: Ubuntu` en la esquina inferior izquierda de la ventana de VS Code, entonces todo está bien y puedes continuar :+1:
 
-![WSL Ubuntu Remote](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_remote_wsl.png)
+![WSL Ubuntu Remote](https://github.com/lewagon/setup/blob/master/images/windows_remote_wsl.png)
 
 :x: Si no es el caso, por favor **pídele ayuda a un profesor**.
 
@@ -573,7 +573,7 @@ Presiona `Ctrl` + `,`
 
 Debería abrir los parámetros de la terminal:
 
-![Parámetros de Windows Terminal](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_terminal_settings.png)
+![Parámetros de Windows Terminal](https://github.com/lewagon/setup/blob/master/images/windows_terminal_settings.png)
 
 - Cambia el perfil predeterminado a "Ubuntu"
 - Haz clic en "Save"
@@ -581,7 +581,7 @@ Debería abrir los parámetros de la terminal:
 
 Verás la parte a cambiar en un círculo rojo:
 
-![Archivo de parámetros JSON de Windows Terminal](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_terminal_settings_json.png)
+![Archivo de parámetros JSON de Windows Terminal](https://github.com/lewagon/setup/blob/master/images/windows_terminal_settings_json.png)
 
 Primero pídele a Ubuntu que inicie directamente dentro de tu Ubuntu Home Directory en vez de hacerlo desde Windows:
 - Localiza el `"name": "Ubuntu",`
@@ -651,9 +651,9 @@ En **VS Code**:
 
 1. Abramos la "Paleta de comandos" de VS Code: escribe `Ctrl-Shift-P`.
 1. Se abrirá la Paleta de comandos: una pequeña caja de texto en la parte superior de la pantalla. Empieza a escribir `aifeatures` hasta que veas "Chat: Learn How to Hide AI features". Haz clic en ella.
-  ![The Command Palette at the top of the screen](https://github.com/lewagon/setup/blob/simplify-conso/images/vscode_find_aifeatures.png)
+  ![The Command Palette at the top of the screen](https://github.com/lewagon/setup/blob/master/images/vscode_find_aifeatures.png)
 1. Esto abrirá la configuración y te mostrará la opción "Disable and hide built-in AI features ...". Marca la casilla delante de esa opción.
-  ![Check the disable option](https://github.com/lewagon/setup/blob/simplify-conso/images/vscode_disable_aifeatures.png)
+  ![Check the disable option](https://github.com/lewagon/setup/blob/master/images/vscode_disable_aifeatures.png)
 
 Más adelante, si quieres **volver a habilitar** las funciones de IA, puedes seguir las mismas instrucciones para desmarcar la casilla.
 
@@ -705,7 +705,7 @@ sudo apt update
 ```
 
 ```bash
-sudo apt install -y curl git imagemagick jq unzip vim zsh
+sudo apt install -y curl git imagemagick jq unzip vim zsh tree direnv
 ```
 
 Estos comandos te pedirán tu contraseña: escríbela.
@@ -751,7 +751,7 @@ Si te preguntan "Do you want to change your default shell to zsh?", presiona `Y`
 
 Cuando termines, tu terminal debería lucir así:
 
-![La terminal de Ubuntu con OhMyZsh](https://github.com/lewagon/setup/blob/simplify-conso/images/oh_my_zsh.png)
+![La terminal de Ubuntu con OhMyZsh](https://github.com/lewagon/setup/blob/master/images/oh_my_zsh.png)
 
 :heavy_check_mark: Si es el caso, puedes continuar :+1:
 
@@ -833,34 +833,8 @@ gh auth status
 
 Mejoremos la experiencia de tu máquina instalando los [dotfiles 🔗](https://github.com/lewagon/dotfiles) preconfigurados de Le Wagon. Son archivos de configuración para tu terminal, zsh, git y VS Code.
 
-### Hacer un fork de los dotfiles
 
-Para personalizar esta configuración, tendrás que hacer un **fork** del repositorio en tu propia cuenta de Github.
-
-Al hacer un **fork**, se crea una copia del repositorio en tu cuenta (`your_github_username/dotfiles`), que luego podrás modificar con tu información personal, como tu nombre.
-
-<details>
-<summary>❗ <strong>Si</strong> ya hiciste otro bootcamp de Le Wagon (<strong>Desarrollo Web, Desarrollo de Software con IA, Análisis de Datos, Ciencia de Datos e IA</strong>), abre esto primero ❗
-</summary>
-
-Es posible que tengas una versión anterior de los dotfiles de Le Wagon. Podrían ser incompatibles con la configuración actual.
-
-
-**Abre un ticket** con un TA y haz una de las siguientes cosas:
-- Compara tus dotfiles existentes con los [dotfiles 🔗](https://github.com/lewagon/dotfiles) actuales de Le Wagon, especialmente `.zshrc`, `.zprofile` y `settings.json`. Si no hay ninguna diferencia significativa aparte de tu nombre y correo electrónico, continúa con la configuración.
-- Si no te importa perder tus dotfiles existentes (recomendado):
-    - Elimina tu repositorio de dotfiles existente en GitHub y continúa con la configuración.
-    - Elimina el repositorio local: `rm -rf ~/code/<your_github_username>/dotifles`.
-- Si no quieres perder tus dotfiles existentes, recomendamos trabajar con ramas:
-    - En tu **portátil**, o donde tengas una copia **local** de **tu versión existente de los dotfiles**.
-    - Crea una rama de tu configuración existente de dotfiles (`git checkout -b old-setup`) y súbela a GitHub: `git push origin old-setup`.
-    - Vuelve a `master`: `git checkout master`.
-    - En la rama local `master`, ejecuta `git pull upstream master`, resuelve los conflictos, ejecuta `git commit -m "merged"` y `git push origin master`. Es importante que aceptes los cambios entrantes en los archivos `.zshrc`, `.zprofile` y `settings.json`.
-    - Continúa con la configuración.
-
-</details>
-
-<br>
+### Obtener tu nombre de usuario de GitHub
 
 Ejecuta el siguiente comando:
 
@@ -869,16 +843,122 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-✔️ Deberías ver tu nombre de usuario de Github impreso.
+✔️ Deberías ver tu nombre de usuario de GitHub en la pantalla.
 
 ❌ Si no es así, detente aquí y pide ayuda. Puede haber un problema con el paso anterior (`gh auth`).
 
-Es hora de hacer un fork del repositorio y clonarlo en tu ordenador:
+
+### Crear un fork de los dotfiles
+
+Para personalizar esta configuración, tendrás que crear un **fork** del repositorio en tu propia cuenta de GitHub.
+
+Crear un **fork** genera una copia del repositorio en tu cuenta (`your_github_username/dotfiles`), que luego podrás modificar con tus datos personales, como tu nombre.
+
+<details>
+<summary>❗ <strong>Si ya hiciste otro bootcamp de Le Wagon</strong> (<em>Desarrollo web, Desarrollo de software con IA, Análisis de datos, Ciencia de datos e IA</em>), <strong>abre un ticket con un TA</strong> y abre esta sección para ver las instrucciones ❗
+</summary>
+
+Es posible que tengas una versión antigua de los dotfiles de Le Wagon. Podrían ser incompatibles con la configuración actual.
+
+
+**Junto con un TA**, haz una de las siguientes acciones:
+
+<details>
+<summary>Estoy usando <strong>la misma máquina</strong> (o una máquina nueva que ya tiene los dotfiles).</summary>
+
+1. Ve a tu carpeta actual de dotfiles:
+   ```bash
+   cd ~/code/$GITHUB_USERNAME/dotfiles
+   ```
+
+1. Comprueba las diferencias con la versión actual de los dotfiles de Le Wagon:
+    ```bash
+    git diff upstream/master
+    ```
+
+Si no hay diferencias importantes aparte de tu nombre y correo electrónico, continúa con la configuración.
+
+</details>
+
+<details>
+<summary>Estoy usando <strong>una máquina nueva</strong> sin los dotfiles.</summary>
+
+1. Ve a GitHub y encuentra tu repositorio de `dotfiles`.
+
+1. Comprueba cuántos commits por detrás y por delante está de `lewagon/dotfiles:master`. Puedes verlo justo encima de la lista de archivos.
+
+1. Haz clic en los enlaces de commits por detrás y por delante, y desplázate hacia abajo para ver las diferencias.
+
+Si no hay diferencias importantes aparte de tu nombre y correo electrónico, continúa con la configuración.
+
+</details>
+
+<details>
+<summary>El paso anterior mostró <strong>diferencias importantes</strong>.</summary>
+
+Si estás de acuerdo con perder tus dotfiles actuales (recomendado):
+
+Ten en cuenta que esto eliminará cualquier cambio personal que hayas hecho en la configuración de tu shell, como cargar utilidades adicionales o cambiar su apariencia. Si no recuerdas haber hecho cambios, no debería haber ningún problema.
+
+1. Elimina tu repositorio actual de dotfiles en GitHub.
+1. Elimina el repositorio local:
+    ```bash
+    cd ~/code && rm -rf ~/code/$GITHUB_USERNAME/dotfiles
+    ```
+1. Continúa con la configuración.
+
+<details>
+<summary>Si no quieres perder tus dotfiles actuales, te recomendamos trabajar con ramas. Haz clic para abrir.</summary>
+
+En tu **portátil**, o donde tengas una copia **local** de **tu versión actual de los dotfiles**.
+
+1. Haz commit de tu versión actual de los dotfiles:
+
+    ```bash
+    git add .
+    git status # Comprueba qué se incluirá en el commit
+    git commit -m "Version prior to new setup"
+    ```
+
+1. Crea una rama de tu configuración actual de dotfiles y súbela a GitHub:
+    
+    ```bash
+    git checkout -b old-setup
+    git push origin old-setup
+    ```
+
+1. Vuelve a `master`: `git checkout master`.
+
+1. En tu `master` local, ejecuta `git pull upstream master`.
+
+1. Comprueba que no estés en estado `MERGING`. Si lo estás, resuelve los conflictos.
+    
+    Es importante que aceptes los cambios entrantes en los archivos `.zshrc`, `.zprofile` y `settings.json`, especialmente todo lo relacionado con `pyenv` y los entornos de Python.
+
+    Si hay demasiados conflictos, usa tu editor de código para reemplazar el contenido de los archivos en conflicto por el de los [dotfiles de Le Wagon](https://www.github.com/lewagon/dotfiles).
+
+    Haz commit de la resolución de conflictos: `git commit --no-edit`
+
+1. Sube tus cambios a GitHub: `git push origin master`.
+
+1. Continúa con la configuración.
+
+</details>
+
+</details>
+
+</details>
+
+<br>
+
+Es hora de crear un fork del repositorio y clonarlo en tu ordenador:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
+
+Si aparece la pregunta _"Are you sure you want to continue connecting (yes/no/[fingerprint])?"_, escribe `yes` y pulsa `Enter`.
 
 ### Instalar los dotfiles
 
@@ -900,11 +980,11 @@ Ejecuta el instalador de git:
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
-:point_up: Se te pedirá (**prompt**) tu nombre (`Nombre Apellido`) y tu correo electrónico.
+:point_up: Se te pedirá tu nombre (`FirstName LastName`) y tu correo electrónico.
 
-:warning: **Debes** introducir uno de los correos electrónicos indicados arriba mediante el comando anterior `gh api ...`. Si no lo haces, Kitt no podrá realizar el seguimiento de tu progreso.
+:warning: **Debes** introducir uno de los correos que aparecen arriba, obtenidos con el comando `gh api ...`. Si no lo haces, Kitt no podrá realizar un seguimiento de tu progreso.
 
-💡 Selecciona la dirección `...@users.noreply.github.com` si no quieres que tu correo electrónico aparezca en repositorios públicos a los que contribuyas.
+💡 Selecciona la dirección `...@users.noreply.github.com` si no quieres que tu correo aparezca en repositorios públicos a los que contribuyas.
 
 
 ## Instalar Python y sus dependencias
@@ -967,7 +1047,7 @@ Instalemos los más comunes:
 
 
 ``` bash
-uv pip install -r /linux.txt
+uv pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/linux.txt
 ```
 
 
@@ -989,7 +1069,7 @@ Este script añade una configuración para mejorar la visualización de los [ele
 
 Si estás usando Windows WSL, también soluciona otros problemas.
 
-- Se asegura de que tu variable BROWSER esté configurada correctamente. Se configuró antes, pero fue sobrescrita por la configuración de dotfiles.
+- Se asegura de que tu navegador esté configurado correctamente. Ya estaba configurado, pero la configuración de dotfiles lo sobrescribió.
 - Soluciona un error conocido en Jupyter Notebook que siempre abre el árbol de directorios, incluso si especificas una ruta de archivo específica.
 
 
@@ -1019,15 +1099,15 @@ jupyter notebook
 
 Tu navegador web debería abrir en una ventana `jupyter`:
 
-![jupyter.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter.png)
+![jupyter.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter.png)
 
 Haz clic en `New` y, en el menú desplegable, selecciona Python 3 (ipykernel):
 
-![jupyter_new.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_new.png)
+![jupyter_new.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_new.png)
 
 Debería abrirse una pestaña en un nuevo notebook:
 
-![jupyter_notebook.png](https://github.com/lewagon/data-setup/blob/pyenv-to-uv/images/jupyter_notebook.png)
+![jupyter_notebook.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_notebook.png)
 
 Asegúrate de que estés usando la versión correcta de python en el notebook. Abre una celda y ejecuta lo siguiente:
 ``` python
@@ -1156,7 +1236,7 @@ Abre la aplicación e inicia sesión en `lewagon-alumni`.
 
 Asegúrate de **subir una foto para tu perfil** :point_down:
 
-![Cómo subir una foto de perfil en Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_profile_picture.gif)
+![Cómo subir una foto de perfil en Slack](https://github.com/lewagon/setup/blob/master/images/slack_profile_picture.gif)
 
 La idea es tener Slack abierto todo el día para compartir enlaces útiles / pedir ayuda / decidir dónde almorzar / etc.
 
@@ -1169,7 +1249,7 @@ Para asegurarte de que todo lo relacionado a videollamadas funcione bien, prueba
 - Comprueba que tus dispositivos preferidos de altavoz, micrófono y cámara aparecen en los menús desplegables y haz clic en "Iniciar prueba"
 - Haz clic en el botón verde "Start test"
 
-![Chequea el micrófono y la cámara con Slack](https://github.com/lewagon/setup/blob/simplify-conso/images/slack_call_test.png)
+![Chequea el micrófono y la cámara con Slack](https://github.com/lewagon/setup/blob/master/images/slack_call_test.png)
 
 :heavy_check_mark: Cuando termine el test deberías ver mensajes de "Succeed" en verde por lo menos para tu micrófono y tu cámara. :+1:
 
@@ -1191,7 +1271,7 @@ Para ello, vamos a crear atajos a directorios Ubuntu en el **Explorador de Archi
 - Navega por el sistema de archivos de Ubuntu para encontrar los directorios que te interesen
 - Arrastra las carpetas que te interesen a la Barra de Direcciones para crear atajos
 
-![Cómo agregar un atajo al sistema de archivos de Ubuntu en Windows](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_ubuntu_file_system_shortcut.gif)
+![Cómo agregar un atajo al sistema de archivos de Ubuntu en Windows](https://github.com/lewagon/setup/blob/master/images/windows_ubuntu_file_system_shortcut.gif)
 
 ### Abre el Explorador de Archivos de Windows desde la terminal de Ubuntu
 
@@ -1201,7 +1281,7 @@ Otra opción para mover archivos es abrir el **Explorador de Archivos** de Windo
 - Ejecuta el comando `explorer.exe .` (Otra alternativa es usar `wslview .`)
 - Si obtienes un mensaje de input output error, ejecuta `wsl --shutdown` en una PowerShell de Windows y abre la terminal de Ubuntu nuevamente
 
-![Cómo abrir Windows Explorer desde la terminal de Ubuntu](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_explorer_from_terminal.png)
+![Cómo abrir Windows Explorer desde la terminal de Ubuntu](https://github.com/lewagon/setup/blob/master/images/windows_explorer_from_terminal.png)
 
 ### Uso del Sistema de Archivos de Ubuntu
 
@@ -1213,7 +1293,7 @@ Para convertir una ruta Windows a una Ubuntu y viceversa:
 - Usa el comando `wslpath -w "/home"` para traducir una ruta Ubuntu a una Windows
 - El comando `wslpath -w $(pwd)` devuelve la ruta Windows del directorio Ubuntu actual
 
-![Cómo acceder a una ruta Windows desde una terminal de Ubuntu](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_path_from_terminal.png)
+![Cómo acceder a una ruta Windows desde una terminal de Ubuntu](https://github.com/lewagon/setup/blob/master/images/windows_path_from_terminal.png)
 
 ### Anclaje de aplicaciones a tu barra de tareas
 
@@ -1221,7 +1301,7 @@ Usarás frecuentemente casi todas las aplicaciones que has instalado hoy. ¡Ancl
 
 Para ello, abre la aplicación. Haz clic derecho en el ícono de la barra de tareas para hacer que aparezca el menú contextual (también llamado emergente) y selecciona "Pin to taskbar".
 
-![Cómo anclar una aplicación a la barra de tareas en Windows](https://github.com/lewagon/setup/blob/simplify-conso/images/windows_taskbar.png)
+![Cómo anclar una aplicación a la barra de tareas en Windows](https://github.com/lewagon/setup/blob/master/images/windows_taskbar.png)
 
 Ancla lo siguiente:
 - Tu terminal
