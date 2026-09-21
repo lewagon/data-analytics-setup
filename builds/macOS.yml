@@ -19,7 +19,7 @@ partials:
   - data_setup/nbextensions
   - data_setup/python_checkup
   - insomnia
-  - gcp_cli_setup
+  - data_setup/gcp_cli_setup
   - data_setup/gcp_setup
   - data_setup/kitt
   - setup/macos_slack
