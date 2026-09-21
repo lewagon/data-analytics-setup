@@ -7,7 +7,7 @@ partials:
   - gcp_account_setup_intro
   - data_setup/gcp_account_setup
   - setup/ubuntu_vscode
-  - data_setup/vscode_extensions
+  - vscode_extensions
   - setup/vscode_aifeatures
   - setup/cli_tools
   - setup/oh_my_zsh

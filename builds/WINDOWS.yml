@@ -12,7 +12,7 @@ partials:
   - setup/windows_ubuntu
   - setup/windows_vscode
   - setup/windows_terminal
-  - data_setup/vscode_extensions
+  - vscode_extensions
   - setup/vscode_aifeatures
   - setup/cli_tools
   - setup/oh_my_zsh
