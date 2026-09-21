@@ -567,6 +567,7 @@ This terminal has tabs: you can choose to open a new terminal tab by clicking on
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.
 
 
+
 ## VS Code Extensions
 
 ### Installation
@@ -585,6 +586,7 @@ code --install-extension alexcvzz.vscode-sqlite
 ```
 
 Here is a list of the extensions you are installing:
+
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)

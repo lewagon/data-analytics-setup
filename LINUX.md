@@ -202,6 +202,7 @@ code
 :x: Otherwise, please **contact a teacher**
 
 
+
 ## VS Code Extensions
 
 ### Installation
@@ -220,6 +221,7 @@ code --install-extension alexcvzz.vscode-sqlite
 ```
 
 Here is a list of the extensions you are installing:
+
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
