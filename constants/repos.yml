@@ -1,7 +1,7 @@
 
 branches:
-  setup: simplify-conso
-  data-setup: pyenv-to-uv
+  setup: master
+  data-setup: master
 
 
 aliases:
