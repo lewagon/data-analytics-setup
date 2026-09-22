@@ -1,6 +1,6 @@
 
 os: linux
-locales: [en]
+locales: [en, es]
 partials:
   - intro
   - setup/github
@@ -14,27 +14,18 @@ partials:
     vars:
       vm_hostname: da-bootcamp-vm
   - vscode_extensions
+  - setup/vscode_aifeatures
   - setup/cli_tools
   - setup/oh_my_zsh
-  - direnv
   - setup/gh_cli
   - de_setup/ubuntu_gcloud
   - de_setup/gcp_setup_linux
-  - dotfiles
-  - dotfiles_new_student
-  - dotfiles_new_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_same_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_installer
+  - data-setup/dotfiles
   - de_setup/zsh_default_terminal
-  - setup/ssh_agent
-  - ubuntu_python
-  - virtualenv
-  - pip
-  - nbextensions
-  - python_checkup
-  - kitt
+  - data_setup/install_python
+  - data_setup/nbextensions
+  - data_setup/python_checkup
+  - data_setup/kitt
   - setup/windows_slack
   - setup/slack_settings
   - bonus

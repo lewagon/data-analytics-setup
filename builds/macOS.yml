@@ -1,38 +1,28 @@
 
 os: macos
-locales: [en]
+locales: [en, es]
 partials:
   - intro
   - setup/github
-  - gcp_account_setup
-  - osx_silicon
+  - gcp_account_setup_intro
+  - data_setup/gcp_account_setup
+  - data_setup/osx_silicon
   - setup/macos_command_line_tools
-  - homebrew
+  - setup/macos_homebrew
   - setup/macos_vscode
   - vscode_extensions
+  - setup/vscode_aifeatures
   - setup/oh_my_zsh
-  - direnv
   - setup/gh_cli
-  - dotfiles
-  - dotfiles_new_student
-  - dotfiles_new_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_same_laptop
-  - dotfiles_merge_upstream
-  - dotfiles_installer
-  - conda_uninstall
-  - osx_python
-  - virtualenv
-  - pip
-  - nbextensions
-  - python_checkup
+  - data_setup/dotfiles
+  - data_setup/install_python
+  - data_setup/nbextensions
+  - data_setup/python_checkup
   - insomnia
-  - gcp_cli_setup
-  - gcp_setup
-  - gcp_setup_mid
-  - gcp_setup_end
-  - kitt
+  - data_setup/gcp_cli_setup
+  - data_setup/gcp_setup
+  - data_setup/kitt
   - setup/macos_slack
   - setup/slack_settings
-  - setup/macos_settings
+  - macos_settings
   - bonus

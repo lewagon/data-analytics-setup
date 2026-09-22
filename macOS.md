@@ -21,29 +21,29 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 ## Google Cloud Platform setup
 
-[GCP](https://cloud.google.com/) is a cloud solution that you are going to use in order to deploy your Machine Learning-based products to production.
+[Google Cloud](https://cloud.google.com/) is a cloud solution that you are going to use in order to deploy your Machine Learning-based products to production.
 
-🚨 If you are a student of the **Part-Time Bootcamp**, SKIP THIS SECTION FOR NOW! **GCP** offers $300 worth of free credits for a duration of 3 months. You do not want to activate your GCP account too soon 🙅‍♂️
+
 
 ### Project setup
 
 - Go to [Google Cloud](https://console.cloud.google.com/) and create an account if you do not already have one
 - In the Cloud Console, on the project list, select or create a Cloud project
 
-⚠️ **Important:** When creating a new project, you will see an **Organization** field. Leave this set to **"No organization"**. Do not select or create an organization. Choosing an organization applies restrictions that can prevent you from using GCP services during the bootcamp.
+⚠️ **Important:** When creating a new project, you will see an **Organization** field. Leave this set to **"No organization"**. Do not select or create an organization. Choosing an organization applies restrictions that can prevent you from using Google Cloud services during the bootcamp.
 
-![](images/gcp-create-project.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp-create-project.png)
 
 - Give it a name such as `Wagon Bootcamp` for example
 - Notice the `ID` automatically created for the project, e.g. `wagon-bootcamp-123456`
 
-![](images/gcp_project.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp_project.png)
 
-ℹ️ Note the **Project ID** (e.g. `wagon-bootcamp-123456`) this is **not** the same as the project name you chose (e.g. `Wagon Bootcamp`). You will need the ID later when running terminal commands, but don't worry, you can always find it in GCP.
+ℹ️ Note the **Project ID** (e.g. `wagon-bootcamp-123456`) this is **not** the same as the project name you chose (e.g. `Wagon Bootcamp`). You will need the ID later when running terminal commands, but don't worry, you can always find it in Google Cloud.
 
 ### Account language
 
-In order to facilitate the following of the instructions during the bootcamp, open your GCP account preferences:
+In order to facilitate the following of the instructions during the bootcamp, open your Google Cloud account preferences:
 
 [https://myaccount.google.com/language](https://myaccount.google.com/language)
 
@@ -61,28 +61,28 @@ Then switch the language to english:
 
 ### Billing account
 
-You will now link your account to your credit card. This step is required or you will not be able to use the services provided by GCP. Do not worry, you will be able to consume most GCP services through free credits throughout the bootcamp.
+You will now link your account to your credit card. This step is required or you will not be able to use the services provided by Google Cloud. Do not worry, you will be able to consume most Google Cloud services through free credits throughout the bootcamp.
 
-⚠️ In some cases, Google may charge your card (around €10) to verify that it is valid. This will unfortunately not be refunded once you are approved, but will be added as credit in GCP that you can use once your free credits have been used or expired.
+⚠️ In some cases, Google may charge your card (around €10) to verify that it is valid. This will unfortunately not be refunded once you are approved, but will be added as credit in Google Cloud that you can use once your free credits have been used or expired.
 
-![](images/gcp-billing.png)
+![](https://github.com/lewagon/data-setup/blob/master/images/gcp-billing.png)
 
 - Click on **Billing**
 - Click on **MANAGE BILLING ACCOUNTS**
 - Click on **ADD BILLING ACCOUNT**
 - Give a name to your billing account, e.g. `My Billing Account`
-- Click on "I have read..." and agree the to the terms of service
+- Click on "I have read..." and agree to the terms of service
 - Click on **CONTINUE**
 - Select your account type: `Individual`
 - Fill your name and address
 
-You should see that you have a free credit of "$300 credits over the next 90days".
+You should see that you have a free credit of "$300 credits over the next 90 days".
 
 - Click on card details
 - Enter your credit card info
 - Click on **START MY FREE TRIAL**
 
-Once this is done, verify that your billing account is linked to your GCP project.
+Once this is done, verify that your billing account is linked to your Google Cloud project.
 
 - Select your project
 - Go to **Billing**
@@ -115,14 +115,14 @@ Download the Revolut app, or go to [revolut](https://www.revolut.com/a-radically
 
 Once this is done, select the standard (free) plan. No need to add the card to Apple pay, or ask for a the delivery of a physical card, or add money securely.
 
-You now have a virtual card which we will use for the GCP setup.
+You now have a virtual card which we will use for the Google Cloud setup.
 
 In the main view of the Revolut app
 
 - Click on Ready to use
 - Click on the card
 - Click on Show card details
-- Note down the references of the virtual credit card and use them in order to proceed with the GCP setup
+- Note down the references of the virtual credit card and use them in order to proceed with the Google Cloud setup
 
 </details>
 
@@ -134,7 +134,7 @@ This may happen especially in case you just setup a Revolut account.
 - Click on PROCEED TO VERIFICATION
 - You will be asked to send a picture of your credit card (only the last 4 digits, no other info)
 - In case you used **Revolut**, you can send a screenshot of your virtual credit card (do not forget to remove the validity date from the screenshot)
-- Explain that you are attending the Le Wagon bootcamp, do not own a credit card, and have just created a Revolut account in order to setup GCP for the bootcamp using a virtual credit card
+- Explain that you are attending the Le Wagon bootcamp, do not own a credit card, and have just created a Revolut account in order to setup Google Cloud for the bootcamp using a virtual credit card
 
 You may receive a validation or requests for more information within 30 minutes.
 
@@ -142,7 +142,7 @@ Once the verification goes through, you should receive an email stating that "Yo
 
 </details>
 
-### Enabling GCP services
+### Enabling Google Cloud services
 
 - Make sure that billing is enabled for your Google Cloud project
 
@@ -153,40 +153,16 @@ Once the verification goes through, you should receive an email stating that "Yo
 That's it for the browser setup! Terminal setup comes later in this guide.
 
 
-## Apple Silicon Chips
+## Check your processor
 
-If you bought your computer after late 2020, chances are it has a new Apple silicon chip instead of an Intel processor: let's find out.
+In line with our laptop requirements, this setup only supports Apple silicon architectures. **The setup does not work on Macs with Intel processors.**
 
-Open a new terminal window from Applications > Utilities or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014):
+If you purchased your Mac after late 2020, it likely features an Apple silicon chip.
 
-![Open Terminal on macOS](images/macos_open_terminal.png)
+To verify your processor, click the Apple icon in the top-left corner of your screen and select *"About This Mac"*. Check the *"Chip"* (or *"Processor"*) field:
 
-Copy-paste the following command in the terminal and hit `Enter` to execute.
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
-```
-
-☝️ The result of the command should indicate whether your computer uses Apple Silicon.
-
-If your computer uses **Apple Silicon**, expand the paragraph below and go through it. Otherwise ignore it.
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
-
-You want to make sure that you are **not using** Rosetta, which is a way to use your Terminal as if you had an Intel computer.
-
-Open the Finder app (or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014)).
-
-Go to Applications > Utilities.
-
-Locate the Terminal app (select it).
-
-Press `Cmd` + `I` on the Terminal app, then verify that the box "Open using Rosetta" is **unchecked**.
-In case you don't see this box, just continue.
-</details>
-
-🚨 Keep this in mind. You will need to remember later on in the setup whether your computer uses an Apple Silicon chip or is an Apple Intel version
+- ✔️ If it lists *"Apple"*, your machine is compatible.
+- ❌ If it says *"Intel"*, your Mac is not supported. You cannot continue the setup, contact the teaching crew.
 
 
 ## A note about quitting apps on a Mac
@@ -199,7 +175,11 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open a new terminal, copy-paste the following command and hit `Enter`:
+Open a new terminal window from Launchpad > Other, or from Finder > Applications > Utilities, or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014):
+
+![Open Terminal on macOS](https://github.com/lewagon/setup/blob/master/images/macos_open_terminal.png)
+
+Copy-paste the following command and hit `Enter`:
 
 ```bash
 xcode-select --install
@@ -231,73 +211,44 @@ Once this is done, you can try to install again.
 
 ## Homebrew
 
-### 1. Install:
+[Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
 
-On Mac, you need to install [Homebrew](http://brew.sh/) which is a Package Manager.
-It will be used as soon as we need to install some software.
-To do so, open your Terminal and run:
+Open a terminal and run:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
-:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
 
-<details>
-  <summary>🛠 If you get a <code>Error: Not a valid ref: refs/remotes/origin/master</code> error</summary>
-
-The full error would be:
-
-``` bash
-Error: Not a valid ref: refs/remotes/origin/master :
-fatal: ambiguous argument 'refs/remotes/origin/master': unknown revision or path not in the working tree.
-```
-
-Run the following commands to solve it:
-
-``` bash
-rm -fr $(brew --repo homebrew/core)  # because you can't `brew untap homebrew/core`
-brew tap homebrew/core
-```
-
-</details>
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
-### 2. Make sure you are on the latest version:
+Once Homebrew has finished installing, run these two commands to add it to your `PATH`:
+
+```bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Make sure you're on the latest version:
 
 ```bash
 brew update
 ```
 
-<details>
-  <summary>🛠 If you get a <code>/usr/local must be writable</code> error</summary>
-
-Just run this:
-
-``` bash
-sudo chown -R $USER:admin /usr/local
-brew update
-```
-
-</details>
-
-### 3. Then install some useful software:
-
-Proceed running the following in the terminal (you can copy / paste all the lines at once).
+Then install some useful software (you can copy / paste all the lines at once):
 
 ```bash
-brew upgrade git         || brew install git
-brew upgrade gh          || brew install gh
-brew upgrade wget        || brew install wget
-brew upgrade imagemagick || brew install imagemagick
-brew upgrade jq          || brew install jq
-brew upgrade openssl     || brew install openssl
-brew upgrade tree        || brew install tree
-brew upgrade ncdu        || brew install ncdu
-brew upgrade xz          || brew install xz
-brew upgrade readline    || brew install readline
+brew upgrade git         || brew install -y git
+brew upgrade gh          || brew install -y gh
+brew upgrade wget        || brew install -y wget
+brew upgrade imagemagick || brew install -y imagemagick
+brew upgrade jq          || brew install -y jq
+brew upgrade openssl     || brew install -y openssl
+brew upgrade tree        || brew install -y tree
+brew upgrade direnv      || brew install -y direnv
 ```
 
 
@@ -354,6 +305,25 @@ Here is a list of the extensions you are installing:
 - [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
 
+### VS Code AI Features
+
+VS Code includes many powerful **AI features**, which are a great tool once you already know how to code.
+
+That said, relying on AI too early can hide important concepts and make debugging harder to understand. Once you’re comfortable with the fundamentals, you’ll know when and how to use AI effectively — without letting it do the thinking for you.
+
+For the start of the bootcamp, we’ll disable these features. At the right point in the course, we’ll reenable them so you can put them to good use.
+
+In **VS Code**:
+
+1. Let's open the VS Code "Command **P**alette": type `Cmd-Shift-P`.
+1. This will open the Command Palette: a small text box at the top of your screen. Start typing `aifeatures` until you see "Chat: Learn How to Hide AI features". Click on it.
+   ![The Command Palette at the top of the screen](https://github.com/lewagon/setup/blob/master/images/vscode_find_aifeatures.png)
+1. This will open the settings, and will show you the option "Disable and hide built-in AI features ...". Tick the checkbox in front of that option.
+   ![Check the disable option](https://github.com/lewagon/setup/blob/master/images/vscode_disable_aifeatures.png)
+
+Later, if you want **to reenable** the AI features, you can follow the same instructions to untick the checkbox.
+
+
 ## Oh-my-zsh
 
 Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
@@ -373,18 +343,6 @@ At the end your terminal should look like this:
 :heavy_check_mark: If it does, you can continue :+1:
 
 :x: Otherwise, please **ask for a teacher**
-
-
-## direnv
-
-[direnv](https://direnv.net/) is a shell extension. It makes it easy to deal with per project environment variables. This will be useful in order to customize the behavior of your code.
-
-
-``` bash
-brew install direnv
-echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-```
-
 
 
 ## GitHub CLI
@@ -443,183 +401,144 @@ gh auth status
 
 ## Dotfiles
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub.
+Let's enhance the experience of your machine by installing Le Wagon's pre-configured [dotfiles 🔗](https://github.com/lewagon/dotfiles). These are configuration files for your terminal, zsh, git, and VS Code.
 
-### Check your GitHub CLI configuration
 
-First, let's do a quick check. Open your terminal and run the following command:
+### Get your GitHub username
+
+Run the following command:
 
 ```bash
 export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
-There seems to be a problem with the previous step (`gh auth`).
+✔️ You should see your Github username printed.
 
-### Fork and/or clone dotfiles
+❌ If not, stop here and ask for help. There may be a problem with the previous step (`gh auth`).
 
-There are three options, choose **one**:
 
+### Forking the dotfiles
+
+To customise this configuration for yourself, you'll need to **fork** the repository to your own Github account.
+
+**Forking** creates a copy of the repository under your account (`your_github_username/dotfiles`), which you can then modify with your personal information, such as your name.
 
 <details>
-    <summary>
-        <strong>I did not attend the Web Dev or Data Science & AI or Data Analytics bootcamp at Le Wagon</strong>
-    </summary>
+<summary>❗ <strong>If you already did another Le Wagon bootcamp</strong> (<em>Web Development, AI Software Development, Data Analytics, Data Science & AI</em>, <strong>open a ticket with a TA</strong> and open this for instructions ❗
+</summary>
 
- As your configuration is personal, you need your own repository storing it, so you'll need to fork it to your GitHub account.
+You may have an older version of the Le Wagon dotfiles. They could be incompatible with the current setup.
 
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those
-files.
 
-Lets' run this command to fork the repo, and clone it on your laptop:
+**Together with a TA**, do one of the following:
+
+<details>
+<summary>I'm using <strong>the same machine</strong> (or a new machine which already has the dotfiles).</summary>
+
+1. Move into your existing dotfiles folder:
+   ```bash
+   cd ~/code/$GITHUB_USERNAME/dotfiles
+   ```
+
+1. Check the diff against the current version of Le Wagon's dotfiles:
+    ```bash
+    git diff upstream/master
+    ```
+
+If there is no meaningful difference other than your name and email setting, continue with the setup.
+
+</details>
+
+<details>
+<summary>I'm using <strong>a new machine</strong> without the dotfiles.</summary>
+
+1. Browse to GitHub and find your `dotfiles` repository.
+
+1. Check how many commits it's behind and ahead `lewagon/dotfiles:master`. You can see this just above the file list.
+
+1. Click through to the behind and the ahead, and scroll down to see the diffs.
+
+If there is no meaningful difference other than your name and email setting, continue with the setup.
+
+</details>
+
+<details>
+<summary>The previous step revealed <strong>meaningful differences</strong>.</summary>
+
+If you are OK with losing your existing dotfiles (recommended):
+
+Be aware that this will remove any personal changes you made to your shell configuration, like loading extra utilites, or changing the look and feel of your shell. If you're not aware of any changes you made yourself, this should be fine.
+
+1. Delete your existing dotfiles repository on GitHub.
+1. Delete the local repository:
+    ```bash
+    cd ~/code && rm -rf ~/code/$GITHUB_USERNAME/dotfiles
+    ```
+1. Continue with the setup.
+
+<details>
+<summary>If you do not want to lose your existing dotfiles, we recommend working with branches. Click to open.</summary>
+
+On your **laptop**, or wherever you have a **local** copy of **your existing version of dotfiles**.
+
+1. Commit your current version of your dotfiles:
+
+    ```bash
+    git add .
+    git status # Check what will be committed
+    git commit -m "Version prior to new setup"
+    ```
+
+1. Create a branch of your current dotfiles setup, and push to GitHub:
+    
+    ```bash
+    git checkout -b old-setup
+    git push origin old-setup
+    ```
+
+1. Go back to `master`: `git checkout master`.
+
+1. On local `master`, `git pull upstream master`.
+
+1. Check that you're not in `MERGING` state. If you are, resolve any conflicts.
+    
+    It is important that you accept incoming changes to the `.zshrc`, `.zprofile`, and `settings.json` files. Especially anything related to `pyenv` and to Python environments.
+
+    If there are too many conficts, use your code editor to replace the contents of the conflicting files with the ones from [the Le Wagon dotfiles](https://www.github.com/lewagon/dotfiles).
+
+    Commit your conflict resolution: `git commit --no-edit`
+
+1. Push your changes to GitHub: `git push origin master`.
+
+1. Continue with the setup.
+
+</details>
+
+</details>
+
+</details>
+
+<br>
+
+Time to fork the repo and clone it on your computer:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
 
-</details>
+If you're asked _"Are you sure you want to continue connecting (yes/no/[fingerprint])?"_, type `yes` followed by `Enter`.
 
+### Installing the dotfiles
 
-<details>
-    <summary>
-        <strong>I already attended a Le Wagon coding bootcamp (Web Development or Data Science & AI or Data Analytics) <em>but I have a new laptop</em></strong>
-    </summary>
-
-This means that you already forked the GitHub repo `lewagon/dotfiles`, but at that time the configuration was maybe not ready for the current Data Analytics bootcamp. Let's update it. **Ask a TA to join you for the nex steps.**
-
-First, clone your fork on this machine:
-
-```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_
-gh repo clone $GITHUB_USERNAME/dotfiles
-```
-
-
-Open your terminal and go to your `dotfiles` project:
-
-```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-
-Time to merge the changes from `lewagon/dotfiles` into yours:
-
-1. Commit your current version of your dotfiles:
-
-   ```bash
-   git add .
-   git status # Check what will be committed
-   git commit -m "Version prior to new setup"
-   ```
-
-1. Let's bring in the changes from upstream: `git merge upstream/master`
-
-1. Check that you're not in `MERGING` state. If you are, resolve any conflicts.
-
-1. Do a `git diff HEAD~1 HEAD` to check what changed.
-
-1. If nothing seems out of the ordinary, continue
-
-<details>
-  <summary>Too many conflicts?
-  </summary>
-
-  Let's just take over the current version from `lewagon/dotfiles`.
-
-  First abort the merge: `git merge --abort`.
-
-  Run `code .`
-
-  In VS Code, open the `zshrc` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zshrc). Save to disk.
-
-  Still in VS Code, open the `zprofile` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zprofile). Save to disk.
-
-  Back in the terminal, run a `git diff` and check if this didn't remove any personal configuration setting that you wanted to keep.
-
-</details>
-
-Time to commit your changes and push them.
-
-```bash
-git add .
-git commit -m "Update for Data Analytics bootcamp"
-git push origin master
-```
-
-</details>
-
-
-<details>
-    <summary>
-        <strong>I already did the setup of a Le Wagon coding bootcamp (WebDev or Data Science & AI or Data Analytics) <em>on the same laptop</em> before</strong>
-    </summary>
-
-This means that you already forked and cloned the GitHub repo `lewagon/dotfiles`, but at that time the configuration was maybe not ready for the current Data Analytics bootcamp. Let's update it. **Ask a TA to join you for the nex steps.**
-
-
-Open your terminal and go to your `dotfiles` project:
-
-```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-
-Time to merge the changes from `lewagon/dotfiles` into yours:
-
-1. Commit your current version of your dotfiles:
-
-   ```bash
-   git add .
-   git status # Check what will be committed
-   git commit -m "Version prior to new setup"
-   ```
-
-1. Let's bring in the changes from upstream: `git merge upstream/master`
-
-1. Check that you're not in `MERGING` state. If you are, resolve any conflicts.
-
-1. Do a `git diff HEAD~1 HEAD` to check what changed.
-
-1. If nothing seems out of the ordinary, continue
-
-<details>
-  <summary>Too many conflicts?
-  </summary>
-
-  Let's just take over the current version from `lewagon/dotfiles`.
-
-  First abort the merge: `git merge --abort`.
-
-  Run `code .`
-
-  In VS Code, open the `zshrc` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zshrc). Save to disk.
-
-  Still in VS Code, open the `zprofile` file. Replace its content with the [newest version](https://raw.githubusercontent.com/lewagon/dotfiles/master/zprofile). Save to disk.
-
-  Back in the terminal, run a `git diff` and check if this didn't remove any personal configuration setting that you wanted to keep.
-
-</details>
-
-Time to commit your changes and push them.
-
-```bash
-git add .
-git commit -m "Update for Data Analytics bootcamp"
-git push origin master
-```
-
-</details>
-
-
-### Run the dotfiles installer
-
-It's time to run the `dotfiles` installer:
+Run the `dotfiles` installer with:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
-Check the emails registered with your GitHub Account. You'll need to pick one at the next step:
+Check the emails registered with your GitHub Account. You'll need to pick one in the next step:
 
 ```bash
 gh api user/emails | jq -r '.[].email'
@@ -632,244 +551,101 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
 :point_up: This will **prompt** you for your name (`FirstName LastName`) and your email.
-:warning: You **need** to put one of the emails listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress. 💡 Select the `@users.noreply.github.com` address if you don't want your email to appear in public repositories you may contribute to.
 
-Please now **quit** all your opened terminal windows.
+:warning: You **need** to put one of the emails listed above from the previous `gh api ...` command. If you don't do that, Kitt will not be able to track your progress.
+
+💡 Select the `...@users.noreply.github.com` address if you don't want your email to appear in public repositories you may contribute to.
 
 
-## Installing Python (with [`pyenv`](https://github.com/pyenv/pyenv))
+## Install Python and dependencies
 
-### Uninstall `conda`
+Your operating system - macOS, or Ubuntu (native, or inside WSL) - comes with a "system Python". That's a Python version your system depends on. We don't mess around with that one. We're going to do a professional setup of Python where you don't mess up your "system Python" and where you'll be able to switch which version you want to use for each project you work on.
 
-As we are using `pyenv` to install and manage our Python version, we need to uninstall [`conda`](https://docs.conda.io/projects/conda/en/latest/), another package manager you may have on your machine if you previously installed [Anaconda](https://www.anaconda.com/). Thus, we are preventing any possible Python version issue later.
+To manage different Python versions and virtual environments (you'll discover what that means during the setup lecture), we will use the state-of-the-art [`uv` created by Astral](https://docs.astral.sh/uv/).
 
-Check if you have `conda` installed on your machine:
+
+### Install `uv`
+
+First, we'll install `uv`:
 
 ```bash
-conda list
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-
-If you have `zsh: command not found: conda`, you can **skip** the uninstall of `conda` and jump to the **Install pre-requisites** section.
-
-
-<details>
-    <summary markdown='span'><code>conda</code> uninstall instructions</summary>
-
-- Install the Anaconda-Clean package from your terminal and run the cleaning
+Next, restart your shell by running this:
 
 ```bash
-conda install anaconda-clean
-anaconda-clean --yes
-```
-
-- Remove every Anaconda directories
-
-```bash
-rm -rf ~/anaconda2
-rm -rf ~/anaconda3
-rm -rf ~/.anaconda_backup
-
-rm -rf ~/opt
-
-```
-
-- Remove Anaconda path from your `.bash_profile`
-  - Open the file with `code ~/.bash_profile`
-  - If the file opens find the line matching the following pattern `export PATH="/path/to/anaconda3/bin:$PATH"` and delete the line
-
-  - Save the file with `CMD` + `s`
-
-- Restart your terminal with `exec zsh`
-- Remove Anaconda initialization from your `.zshrc`:
-  - Open the file with `code ~/.zshrc`
-  - Remove the code lines starting from `>>> conda initialize >>>` to `<<< conda initialize <<<`
-
-</details>
-
-
-### Install pre-requisites
-
-Before installing Python, please check your `xz` version with:
-
-```bash
-brew info xz
-```
-
-It should be more than `5.2.0`, **if not** you should run:
-
-```bash
-sudo rm -rf /usr/local/opt/xz
-brew upgrade
-brew install xz
-```
-
-Then run:
-
-```bash
-brew install readline
-```
-
-### Install `pyenv`
-
-macOS comes with an outdated version of Python that we don't want to use. You might already have installed Anaconda or something else to tinker with Python and Data Analytics packages. All of this does not really matter as we are going to do a professional setup of Python where you'll be able to switch which version you want to use whenever you type `python` in the terminal.
-
-First let's install `pyenv` with the following Terminal command:
-
-```bash
-brew install pyenv
 exec zsh
 ```
 
-### Install Python
+### Create a virtual environment
 
-Let's install the [latest stable version of Python](https://www.python.org/doc/versions/) supported by Le Wagon's curriculum:
-
-```bash
-pyenv install 3.12.9
-```
-
-This command might take a while, this is perfectly normal. Don't hesitate to help other students seated next to you!
-
-<details>
-  <summary>🛠 Troubleshooting `pyenv` not found</summary>
-
-If you encounter an error `Command 'pyenv' not found`: execute the following line:
+Next, we'll create a virtual environment (an isolated environment with Python and the dependencies for the bootcamp):
 
 ```bash
-source ~/.zprofile
+uv venv ~/.lewagon/venvs/lewagon --python 3.12.9
 ```
 
-Then try to install Python again:
+Now that we created this new virtual environment, let's restart our shell to pick it up (this works thanks to the `lewagon/dotfiles` we installed before):
 
 ```bash
-pyenv install 3.12.9
-```
-
-If `pyenv` is still not found, contact a teacher.
-
-</details>
-
-<details>
-  <summary>🛠 Troubleshooting `zlib`</summary>
-
-If you encounter an error installing Python with `pyenv` about `zlib`:
-
-```txt
-zipimport.ZipImportError: can't decompress data; zlib not available
-```
-
-Install `zlib` with:
-
-```bash
-brew install zlib
-export LDFLAGS="-L/usr/local/opt/zlib/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
-```
-
-Then try to install Python again:
-
-```bash
-pyenv install 3.12.9
-```
-
-It could raise another error about `bzip2`, you can ignore it and continue to the next step.
-
-</details>
-<br>
-
-OK once this command is complete, we are going to tell the system to use this version of Python **by default**. This is done with:
-
-```bash
-pyenv global 3.12.9
 exec zsh
 ```
 
-To check if this worked, run `python --version`. If you see `3.12.9`, perfect! If not, ask a TA that will help you debug the problem thanks to `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
-
-
-## Python Virtual Environment
-
-Before we start installing relevant Python packages, we will isolate the setup for the Bootcamp into a **dedicated** virtual environment. We will use a `pyenv` plugin called [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv).
-
-### Setup a virtualenv
-
-First let's install this plugin:
+Let's check that everything went right. Run this:
 
 ```bash
-git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-exec zsh
+which python3
 ```
 
-Let's create the virtual environment we are going to use during the whole bootcamp:
+It should return this:
 
-```bash
-pyenv virtualenv 3.12.9 lewagon
-```
-
-Let's now set the virtual environment with:
-
-```bash
-pyenv global lewagon
-```
-
-Great! Anytime we'll install Python package, we'll do it in that environment.
-
-
-### Python packages
-
-Now that we have a pristine `lewagon` virtual environment, it's time to install some packages in it.
-
-First, let's upgrade `pip`, the tool to install Python Packages from [pypi.org](https://pypi.org). In the latest terminal where the virtualenv `lewagon` is activated, run:
-
-```bash
-pip install --upgrade pip
-```
-
-Then let's install some packages for the first weeks of the program:
-
-
-If your computer uses **Apple Silicon**, expand the paragraph below and go through it. Otherwise ignore it.
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
 
 ``` bash
-pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/apple_silicon.txt
+/Users/your-username/.lewagon/venvs/lewagon/bin/python3
 ```
 
-</details>
 
-If your computer uses **Apple Intel**, expand the paragraph below and go through it. Otherwise ignore it.
+If it doesn't, check with a TA! Do not continue with the next step before you solved this!
 
-<details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Intel 👈</summary>
+
+### Install dependencies
+
+Python is great for data, because the community has developed an enormous amount of packages we can re-use.
+
+Let's install the most common ones:
+
 
 ``` bash
-pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/apple_intel.txt
+uv pip install -r https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/specs/releases/apple_silicon.txt
 ```
-
-</details>
 
 
 
 ## Jupyter Notebook tweaking
 
-Let's improve the display of the [`details` disclosure elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) in your notebooks.
+Depending on your system, we need to make some small changes to your Jupyter configuration.
 
-Run the following lines to create a `custom.css` stylesheet in your Jupyter config directory:
+Run this:
 
 ```bash
-LOCATION=$(jupyter --config-dir)/custom
-SOURCE=https://raw.githubusercontent.com/lewagon/data-analytics-setup/refs/heads/master/specs/jupyter/custom.css
-mkdir -p $LOCATION
-curl $SOURCE > $LOCATION/custom.css
+bash -c "$(curl -s https://raw.githubusercontent.com/lewagon/data-setup/refs/heads/master/checks/setup_jupyter.sh)"
 ```
+
+<details>
+<summary>If you are curious about what happens here, click here.</summary>
+
+This script adds a configuration to improve the display of the [`details` disclosure elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) in your notebooks.
+
+If you're using Windows WSL, it also fixes some other problems.
+
+
+</details>
 
 
 ## Python setup check
 
-### Python and packages check
+Let's run some checks. If any of the following steps fail, ask a TA for help.
 
 Let's reset your terminal:
 
@@ -877,43 +653,43 @@ Let's reset your terminal:
 cd ~/code && exec zsh
 ```
 
-Check your Python version with the following commands:
-
-```bash
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/python_checker.sh)" 3.12.9
-```
-
-Run the following command to check if you successfully installed the required packages:
-
-```bash
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/pip_check.sh)"
-```
-
-Now run the following command to check if you can load these packages:
-
-```bash
-python -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/data-analytics-setup/master/checks/pip_check.py)"
-```
-
-### Jupyter check
-
 Make sure you can run Jupyter:
 
 ```bash
 jupyter notebook
 ```
 
-Your web browser should open on a `jupyter` window:
+Your web browser should open on a `jupyter` window.
 
-![jupyter.png](images/jupyter.png)
+<details>
+
+  <summary>Note if you're running the setup on a virtual machine</summary>
+
+  VSCode detects that a jupyter notebook started in your virtual machine and creates a port forward in order to allow you to open the application in your browser.
+
+  Hit Open in Browser or go to http://localhost:8888/ (the url to use is available in the terminal).
+
+  ![](https://github.com/lewagon/data-setup/blob/master/images/jupyter_port_forward.png)
+
+  On the first run, jupyter will ask for the token displayed in the terminal of your virtual machine in order to allow you to connect to the application from your local machine.
+
+  Fill the token and hit Log in.
+
+  ![](https://github.com/lewagon/data-setup/blob/master/images/jupyter_token.png)
+
+  You are now interacting from your local machine with the jupyter application running in your virtual machine.
+</details>
+
+
+![jupyter.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter.png)
 
 Click on `New` and in the dropdown menu select `Python 3 (ipykernel)`:
 
-![jupyter_new.png](images/jupyter_new.png)
+![jupyter_new.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_new.png)
 
 A tab should open on a new notebook:
 
-![jupyter_notebook.png](images/jupyter_notebook.png)
+![jupyter_notebook.png](https://github.com/lewagon/data-setup/blob/master/images/jupyter_notebook.png)
 
 Make sure that you are running the correct python version in the notebook. Open a cell and run:
 
@@ -922,6 +698,15 @@ import sys; sys.version
 ```
 
 It should output `3.12.9` followed by some more details. If not, check with a TA.
+
+In another cell, run:
+
+```python
+import pandas as pd
+pd.__version__
+```
+
+This might take a few minutes to run. It should output a version number, `2.2.3`.  If not, check with a TA.
 
 You can close your web browser then terminate the jupyter server with `CTRL` + `C`.
 
@@ -940,12 +725,14 @@ Here you have it! A complete python virtual env with all the third-party package
 
 
 
-## `gcloud` CLI
+## Google Cloud CLI
+
+### Install `gcloud`
 
 Before Setting up our Google Cloud Platform account let's configure the `gcloud` CLI (A command line interface for Google Cloud Platform). Run the below and follow the terminal prompts to update your $PATH and enable shell command completion for the `.zshrc` file:
 
 ```bash
-brew install --cask google-cloud-sdk
+brew install -y --cask google-cloud-sdk
 ```
 
 Then you can:
@@ -953,6 +740,8 @@ Then you can:
 ```bash
 $(brew --prefix)/share/google-cloud-sdk/install.sh
 ```
+
+When asked if you want to make updates, choose `y`. When asked for the path to an rc file, hit `Enter` to accept the default `.zshrc`.
 
 <details>
   <summary>Getting a <code>no such file or directory</code> error?
@@ -969,64 +758,62 @@ If that doesn't work, contact a TA.
 </details>
 
 
-### Configure Cloud sdk
+### Configure the Google Cloud CLI
 
 - Authenticate the `gcloud` CLI with the google account you used for GCP
 
-
-```bash
-gcloud auth login
-```
-
+  ```bash
+  gcloud auth login
+  ```
 
 - Login to your Google account on the new tab opened in your web browser
+
 - List your active account and check your email address you used for GCP is present
 
-```bash
-gcloud auth list
-```
+  ```bash
+  gcloud auth list
+  ```
 
 - Set your current project (replace `PROJECT_ID` with the `ID` of your project, e.g. `wagon-bootcamp-123456`)
 
-```bash
-gcloud config set project PROJECT_ID
-```
+  ```bash
+  gcloud config set project PROJECT_ID
+  ```
 
 - List your active account and current project and check your project is present
 
-```bash
-gcloud config list
-```
+  ```bash
+  gcloud config list
+  ```
 
+- Now let's set up Application Default Credentials so your Python code can access GCP:
 
-Now let's set up Application Default Credentials so your Python code can access GCP:
+  ```bash
+  gcloud auth application-default login
+  ```
 
-```bash
-gcloud auth application-default login
-```
+  This will open a browser window. Log in with the same Google account you used to create your GCP project. Your credentials will be saved automatically.
 
-This will open a browser window. Log in with the same Google account you used to create your GCP project. Your credentials will be saved automatically.
+- Let's verify your Application Default Credentials are working:
 
+  ```bash
+  gcloud auth application-default print-access-token
+  ```
 
-Let's verify your Application Default Credentials are working:
+  You should see a long token string. If you see an error, run `gcloud auth application-default login` again.
 
-```bash
-gcloud auth application-default print-access-token
-```
+  <details>
+    <summary>Troubleshooting</summary>
 
-You should see a long token string. If you see an error, run `gcloud auth application-default login` again.
-
-<details>
-  <summary>Troubleshooting</summary>
-
-- `AccessDeniedException: 403 The project to be billed is associated with an absent billing account.`
-  - Make sure that billing is enabled for your Google Cloud Platform project [https://cloud.google.com/billing/docs/how-to/modify-project](https://cloud.google.com/billing/docs/how-to/modify-project)
-</details>
+  - `AccessDeniedException: 403 The project to be billed is associated with an absent billing account.`
+    - Make sure that billing is enabled for your Google Cloud Platform project [https://cloud.google.com/billing/docs/how-to/modify-project](https://cloud.google.com/billing/docs/how-to/modify-project)
+  </details>
 
 🏁 You are done with the GCP setup!
 
 
-  ## Kitt
+
+## Kitt
 
 You should have received an email from Le Wagon inviting you to sign up on [Kitt](https://kitt.lewagon.com) (our learning platform).
 
@@ -1075,43 +862,13 @@ You can also install Slack app on your phone and sign in `lewagon-alumni`!
 
 ## macOS settings
 
-### Security
-
-It is mandatory that you protect your session behind a password. If it is not already the case, go to ` > System Settings... > Users & Groups` and change your account password. You should also go to ` > System Settings... > Lock Screen`. You should require a password `5 seconds` after screen saver begins or display is turned off.
-
-You can also go to ` > System Settings... > Desktop & Dock` and click on the `Hot Corners...` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your MacBook will be locked and will ask for a password to get back on the session.
-
-### Keyboard
-
-As you become a programmer, you'll understand that leaving the keyboard takes a lot of time, so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on macOS to help you do that.
-
-#### Keyboard speed
-
-Go to ` > System Settings... > Keyboard`. Set `Key repeat rate` to the fastest position (to the right) and `Delay until repeat` to the shortest position (also to the right).
-
-#### macOS For hackers
-
-[Read this script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and cherry-pick some stuff you think will suit you. For instance, you can type in the terminal this one:
-
-```bash
-# Expanding the save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
-
-# Save screenshots to the Desktop (or elsewhere)
-defaults write com.apple.screencapture location "${HOME}/Desktop"
-
-# etc..
-```
-
 ### Pin apps to your dock
 
 You are going to use most of the apps you've installed today really often. Let's pin them to your dock so that they are just one click away!
 
 To pin an app to your dock, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Options" then "Keep in Dock".
 
-![How to pin an app to the taskbar in macOS](https://github.com/lewagon/setup/blob/master/images/macos_dock.png)
+![How to pin an app to the taskbar in macOS](https://raw.githubusercontent.com/lewagon/setup/refs/heads/master/images/macos_dock.png)
 
 You must pin:
 - Your terminal

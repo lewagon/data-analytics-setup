@@ -1,6 +1,11 @@
 
 os: macos
-locales: [en]
+locales: [en, es]
 partials:
-  - keep_current
-  - python_checkup
+  - data_setup/keep_current
+  - data_setup/dotfiles
+  - data_setup/install_python
+  - data_setup/nbextensions
+  - data_setup/python_checkup
+  - data_setup/gcp_cli_setup
+  - data_setup/gcp_setup
