@@ -20,9 +20,9 @@ Por favor **léelas cuidadosamente y ejecuta todos los comandos en el siguiente 
 
 ## Google Cloud Platform setup
 
-[Google Cloud](https://cloud.google.com/) is a cloud solution that you are going to use in order to deploy your Machine Learning-based products to production.
+[Google Cloud](https://cloud.google.com/) ofrece una variedad de herramientas para crear plataformas de datos fiables. Usaremos su almacén de datos de última generación, BigQuery, para almacenar y transformar datos.
 
-:warning: For the next steps, we highly recommend to **use a gmail.com address (or googlemail.com)**. This helps to avoid additional manual steps and delays when linking your Google Cloud account to the data we'll use during the bootcamp.
+:warning: Para los siguientes pasos, te recomendamos encarecidamente **usar una dirección de gmail.com (o googlemail.com)**. Esto ayuda a evitar pasos manuales adicionales y retrasos al vincular tu cuenta de Google Cloud con los datos que usaremos durante el bootcamp.
 
 
 
