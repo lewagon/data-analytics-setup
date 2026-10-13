@@ -32,16 +32,17 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 - Go to [Google Cloud](https://console.cloud.google.com/) and create an account if you do not already have one
 - In the Cloud Console, on the project list, select or create a Cloud project
 
-⚠️ **Important:** When creating a new project, you will see an **Organization** field. Leave this set to **"No organization"**. Do not select or create an organization. Choosing an organization applies restrictions that can prevent you from using Google Cloud services during the bootcamp.
+⚠️ **Important:** When creating a new project, you will see a **Parent resource** field. Leave this set to **"No organization"**. Do **not** select or create an organization. Choosing an organization applies restrictions that can prevent you from using Google Cloud services during the bootcamp. ⚠️ 
 
 ![](https://github.com/lewagon/data-setup/blob/master/images/gcp-create-project.png)
 
-- Give it a name such as `Wagon Bootcamp` for example
-- Notice the `ID` automatically created for the project, e.g. `wagon-bootcamp-123456`
+- Give it a name such as `Wagon Bootcamp` followed by your name
+- Make sure to leave **Parent resource** set to **"No organization"**
+- Notice the `ID` automatically created for the project, e.g. `wagon-bootcamp-your-name-123456`
 
 ![](https://github.com/lewagon/data-setup/blob/master/images/gcp_project.png)
 
-ℹ️ Note the **Project ID** (e.g. `wagon-bootcamp-123456`) this is **not** the same as the project name you chose (e.g. `Wagon Bootcamp`). You will need the ID later when running terminal commands, but don't worry, you can always find it in Google Cloud.
+ℹ️ Note the **Project ID** (e.g. `wagon-bootcamp-your-name-123456`) this is **not** the same as the project name you chose (e.g. `Wagon Bootcamp Your Name`). You will need the ID later when running terminal commands, but don't worry, you can always find it in Google Cloud.
 
 ### Account language
 
